@@ -12325,7 +12325,7 @@ out = output[:, -1]</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">torch.nn</span> <span class="k">as</span> <span class="nn">nn</span>
@@ -12438,7 +12438,7 @@ out = output[:, -1]</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">forward_back_prop</span><span class="p">(</span><span class="n">rnn</span><span class="p">,</span> <span class="n">optimizer</span><span class="p">,</span> <span class="n">criterion</span><span class="p">,</span> <span class="n">inp</span><span class="p">,</span> <span class="n">target</span><span class="p">,</span> <span class="n">hidden</span><span class="p">):</span>
@@ -12514,7 +12514,7 @@ out = output[:, -1]</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12583,7 +12583,7 @@ out = output[:, -1]</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Data params</span>
@@ -12603,7 +12603,7 @@ out = output[:, -1]</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Training parameters</span>
@@ -12647,7 +12647,7 @@ out = output[:, -1]</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12655,7 +12655,7 @@ out = output[:, -1]</code></pre>
 <span class="sd">&quot;&quot;&quot;</span>
 
 <span class="c1"># create model and move to gpu if available</span>
-<span class="c1">#rnn = RNN(vocab_size, output_size, embedding_dim, hidden_dim, n_layers, dropout=0.5)</span>
+<span class="n">rnn</span> <span class="o">=</span> <span class="n">RNN</span><span class="p">(</span><span class="n">vocab_size</span><span class="p">,</span> <span class="n">output_size</span><span class="p">,</span> <span class="n">embedding_dim</span><span class="p">,</span> <span class="n">hidden_dim</span><span class="p">,</span> <span class="n">n_layers</span><span class="p">,</span> <span class="n">dropout</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
 <span class="k">if</span> <span class="n">train_on_gpu</span><span class="p">:</span>
     <span class="n">rnn</span><span class="o">.</span><span class="n">cuda</span><span class="p">()</span>
 
@@ -12685,7 +12685,7087 @@ out = output[:, -1]</code></pre>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Training for 0 epoch(s)...
+<pre>Training for 60 epoch(s)...
+Epoch:    1/60    Loss: 5.584539404392243
+
+Epoch:    1/60    Loss: 4.978618786811829
+
+Epoch:    1/60    Loss: 4.743197936058045
+
+Epoch:    1/60    Loss: 4.7408830742836
+
+Epoch:    1/60    Loss: 4.796560604572296
+
+Epoch:    1/60    Loss: 4.691383345127106
+
+Epoch:    1/60    Loss: 4.620989734649658
+
+Epoch:    1/60    Loss: 4.5035069065094
+
+Epoch:    1/60    Loss: 4.2975137164592745
+
+Epoch:    1/60    Loss: 4.580089133262634
+
+Epoch:    1/60    Loss: 4.363871543884278
+
+Epoch:    1/60    Loss: 4.470418291568756
+
+Epoch:    1/60    Loss: 4.186340519428253
+
+Epoch:    1/60    Loss: 4.282206547737122
+
+Epoch:    1/60    Loss: 4.192819122314453
+
+Epoch:    1/60    Loss: 4.33475363445282
+
+Epoch:    1/60    Loss: 4.294622162818909
+
+Epoch:    1/60    Loss: 4.451160747051239
+
+Epoch:    1/60    Loss: 4.440550621509552
+
+Epoch:    1/60    Loss: 4.313336195468903
+
+Epoch:    1/60    Loss: 4.309487774848938
+
+Epoch:    1/60    Loss: 4.205012201547623
+
+Epoch:    1/60    Loss: 4.502835605621338
+
+Epoch:    1/60    Loss: 4.315154174804688
+
+Epoch:    1/60    Loss: 4.477178359031678
+
+Epoch:    1/60    Loss: 4.474082582473755
+
+Epoch:    1/60    Loss: 4.332868708610535
+
+Epoch:    1/60    Loss: 4.454158801078797
+
+Epoch:    1/60    Loss: 4.333987774848938
+
+Epoch:    1/60    Loss: 4.245570753097534
+
+Epoch:    1/60    Loss: 4.191190000057221
+
+Epoch:    1/60    Loss: 4.500000421524048
+
+Epoch:    1/60    Loss: 4.312783335208893
+
+Epoch:    1/60    Loss: 4.0926206276416774
+
+Epoch:    1/60    Loss: 4.1326706950664525
+
+Epoch:    1/60    Loss: 4.312404307842255
+
+Epoch:    1/60    Loss: 4.12882629776001
+
+Epoch:    1/60    Loss: 4.399092391729355
+
+Epoch:    1/60    Loss: 4.264918925523758
+
+Epoch:    1/60    Loss: 4.217979504585266
+
+Epoch:    1/60    Loss: 4.194918124675751
+
+Epoch:    1/60    Loss: 4.245503536701202
+
+Epoch:    1/60    Loss: 4.207558061599731
+
+Epoch:    1/60    Loss: 4.386960781574249
+
+Epoch:    1/60    Loss: 4.240934824943542
+
+Epoch:    1/60    Loss: 4.349321382522583
+
+Epoch:    1/60    Loss: 4.556552526950836
+
+Epoch:    1/60    Loss: 4.565672998428345
+
+Epoch:    1/60    Loss: 4.419836859226227
+
+Epoch:    1/60    Loss: 4.430744566679001
+
+Epoch:    1/60    Loss: 4.491157646656037
+
+Epoch:    1/60    Loss: 4.461477841854095
+
+Epoch:    1/60    Loss: 4.483451738595963
+
+Epoch:    1/60    Loss: 4.417303246498108
+
+Epoch:    1/60    Loss: 4.428138305187225
+
+Epoch:    1/60    Loss: 4.4382841343879695
+
+Epoch:    1/60    Loss: 4.290555070877075
+
+Epoch:    1/60    Loss: 4.510940369129181
+
+Epoch:    1/60    Loss: 4.262174345254898
+
+Epoch:    2/60    Loss: 4.429508287945519
+
+Epoch:    2/60    Loss: 4.0317278101444245
+
+Epoch:    2/60    Loss: 4.030819558143616
+
+Epoch:    2/60    Loss: 4.06558516073227
+
+Epoch:    2/60    Loss: 4.132909673452377
+
+Epoch:    2/60    Loss: 4.153683086156845
+
+Epoch:    2/60    Loss: 4.111942491531372
+
+Epoch:    2/60    Loss: 4.052715909957886
+
+Epoch:    2/60    Loss: 3.874140060424805
+
+Epoch:    2/60    Loss: 4.1939811913967135
+
+Epoch:    2/60    Loss: 3.990584184885025
+
+Epoch:    2/60    Loss: 4.126995318889618
+
+Epoch:    2/60    Loss: 3.840491840362549
+
+Epoch:    2/60    Loss: 3.9559146318435667
+
+Epoch:    2/60    Loss: 3.8551442093849184
+
+Epoch:    2/60    Loss: 4.006331790208817
+
+Epoch:    2/60    Loss: 4.020254987716675
+
+Epoch:    2/60    Loss: 4.228961871147156
+
+Epoch:    2/60    Loss: 4.141343107700348
+
+Epoch:    2/60    Loss: 4.0554907076358795
+
+Epoch:    2/60    Loss: 4.055373066902161
+
+Epoch:    2/60    Loss: 3.97321329498291
+
+Epoch:    2/60    Loss: 4.298759968757629
+
+Epoch:    2/60    Loss: 4.109160690307617
+
+Epoch:    2/60    Loss: 4.242182459831238
+
+Epoch:    2/60    Loss: 4.264491364717483
+
+Epoch:    2/60    Loss: 4.132045463562012
+
+Epoch:    2/60    Loss: 4.248043483734131
+
+Epoch:    2/60    Loss: 4.1306860065460205
+
+Epoch:    2/60    Loss: 4.060737189769745
+
+Epoch:    2/60    Loss: 3.9417130317687987
+
+Epoch:    2/60    Loss: 4.29304283285141
+
+Epoch:    2/60    Loss: 4.137231809854508
+
+Epoch:    2/60    Loss: 3.9067204978466035
+
+Epoch:    2/60    Loss: 3.956833998441696
+
+Epoch:    2/60    Loss: 4.113496272802353
+
+Epoch:    2/60    Loss: 3.972088612794876
+
+Epoch:    2/60    Loss: 4.238672315597534
+
+Epoch:    2/60    Loss: 4.08638326048851
+
+Epoch:    2/60    Loss: 4.041441945791244
+
+Epoch:    2/60    Loss: 4.041833787918091
+
+Epoch:    2/60    Loss: 4.058106949567795
+
+Epoch:    2/60    Loss: 4.092928634643554
+
+Epoch:    2/60    Loss: 4.200017159461975
+
+Epoch:    2/60    Loss: 4.119115034103394
+
+Epoch:    2/60    Loss: 4.187801851272583
+
+Epoch:    2/60    Loss: 4.41037546133995
+
+Epoch:    2/60    Loss: 4.3907617893219
+
+Epoch:    2/60    Loss: 4.24628427362442
+
+Epoch:    2/60    Loss: 4.246769404649735
+
+Epoch:    2/60    Loss: 4.2671496539115905
+
+Epoch:    2/60    Loss: 4.289663331031799
+
+Epoch:    2/60    Loss: 4.297907082319259
+
+Epoch:    2/60    Loss: 4.276141669273376
+
+Epoch:    2/60    Loss: 4.198048438787461
+
+Epoch:    2/60    Loss: 4.266749669075012
+
+Epoch:    2/60    Loss: 4.121604875087738
+
+Epoch:    2/60    Loss: 4.362252393245697
+
+Epoch:    2/60    Loss: 4.079461237668991
+
+Epoch:    3/60    Loss: 4.250750797922197
+
+Epoch:    3/60    Loss: 3.9251162407398223
+
+Epoch:    3/60    Loss: 3.914248083591461
+
+Epoch:    3/60    Loss: 3.94316263628006
+
+Epoch:    3/60    Loss: 4.029306303739547
+
+Epoch:    3/60    Loss: 4.083336960792542
+
+Epoch:    3/60    Loss: 4.0299128365516665
+
+Epoch:    3/60    Loss: 4.042876502275467
+
+Epoch:    3/60    Loss: 3.7869373910427093
+
+Epoch:    3/60    Loss: 4.123842885255813
+
+Epoch:    3/60    Loss: 3.9306966569423674
+
+Epoch:    3/60    Loss: 4.0140827729702
+
+Epoch:    3/60    Loss: 3.746992486476898
+
+Epoch:    3/60    Loss: 3.8321164903640748
+
+Epoch:    3/60    Loss: 3.746077346324921
+
+Epoch:    3/60    Loss: 3.8679626944065095
+
+Epoch:    3/60    Loss: 3.910302846431732
+
+Epoch:    3/60    Loss: 4.1163127307891845
+
+Epoch:    3/60    Loss: 4.018224453449249
+
+Epoch:    3/60    Loss: 3.9532341599464416
+
+Epoch:    3/60    Loss: 3.909925265073776
+
+Epoch:    3/60    Loss: 3.8639591455459597
+
+Epoch:    3/60    Loss: 4.18081232213974
+
+Epoch:    3/60    Loss: 3.945679934024811
+
+Epoch:    3/60    Loss: 4.076323775529861
+
+Epoch:    3/60    Loss: 4.16047481584549
+
+Epoch:    3/60    Loss: 4.019626809597016
+
+Epoch:    3/60    Loss: 4.157767161846161
+
+Epoch:    3/60    Loss: 4.025215100288391
+
+Epoch:    3/60    Loss: 3.989033597946167
+
+Epoch:    3/60    Loss: 3.8601762781143187
+
+Epoch:    3/60    Loss: 4.183839636325836
+
+Epoch:    3/60    Loss: 4.022508750200272
+
+Epoch:    3/60    Loss: 3.8207516753673554
+
+Epoch:    3/60    Loss: 3.8664631218910217
+
+Epoch:    3/60    Loss: 3.992371515750885
+
+Epoch:    3/60    Loss: 3.8129169692993163
+
+Epoch:    3/60    Loss: 4.052038418769836
+
+Epoch:    3/60    Loss: 3.994664577484131
+
+Epoch:    3/60    Loss: 3.8779393215179443
+
+Epoch:    3/60    Loss: 3.9145858850479125
+
+Epoch:    3/60    Loss: 3.9229103367328646
+
+Epoch:    3/60    Loss: 3.955868262529373
+
+Epoch:    3/60    Loss: 4.128921581983566
+
+Epoch:    3/60    Loss: 4.026408871173858
+
+Epoch:    3/60    Loss: 4.058253768444061
+
+Epoch:    3/60    Loss: 4.234986638069153
+
+Epoch:    3/60    Loss: 4.196707132339477
+
+Epoch:    3/60    Loss: 4.074207115650177
+
+Epoch:    3/60    Loss: 4.104648168563843
+
+Epoch:    3/60    Loss: 4.12827761554718
+
+Epoch:    3/60    Loss: 4.132703597545624
+
+Epoch:    3/60    Loss: 4.090524292230606
+
+Epoch:    3/60    Loss: 4.1452890601158146
+
+Epoch:    3/60    Loss: 4.129444852590561
+
+Epoch:    3/60    Loss: 4.151323220014572
+
+Epoch:    3/60    Loss: 3.975802195549011
+
+Epoch:    3/60    Loss: 4.234117865085602
+
+Epoch:    3/60    Loss: 3.9730878348350527
+
+Epoch:    4/60    Loss: 4.184733656923408
+
+Epoch:    4/60    Loss: 3.914286875963211
+
+Epoch:    4/60    Loss: 3.865648806810379
+
+Epoch:    4/60    Loss: 3.9025143425464632
+
+Epoch:    4/60    Loss: 3.9858370382785795
+
+Epoch:    4/60    Loss: 4.020926055908203
+
+Epoch:    4/60    Loss: 3.918301112651825
+
+Epoch:    4/60    Loss: 3.9387994062900544
+
+Epoch:    4/60    Loss: 3.6834995160102846
+
+Epoch:    4/60    Loss: 4.005870884895325
+
+Epoch:    4/60    Loss: 3.880285642147064
+
+Epoch:    4/60    Loss: 3.940782643079758
+
+Epoch:    4/60    Loss: 3.660971079349518
+
+Epoch:    4/60    Loss: 3.729708338022232
+
+Epoch:    4/60    Loss: 3.6837831318378447
+
+Epoch:    4/60    Loss: 3.7861758847236633
+
+Epoch:    4/60    Loss: 3.851883688211441
+
+Epoch:    4/60    Loss: 4.0383371849060055
+
+Epoch:    4/60    Loss: 3.9950000686645506
+
+Epoch:    4/60    Loss: 3.900468761205673
+
+Epoch:    4/60    Loss: 3.837289304494858
+
+Epoch:    4/60    Loss: 3.780396887779236
+
+Epoch:    4/60    Loss: 4.057126965761185
+
+Epoch:    4/60    Loss: 3.9283308670520785
+
+Epoch:    4/60    Loss: 4.049860929012299
+
+Epoch:    4/60    Loss: 4.121878700256348
+
+Epoch:    4/60    Loss: 3.9498735902309416
+
+Epoch:    4/60    Loss: 4.0905147600173954
+
+Epoch:    4/60    Loss: 3.9671390261650084
+
+Epoch:    4/60    Loss: 3.9465711572170257
+
+Epoch:    4/60    Loss: 3.83036514043808
+
+Epoch:    4/60    Loss: 4.124916875839234
+
+Epoch:    4/60    Loss: 3.954480763912201
+
+Epoch:    4/60    Loss: 3.7412215039730072
+
+Epoch:    4/60    Loss: 3.723030748605728
+
+Epoch:    4/60    Loss: 3.905531548023224
+
+Epoch:    4/60    Loss: 3.7376203265190124
+
+Epoch:    4/60    Loss: 3.9991951546669005
+
+Epoch:    4/60    Loss: 3.917320873737335
+
+Epoch:    4/60    Loss: 3.7944553582668306
+
+Epoch:    4/60    Loss: 3.8629423995018004
+
+Epoch:    4/60    Loss: 3.8377852849960328
+
+Epoch:    4/60    Loss: 3.8805543835163117
+
+Epoch:    4/60    Loss: 4.047729310750961
+
+Epoch:    4/60    Loss: 3.916271938800812
+
+Epoch:    4/60    Loss: 3.999320381641388
+
+Epoch:    4/60    Loss: 4.154348774909973
+
+Epoch:    4/60    Loss: 4.1380528497695925
+
+Epoch:    4/60    Loss: 4.020527085781097
+
+Epoch:    4/60    Loss: 4.076804300069809
+
+Epoch:    4/60    Loss: 4.052146801948547
+
+Epoch:    4/60    Loss: 4.024033182382584
+
+Epoch:    4/60    Loss: 4.0529596912860875
+
+Epoch:    4/60    Loss: 4.10186659860611
+
+Epoch:    4/60    Loss: 4.068910949468613
+
+Epoch:    4/60    Loss: 4.104790388584137
+
+Epoch:    4/60    Loss: 3.9825770411491392
+
+Epoch:    4/60    Loss: 4.175799583911895
+
+Epoch:    4/60    Loss: 3.9753463881015776
+
+Epoch:    5/60    Loss: 4.097844849624064
+
+Epoch:    5/60    Loss: 3.828784527301788
+
+Epoch:    5/60    Loss: 3.7915471830368044
+
+Epoch:    5/60    Loss: 3.7971268219947816
+
+Epoch:    5/60    Loss: 3.9283235449790954
+
+Epoch:    5/60    Loss: 3.9659277534484865
+
+Epoch:    5/60    Loss: 3.84574959564209
+
+Epoch:    5/60    Loss: 3.843651285648346
+
+Epoch:    5/60    Loss: 3.6083807713985445
+
+Epoch:    5/60    Loss: 3.9355651507377623
+
+Epoch:    5/60    Loss: 3.7863817760944367
+
+Epoch:    5/60    Loss: 3.87999902009964
+
+Epoch:    5/60    Loss: 3.574395511388779
+
+Epoch:    5/60    Loss: 3.638563306570053
+
+Epoch:    5/60    Loss: 3.6250097687244414
+
+Epoch:    5/60    Loss: 3.6929680082798004
+
+Epoch:    5/60    Loss: 3.757768502235413
+
+Epoch:    5/60    Loss: 3.93716251206398
+
+Epoch:    5/60    Loss: 3.880793387413025
+
+Epoch:    5/60    Loss: 3.805861238241196
+
+Epoch:    5/60    Loss: 3.7415810153484346
+
+Epoch:    5/60    Loss: 3.7039615325927735
+
+Epoch:    5/60    Loss: 3.9595858035087583
+
+Epoch:    5/60    Loss: 3.8195024592876434
+
+Epoch:    5/60    Loss: 3.931761650323868
+
+Epoch:    5/60    Loss: 4.014524369955063
+
+Epoch:    5/60    Loss: 3.8668178052902222
+
+Epoch:    5/60    Loss: 4.016498373031617
+
+Epoch:    5/60    Loss: 3.860679790973663
+
+Epoch:    5/60    Loss: 3.810183493614197
+
+Epoch:    5/60    Loss: 3.695480749607086
+
+Epoch:    5/60    Loss: 3.984098320007324
+
+Epoch:    5/60    Loss: 3.849516926765442
+
+Epoch:    5/60    Loss: 3.6499430229663847
+
+Epoch:    5/60    Loss: 3.6218911139965058
+
+Epoch:    5/60    Loss: 3.833564812898636
+
+Epoch:    5/60    Loss: 3.661193711042404
+
+Epoch:    5/60    Loss: 3.9078928472995758
+
+Epoch:    5/60    Loss: 3.821103435993195
+
+Epoch:    5/60    Loss: 3.697388453722
+
+Epoch:    5/60    Loss: 3.8136048891544343
+
+Epoch:    5/60    Loss: 3.7856540055274963
+
+Epoch:    5/60    Loss: 3.8030316157341004
+
+Epoch:    5/60    Loss: 3.955633511543274
+
+Epoch:    5/60    Loss: 3.818228059053421
+
+Epoch:    5/60    Loss: 3.903260181903839
+
+Epoch:    5/60    Loss: 4.096767734050751
+
+Epoch:    5/60    Loss: 4.07127855348587
+
+Epoch:    5/60    Loss: 3.988435635566711
+
+Epoch:    5/60    Loss: 4.029611707448959
+
+Epoch:    5/60    Loss: 3.9816808195114137
+
+Epoch:    5/60    Loss: 4.012894055128098
+
+Epoch:    5/60    Loss: 3.9835224540233614
+
+Epoch:    5/60    Loss: 4.049765089035034
+
+Epoch:    5/60    Loss: 3.9708551032543182
+
+Epoch:    5/60    Loss: 4.0643724403381345
+
+Epoch:    5/60    Loss: 3.9051042773723603
+
+Epoch:    5/60    Loss: 4.117882941961288
+
+Epoch:    5/60    Loss: 3.9175322914123534
+
+Epoch:    6/60    Loss: 4.04913871055064
+
+Epoch:    6/60    Loss: 3.8106752781867983
+
+Epoch:    6/60    Loss: 3.7331402907371523
+
+Epoch:    6/60    Loss: 3.736544463634491
+
+Epoch:    6/60    Loss: 3.864188212633133
+
+Epoch:    6/60    Loss: 3.888409194469452
+
+Epoch:    6/60    Loss: 3.799902782201767
+
+Epoch:    6/60    Loss: 3.7798652896881104
+
+Epoch:    6/60    Loss: 3.5515146079063418
+
+Epoch:    6/60    Loss: 3.874164961576462
+
+Epoch:    6/60    Loss: 3.73828484082222
+
+Epoch:    6/60    Loss: 3.840934360027313
+
+Epoch:    6/60    Loss: 3.573694751024246
+
+Epoch:    6/60    Loss: 3.633674203634262
+
+Epoch:    6/60    Loss: 3.571234460115433
+
+Epoch:    6/60    Loss: 3.651729145050049
+
+Epoch:    6/60    Loss: 3.6977679817676545
+
+Epoch:    6/60    Loss: 3.8667835631370546
+
+Epoch:    6/60    Loss: 3.830215758562088
+
+Epoch:    6/60    Loss: 3.7869247341156007
+
+Epoch:    6/60    Loss: 3.6622869288921356
+
+Epoch:    6/60    Loss: 3.614857929468155
+
+Epoch:    6/60    Loss: 3.8655201897621154
+
+Epoch:    6/60    Loss: 3.7307353348731995
+
+Epoch:    6/60    Loss: 3.8623774743080137
+
+Epoch:    6/60    Loss: 3.9321649601459505
+
+Epoch:    6/60    Loss: 3.8124815175533295
+
+Epoch:    6/60    Loss: 3.894720826625824
+
+Epoch:    6/60    Loss: 3.7567529780864715
+
+Epoch:    6/60    Loss: 3.7267847936153413
+
+Epoch:    6/60    Loss: 3.5973722019195558
+
+Epoch:    6/60    Loss: 3.9082692403793335
+
+Epoch:    6/60    Loss: 3.799652024269104
+
+Epoch:    6/60    Loss: 3.60671950006485
+
+Epoch:    6/60    Loss: 3.5833284051418306
+
+Epoch:    6/60    Loss: 3.7489094302654267
+
+Epoch:    6/60    Loss: 3.594226236343384
+
+Epoch:    6/60    Loss: 3.837468341588974
+
+Epoch:    6/60    Loss: 3.746499710083008
+
+Epoch:    6/60    Loss: 3.642067765712738
+
+Epoch:    6/60    Loss: 3.736544775724411
+
+Epoch:    6/60    Loss: 3.7118086080551147
+
+Epoch:    6/60    Loss: 3.7266146104335784
+
+Epoch:    6/60    Loss: 3.8228844656944276
+
+Epoch:    6/60    Loss: 3.7350820441246033
+
+Epoch:    6/60    Loss: 3.845863143444061
+
+Epoch:    6/60    Loss: 4.009049328804016
+
+Epoch:    6/60    Loss: 3.99966006565094
+
+Epoch:    6/60    Loss: 3.9011569049358368
+
+Epoch:    6/60    Loss: 3.9519304883480073
+
+Epoch:    6/60    Loss: 3.938504410266876
+
+Epoch:    6/60    Loss: 3.9310884656906127
+
+Epoch:    6/60    Loss: 3.930112681865692
+
+Epoch:    6/60    Loss: 4.030239832401276
+
+Epoch:    6/60    Loss: 3.941018092870712
+
+Epoch:    6/60    Loss: 3.9544375257492064
+
+Epoch:    6/60    Loss: 3.7697881858348845
+
+Epoch:    6/60    Loss: 4.005310119390487
+
+Epoch:    6/60    Loss: 3.816432174682617
+
+Epoch:    7/60    Loss: 3.9897882389309616
+
+Epoch:    7/60    Loss: 3.778581902503967
+
+Epoch:    7/60    Loss: 3.686000163078308
+
+Epoch:    7/60    Loss: 3.701802495479584
+
+Epoch:    7/60    Loss: 3.765045377969742
+
+Epoch:    7/60    Loss: 3.808631047010422
+
+Epoch:    7/60    Loss: 3.742760512828827
+
+Epoch:    7/60    Loss: 3.7091941986083983
+
+Epoch:    7/60    Loss: 3.473218906402588
+
+Epoch:    7/60    Loss: 3.7973140218257906
+
+Epoch:    7/60    Loss: 3.638468101739883
+
+Epoch:    7/60    Loss: 3.751542142868042
+
+Epoch:    7/60    Loss: 3.508015439748764
+
+Epoch:    7/60    Loss: 3.563832541227341
+
+Epoch:    7/60    Loss: 3.517354857683182
+
+Epoch:    7/60    Loss: 3.597262838602066
+
+Epoch:    7/60    Loss: 3.6181649644374847
+
+Epoch:    7/60    Loss: 3.7884272160530092
+
+Epoch:    7/60    Loss: 3.7610038650035857
+
+Epoch:    7/60    Loss: 3.6764439175128936
+
+Epoch:    7/60    Loss: 3.6012875263690947
+
+Epoch:    7/60    Loss: 3.567130274772644
+
+Epoch:    7/60    Loss: 3.825834000825882
+
+Epoch:    7/60    Loss: 3.675629364013672
+
+Epoch:    7/60    Loss: 3.808701804637909
+
+Epoch:    7/60    Loss: 3.8757731997966767
+
+Epoch:    7/60    Loss: 3.7476639981269835
+
+Epoch:    7/60    Loss: 3.8593687086105346
+
+Epoch:    7/60    Loss: 3.7231946861743928
+
+Epoch:    7/60    Loss: 3.6708181862831117
+
+Epoch:    7/60    Loss: 3.5521518626213076
+
+Epoch:    7/60    Loss: 3.874047056674957
+
+Epoch:    7/60    Loss: 3.734549289226532
+
+Epoch:    7/60    Loss: 3.5545007317066193
+
+Epoch:    7/60    Loss: 3.5176464920043946
+
+Epoch:    7/60    Loss: 3.667836847305298
+
+Epoch:    7/60    Loss: 3.5436180019378662
+
+Epoch:    7/60    Loss: 3.745401458263397
+
+Epoch:    7/60    Loss: 3.7001532146930693
+
+Epoch:    7/60    Loss: 3.5840956127643584
+
+Epoch:    7/60    Loss: 3.6670471658706667
+
+Epoch:    7/60    Loss: 3.6500742745399477
+
+Epoch:    7/60    Loss: 3.679114816904068
+
+Epoch:    7/60    Loss: 3.7834524478912352
+
+Epoch:    7/60    Loss: 3.675047170639038
+
+Epoch:    7/60    Loss: 3.7911734120845795
+
+Epoch:    7/60    Loss: 3.932958755016327
+
+Epoch:    7/60    Loss: 3.9293767795562746
+
+Epoch:    7/60    Loss: 3.8518361163139345
+
+Epoch:    7/60    Loss: 3.904269580364227
+
+Epoch:    7/60    Loss: 3.8785188517570495
+
+Epoch:    7/60    Loss: 3.850238511323929
+
+Epoch:    7/60    Loss: 3.870778109550476
+
+Epoch:    7/60    Loss: 3.9839150035381317
+
+Epoch:    7/60    Loss: 3.872526345729828
+
+Epoch:    7/60    Loss: 3.888511035203934
+
+Epoch:    7/60    Loss: 3.7889062201976778
+
+Epoch:    7/60    Loss: 3.975102250576019
+
+Epoch:    7/60    Loss: 3.7703021459579467
+
+Epoch:    8/60    Loss: 3.9288163611098477
+
+Epoch:    8/60    Loss: 3.725694377422333
+
+Epoch:    8/60    Loss: 3.600246710062027
+
+Epoch:    8/60    Loss: 3.621817303419113
+
+Epoch:    8/60    Loss: 3.707548088788986
+
+Epoch:    8/60    Loss: 3.737004664182663
+
+Epoch:    8/60    Loss: 3.671135634660721
+
+Epoch:    8/60    Loss: 3.640261929512024
+
+Epoch:    8/60    Loss: 3.4046792914867403
+
+Epoch:    8/60    Loss: 3.7023404791355135
+
+Epoch:    8/60    Loss: 3.5890075125694274
+
+Epoch:    8/60    Loss: 3.682610872268677
+
+Epoch:    8/60    Loss: 3.453173261165619
+
+Epoch:    8/60    Loss: 3.492424210071564
+
+Epoch:    8/60    Loss: 3.463555696964264
+
+Epoch:    8/60    Loss: 3.512752742290497
+
+Epoch:    8/60    Loss: 3.5436580097675323
+
+Epoch:    8/60    Loss: 3.6830229918956756
+
+Epoch:    8/60    Loss: 3.668008337497711
+
+Epoch:    8/60    Loss: 3.5667754971981047
+
+Epoch:    8/60    Loss: 3.5671004915237425
+
+Epoch:    8/60    Loss: 3.5346662466526033
+
+Epoch:    8/60    Loss: 3.795267871379852
+
+Epoch:    8/60    Loss: 3.6163527352809908
+
+Epoch:    8/60    Loss: 3.7290788989067076
+
+Epoch:    8/60    Loss: 3.8055024130344393
+
+Epoch:    8/60    Loss: 3.658055276632309
+
+Epoch:    8/60    Loss: 3.7649919054508207
+
+Epoch:    8/60    Loss: 3.609391571044922
+
+Epoch:    8/60    Loss: 3.5772050626277925
+
+Epoch:    8/60    Loss: 3.4774184222221374
+
+Epoch:    8/60    Loss: 3.831024895429611
+
+Epoch:    8/60    Loss: 3.6811555156707763
+
+Epoch:    8/60    Loss: 3.508899646282196
+
+Epoch:    8/60    Loss: 3.4739223161935806
+
+Epoch:    8/60    Loss: 3.618792956352234
+
+Epoch:    8/60    Loss: 3.489440856218338
+
+Epoch:    8/60    Loss: 3.6561764039993285
+
+Epoch:    8/60    Loss: 3.617253879070282
+
+Epoch:    8/60    Loss: 3.530184979915619
+
+Epoch:    8/60    Loss: 3.594269181251526
+
+Epoch:    8/60    Loss: 3.574828743457794
+
+Epoch:    8/60    Loss: 3.620969788789749
+
+Epoch:    8/60    Loss: 3.7073093342781065
+
+Epoch:    8/60    Loss: 3.6110213897228243
+
+Epoch:    8/60    Loss: 3.724043968677521
+
+Epoch:    8/60    Loss: 3.8554792103767395
+
+Epoch:    8/60    Loss: 3.8675808320045473
+
+Epoch:    8/60    Loss: 3.789744598865509
+
+Epoch:    8/60    Loss: 3.815082355976105
+
+Epoch:    8/60    Loss: 3.7897395873069764
+
+Epoch:    8/60    Loss: 3.810154887676239
+
+Epoch:    8/60    Loss: 3.838450210809708
+
+Epoch:    8/60    Loss: 3.927894937515259
+
+Epoch:    8/60    Loss: 3.7934266760349273
+
+Epoch:    8/60    Loss: 3.864465275526047
+
+Epoch:    8/60    Loss: 3.713022535085678
+
+Epoch:    8/60    Loss: 3.91150870013237
+
+Epoch:    8/60    Loss: 3.6868603880405426
+
+Epoch:    9/60    Loss: 3.8674727153518926
+
+Epoch:    9/60    Loss: 3.6749047703742983
+
+Epoch:    9/60    Loss: 3.5415132715702056
+
+Epoch:    9/60    Loss: 3.57811181640625
+
+Epoch:    9/60    Loss: 3.635637539386749
+
+Epoch:    9/60    Loss: 3.6814722259044648
+
+Epoch:    9/60    Loss: 3.616035396337509
+
+Epoch:    9/60    Loss: 3.586923178434372
+
+Epoch:    9/60    Loss: 3.3702004249095916
+
+Epoch:    9/60    Loss: 3.6537012503147124
+
+Epoch:    9/60    Loss: 3.5491888966560365
+
+Epoch:    9/60    Loss: 3.6332018735408784
+
+Epoch:    9/60    Loss: 3.4165285243988035
+
+Epoch:    9/60    Loss: 3.4704237897396086
+
+Epoch:    9/60    Loss: 3.4306859278678896
+
+Epoch:    9/60    Loss: 3.4894718856811524
+
+Epoch:    9/60    Loss: 3.5137692317962648
+
+Epoch:    9/60    Loss: 3.6418300313949583
+
+Epoch:    9/60    Loss: 3.6147139329910276
+
+Epoch:    9/60    Loss: 3.5125934655666353
+
+Epoch:    9/60    Loss: 3.533508552312851
+
+Epoch:    9/60    Loss: 3.5179746882915497
+
+Epoch:    9/60    Loss: 3.7500924179553987
+
+Epoch:    9/60    Loss: 3.5749093902111055
+
+Epoch:    9/60    Loss: 3.6834502825737
+
+Epoch:    9/60    Loss: 3.7641498599052428
+
+Epoch:    9/60    Loss: 3.6205097131729125
+
+Epoch:    9/60    Loss: 3.6914693839550017
+
+Epoch:    9/60    Loss: 3.5589679641723633
+
+Epoch:    9/60    Loss: 3.5537779562473295
+
+Epoch:    9/60    Loss: 3.4364824957847597
+
+Epoch:    9/60    Loss: 3.7584059171676634
+
+Epoch:    9/60    Loss: 3.643512302160263
+
+Epoch:    9/60    Loss: 3.4688806002140047
+
+Epoch:    9/60    Loss: 3.4369710812568663
+
+Epoch:    9/60    Loss: 3.5699786858558653
+
+Epoch:    9/60    Loss: 3.4497231612205503
+
+Epoch:    9/60    Loss: 3.61539053106308
+
+Epoch:    9/60    Loss: 3.5719607849121093
+
+Epoch:    9/60    Loss: 3.490773800611496
+
+Epoch:    9/60    Loss: 3.53324223279953
+
+Epoch:    9/60    Loss: 3.5380627074241637
+
+Epoch:    9/60    Loss: 3.587788015842438
+
+Epoch:    9/60    Loss: 3.6637820842266082
+
+Epoch:    9/60    Loss: 3.5827491250038146
+
+Epoch:    9/60    Loss: 3.714970386505127
+
+Epoch:    9/60    Loss: 3.8154319381713866
+
+Epoch:    9/60    Loss: 3.78645583486557
+
+Epoch:    9/60    Loss: 3.728056159734726
+
+Epoch:    9/60    Loss: 3.7769299249649047
+
+Epoch:    9/60    Loss: 3.74681187915802
+
+Epoch:    9/60    Loss: 3.7833212683200834
+
+Epoch:    9/60    Loss: 3.8019082539081572
+
+Epoch:    9/60    Loss: 3.8938212351799013
+
+Epoch:    9/60    Loss: 3.8006691815853118
+
+Epoch:    9/60    Loss: 3.7803919401168824
+
+Epoch:    9/60    Loss: 3.658997056722641
+
+Epoch:    9/60    Loss: 3.865464338541031
+
+Epoch:    9/60    Loss: 3.64456339764595
+
+Epoch:   10/60    Loss: 3.7916903244736404
+
+Epoch:   10/60    Loss: 3.6200971689224244
+
+Epoch:   10/60    Loss: 3.4918792915344237
+
+Epoch:   10/60    Loss: 3.5388222699165346
+
+Epoch:   10/60    Loss: 3.5898152887821198
+
+Epoch:   10/60    Loss: 3.6339627029895785
+
+Epoch:   10/60    Loss: 3.5824939963817597
+
+Epoch:   10/60    Loss: 3.550046229124069
+
+Epoch:   10/60    Loss: 3.345297247886658
+
+Epoch:   10/60    Loss: 3.6202656383514404
+
+Epoch:   10/60    Loss: 3.513807405948639
+
+Epoch:   10/60    Loss: 3.5648553109169008
+
+Epoch:   10/60    Loss: 3.3616503007411955
+
+Epoch:   10/60    Loss: 3.425822139263153
+
+Epoch:   10/60    Loss: 3.4019061806201933
+
+Epoch:   10/60    Loss: 3.4350856640338896
+
+Epoch:   10/60    Loss: 3.4428398308753967
+
+Epoch:   10/60    Loss: 3.580134294271469
+
+Epoch:   10/60    Loss: 3.5586517100334167
+
+Epoch:   10/60    Loss: 3.4409358966350556
+
+Epoch:   10/60    Loss: 3.4837193727493285
+
+Epoch:   10/60    Loss: 3.446145947933197
+
+Epoch:   10/60    Loss: 3.683572547197342
+
+Epoch:   10/60    Loss: 3.5316928112506867
+
+Epoch:   10/60    Loss: 3.623553609609604
+
+Epoch:   10/60    Loss: 3.6879937267303466
+
+Epoch:   10/60    Loss: 3.5404200282096863
+
+Epoch:   10/60    Loss: 3.618318155050278
+
+Epoch:   10/60    Loss: 3.5089039578437804
+
+Epoch:   10/60    Loss: 3.4897194488048555
+
+Epoch:   10/60    Loss: 3.370453464269638
+
+Epoch:   10/60    Loss: 3.6795973234176635
+
+Epoch:   10/60    Loss: 3.5879672803878786
+
+Epoch:   10/60    Loss: 3.409100648164749
+
+Epoch:   10/60    Loss: 3.3936631331443787
+
+Epoch:   10/60    Loss: 3.510334067106247
+
+Epoch:   10/60    Loss: 3.4008598058223725
+
+Epoch:   10/60    Loss: 3.5584982147216797
+
+Epoch:   10/60    Loss: 3.5097120525836947
+
+Epoch:   10/60    Loss: 3.4547658886909485
+
+Epoch:   10/60    Loss: 3.4657480516433714
+
+Epoch:   10/60    Loss: 3.4924599905014038
+
+Epoch:   10/60    Loss: 3.5465559515953062
+
+Epoch:   10/60    Loss: 3.6250047516822814
+
+Epoch:   10/60    Loss: 3.558868219137192
+
+Epoch:   10/60    Loss: 3.6529250473976136
+
+Epoch:   10/60    Loss: 3.7863014068603515
+
+Epoch:   10/60    Loss: 3.7193010082244875
+
+Epoch:   10/60    Loss: 3.673429448366165
+
+Epoch:   10/60    Loss: 3.712593658924103
+
+Epoch:   10/60    Loss: 3.69113086271286
+
+Epoch:   10/60    Loss: 3.727460372686386
+
+Epoch:   10/60    Loss: 3.7415526093244553
+
+Epoch:   10/60    Loss: 3.795404575109482
+
+Epoch:   10/60    Loss: 3.713820204734802
+
+Epoch:   10/60    Loss: 3.6860624089241028
+
+Epoch:   10/60    Loss: 3.5882261383533476
+
+Epoch:   10/60    Loss: 3.7736968326568605
+
+Epoch:   10/60    Loss: 3.592023967504501
+
+Epoch:   11/60    Loss: 3.762373757751092
+
+Epoch:   11/60    Loss: 3.605390557765961
+
+Epoch:   11/60    Loss: 3.4750542118549346
+
+Epoch:   11/60    Loss: 3.536714929819107
+
+Epoch:   11/60    Loss: 3.5823006427288053
+
+Epoch:   11/60    Loss: 3.6050270714759827
+
+Epoch:   11/60    Loss: 3.5505755183696746
+
+Epoch:   11/60    Loss: 3.5023224608898165
+
+Epoch:   11/60    Loss: 3.3136247324943544
+
+Epoch:   11/60    Loss: 3.579969510555267
+
+Epoch:   11/60    Loss: 3.4812975516319273
+
+Epoch:   11/60    Loss: 3.531459974050522
+
+Epoch:   11/60    Loss: 3.333946119070053
+
+Epoch:   11/60    Loss: 3.3904587903022767
+
+Epoch:   11/60    Loss: 3.3600435338020325
+
+Epoch:   11/60    Loss: 3.3978937523365023
+
+Epoch:   11/60    Loss: 3.395810935497284
+
+Epoch:   11/60    Loss: 3.5464040360450744
+
+Epoch:   11/60    Loss: 3.5209201378822326
+
+Epoch:   11/60    Loss: 3.4239779448509218
+
+Epoch:   11/60    Loss: 3.4494804124832155
+
+Epoch:   11/60    Loss: 3.4147557990550994
+
+Epoch:   11/60    Loss: 3.6435554578304292
+
+Epoch:   11/60    Loss: 3.480894809484482
+
+Epoch:   11/60    Loss: 3.5749907920360564
+
+Epoch:   11/60    Loss: 3.6355729875564573
+
+Epoch:   11/60    Loss: 3.4996128878593447
+
+Epoch:   11/60    Loss: 3.581681033849716
+
+Epoch:   11/60    Loss: 3.503224030256271
+
+Epoch:   11/60    Loss: 3.461798913478851
+
+Epoch:   11/60    Loss: 3.3247987124919893
+
+Epoch:   11/60    Loss: 3.630829516887665
+
+Epoch:   11/60    Loss: 3.5614179203510283
+
+Epoch:   11/60    Loss: 3.3818553814888
+
+Epoch:   11/60    Loss: 3.349005355358124
+
+Epoch:   11/60    Loss: 3.4894536139965058
+
+Epoch:   11/60    Loss: 3.3905297176837923
+
+Epoch:   11/60    Loss: 3.526557269334793
+
+Epoch:   11/60    Loss: 3.5017120003700257
+
+Epoch:   11/60    Loss: 3.4326830575466154
+
+Epoch:   11/60    Loss: 3.455827918291092
+
+Epoch:   11/60    Loss: 3.448095640659332
+
+Epoch:   11/60    Loss: 3.5406017334461213
+
+Epoch:   11/60    Loss: 3.6441096906661987
+
+Epoch:   11/60    Loss: 3.6104516475200654
+
+Epoch:   11/60    Loss: 3.627206099033356
+
+Epoch:   11/60    Loss: 3.728110293626785
+
+Epoch:   11/60    Loss: 3.663515791416168
+
+Epoch:   11/60    Loss: 3.641201601266861
+
+Epoch:   11/60    Loss: 3.692295907974243
+
+Epoch:   11/60    Loss: 3.6510821900367736
+
+Epoch:   11/60    Loss: 3.6898596770763397
+
+Epoch:   11/60    Loss: 3.7123113532066343
+
+Epoch:   11/60    Loss: 3.7464305720329283
+
+Epoch:   11/60    Loss: 3.6756236519813537
+
+Epoch:   11/60    Loss: 3.6677811672687533
+
+Epoch:   11/60    Loss: 3.568403673410416
+
+Epoch:   11/60    Loss: 3.716959187269211
+
+Epoch:   11/60    Loss: 3.533947014570236
+
+Epoch:   12/60    Loss: 3.722932328672513
+
+Epoch:   12/60    Loss: 3.5986595990657806
+
+Epoch:   12/60    Loss: 3.457977991819382
+
+Epoch:   12/60    Loss: 3.5109978659152983
+
+Epoch:   12/60    Loss: 3.5520497162342073
+
+Epoch:   12/60    Loss: 3.5855153365135193
+
+Epoch:   12/60    Loss: 3.5298806276321413
+
+Epoch:   12/60    Loss: 3.469061761379242
+
+Epoch:   12/60    Loss: 3.3100754446983336
+
+Epoch:   12/60    Loss: 3.556035200834274
+
+Epoch:   12/60    Loss: 3.452882736682892
+
+Epoch:   12/60    Loss: 3.49192986702919
+
+Epoch:   12/60    Loss: 3.2953031046390535
+
+Epoch:   12/60    Loss: 3.3394475333690643
+
+Epoch:   12/60    Loss: 3.3482992713451387
+
+Epoch:   12/60    Loss: 3.3689435324668886
+
+Epoch:   12/60    Loss: 3.393075595855713
+
+Epoch:   12/60    Loss: 3.522240922451019
+
+Epoch:   12/60    Loss: 3.475549899339676
+
+Epoch:   12/60    Loss: 3.3864578609466554
+
+Epoch:   12/60    Loss: 3.4164824833869933
+
+Epoch:   12/60    Loss: 3.416160554647446
+
+Epoch:   12/60    Loss: 3.577465455532074
+
+Epoch:   12/60    Loss: 3.451311095237732
+
+Epoch:   12/60    Loss: 3.5386988213062285
+
+Epoch:   12/60    Loss: 3.5954009222984316
+
+Epoch:   12/60    Loss: 3.459300685405731
+
+Epoch:   12/60    Loss: 3.550304529428482
+
+Epoch:   12/60    Loss: 3.4809310131072997
+
+Epoch:   12/60    Loss: 3.4384466779232024
+
+Epoch:   12/60    Loss: 3.288239565849304
+
+Epoch:   12/60    Loss: 3.603840918540955
+
+Epoch:   12/60    Loss: 3.511156045913696
+
+Epoch:   12/60    Loss: 3.3363916277885437
+
+Epoch:   12/60    Loss: 3.3285923931598664
+
+Epoch:   12/60    Loss: 3.4682236449718475
+
+Epoch:   12/60    Loss: 3.3543639905452727
+
+Epoch:   12/60    Loss: 3.468362466096878
+
+Epoch:   12/60    Loss: 3.449130399465561
+
+Epoch:   12/60    Loss: 3.387033580780029
+
+Epoch:   12/60    Loss: 3.4077745056152344
+
+Epoch:   12/60    Loss: 3.3863085446357726
+
+Epoch:   12/60    Loss: 3.4775174956321715
+
+Epoch:   12/60    Loss: 3.5716629276275635
+
+Epoch:   12/60    Loss: 3.5267696352005005
+
+Epoch:   12/60    Loss: 3.554508596420288
+
+Epoch:   12/60    Loss: 3.638662242412567
+
+Epoch:   12/60    Loss: 3.543053324699402
+
+Epoch:   12/60    Loss: 3.5590641334056854
+
+Epoch:   12/60    Loss: 3.6146525695323946
+
+Epoch:   12/60    Loss: 3.5644933471679687
+
+Epoch:   12/60    Loss: 3.6006943662166595
+
+Epoch:   12/60    Loss: 3.6137799098491667
+
+Epoch:   12/60    Loss: 3.6409624662399294
+
+Epoch:   12/60    Loss: 3.62011626791954
+
+Epoch:   12/60    Loss: 3.6179453299045563
+
+Epoch:   12/60    Loss: 3.5239859890937804
+
+Epoch:   12/60    Loss: 3.652615890264511
+
+Epoch:   12/60    Loss: 3.4879220027923585
+
+Epoch:   13/60    Loss: 3.668476427864769
+
+Epoch:   13/60    Loss: 3.551484389781952
+
+Epoch:   13/60    Loss: 3.410887631177902
+
+Epoch:   13/60    Loss: 3.4455637443065643
+
+Epoch:   13/60    Loss: 3.4497782208919525
+
+Epoch:   13/60    Loss: 3.4943095734119414
+
+Epoch:   13/60    Loss: 3.497854811191559
+
+Epoch:   13/60    Loss: 3.4348411281108855
+
+Epoch:   13/60    Loss: 3.2534138102531434
+
+Epoch:   13/60    Loss: 3.513117794275284
+
+Epoch:   13/60    Loss: 3.4300424473285673
+
+Epoch:   13/60    Loss: 3.4403796095848085
+
+Epoch:   13/60    Loss: 3.2603962879180908
+
+Epoch:   13/60    Loss: 3.329005229234695
+
+Epoch:   13/60    Loss: 3.3282157955169676
+
+Epoch:   13/60    Loss: 3.333139503479004
+
+Epoch:   13/60    Loss: 3.3636950516700743
+
+Epoch:   13/60    Loss: 3.4703209958076475
+
+Epoch:   13/60    Loss: 3.4203539493083954
+
+Epoch:   13/60    Loss: 3.3402546861171722
+
+Epoch:   13/60    Loss: 3.3911341474056242
+
+Epoch:   13/60    Loss: 3.357407230377197
+
+Epoch:   13/60    Loss: 3.5085783858299253
+
+Epoch:   13/60    Loss: 3.411143491744995
+
+Epoch:   13/60    Loss: 3.491267461299896
+
+Epoch:   13/60    Loss: 3.543554400920868
+
+Epoch:   13/60    Loss: 3.4448009996414184
+
+Epoch:   13/60    Loss: 3.5093280799388884
+
+Epoch:   13/60    Loss: 3.4515255858898164
+
+Epoch:   13/60    Loss: 3.392246668100357
+
+Epoch:   13/60    Loss: 3.253947923183441
+
+Epoch:   13/60    Loss: 3.550262416601181
+
+Epoch:   13/60    Loss: 3.4800392460823057
+
+Epoch:   13/60    Loss: 3.313714222431183
+
+Epoch:   13/60    Loss: 3.3072771842479707
+
+Epoch:   13/60    Loss: 3.4458764114379883
+
+Epoch:   13/60    Loss: 3.306202966213226
+
+Epoch:   13/60    Loss: 3.389444536924362
+
+Epoch:   13/60    Loss: 3.409256075620651
+
+Epoch:   13/60    Loss: 3.3464845840930937
+
+Epoch:   13/60    Loss: 3.3766424124240877
+
+Epoch:   13/60    Loss: 3.349675814628601
+
+Epoch:   13/60    Loss: 3.4249412336349487
+
+Epoch:   13/60    Loss: 3.501241278409958
+
+Epoch:   13/60    Loss: 3.4614691202640535
+
+Epoch:   13/60    Loss: 3.517523584365845
+
+Epoch:   13/60    Loss: 3.594325399160385
+
+Epoch:   13/60    Loss: 3.4909558238983154
+
+Epoch:   13/60    Loss: 3.5139585726261138
+
+Epoch:   13/60    Loss: 3.579603631258011
+
+Epoch:   13/60    Loss: 3.5262464666366578
+
+Epoch:   13/60    Loss: 3.543883153676987
+
+Epoch:   13/60    Loss: 3.564850581407547
+
+Epoch:   13/60    Loss: 3.6192431302070616
+
+Epoch:   13/60    Loss: 3.580011263370514
+
+Epoch:   13/60    Loss: 3.589677803993225
+
+Epoch:   13/60    Loss: 3.4980432991981507
+
+Epoch:   13/60    Loss: 3.6150482680797578
+
+Epoch:   13/60    Loss: 3.4706174697875976
+
+Epoch:   14/60    Loss: 3.6440658080189126
+
+Epoch:   14/60    Loss: 3.5505749077796938
+
+Epoch:   14/60    Loss: 3.4221648554801942
+
+Epoch:   14/60    Loss: 3.456373544692993
+
+Epoch:   14/60    Loss: 3.4427258191108705
+
+Epoch:   14/60    Loss: 3.475616331100464
+
+Epoch:   14/60    Loss: 3.5077902569770814
+
+Epoch:   14/60    Loss: 3.407384548187256
+
+Epoch:   14/60    Loss: 3.223609859228134
+
+Epoch:   14/60    Loss: 3.4691884999275207
+
+Epoch:   14/60    Loss: 3.3999497628211977
+
+Epoch:   14/60    Loss: 3.397182380914688
+
+Epoch:   14/60    Loss: 3.2375227584838866
+
+Epoch:   14/60    Loss: 3.2890483322143553
+
+Epoch:   14/60    Loss: 3.286317976951599
+
+Epoch:   14/60    Loss: 3.2803670251369477
+
+Epoch:   14/60    Loss: 3.3136286401748656
+
+Epoch:   14/60    Loss: 3.432775870323181
+
+Epoch:   14/60    Loss: 3.3674558906555174
+
+Epoch:   14/60    Loss: 3.287450428247452
+
+Epoch:   14/60    Loss: 3.342788825035095
+
+Epoch:   14/60    Loss: 3.297739010334015
+
+Epoch:   14/60    Loss: 3.488912986755371
+
+Epoch:   14/60    Loss: 3.3763635001182557
+
+Epoch:   14/60    Loss: 3.4753860340118408
+
+Epoch:   14/60    Loss: 3.5221248543262482
+
+Epoch:   14/60    Loss: 3.4051649730205535
+
+Epoch:   14/60    Loss: 3.50700021648407
+
+Epoch:   14/60    Loss: 3.422054708480835
+
+Epoch:   14/60    Loss: 3.3726066896915436
+
+Epoch:   14/60    Loss: 3.2287880296707154
+
+Epoch:   14/60    Loss: 3.5319434294700622
+
+Epoch:   14/60    Loss: 3.45263315987587
+
+Epoch:   14/60    Loss: 3.2880559384822847
+
+Epoch:   14/60    Loss: 3.2659445127248765
+
+Epoch:   14/60    Loss: 3.423380567073822
+
+Epoch:   14/60    Loss: 3.2767807881832125
+
+Epoch:   14/60    Loss: 3.3713716061115266
+
+Epoch:   14/60    Loss: 3.3815531961917875
+
+Epoch:   14/60    Loss: 3.3338660485744476
+
+Epoch:   14/60    Loss: 3.3340334005355836
+
+Epoch:   14/60    Loss: 3.31309898853302
+
+Epoch:   14/60    Loss: 3.3666598098278047
+
+Epoch:   14/60    Loss: 3.447463441848755
+
+Epoch:   14/60    Loss: 3.3931056327819826
+
+Epoch:   14/60    Loss: 3.472395007610321
+
+Epoch:   14/60    Loss: 3.543052148103714
+
+Epoch:   14/60    Loss: 3.419991268634796
+
+Epoch:   14/60    Loss: 3.4808440845012667
+
+Epoch:   14/60    Loss: 3.5363125522136687
+
+Epoch:   14/60    Loss: 3.489264604091644
+
+Epoch:   14/60    Loss: 3.5149637606143953
+
+Epoch:   14/60    Loss: 3.539115919828415
+
+Epoch:   14/60    Loss: 3.606447235584259
+
+Epoch:   14/60    Loss: 3.554535835504532
+
+Epoch:   14/60    Loss: 3.566235748052597
+
+Epoch:   14/60    Loss: 3.4646394033432006
+
+Epoch:   14/60    Loss: 3.572420719385147
+
+Epoch:   14/60    Loss: 3.413465657234192
+
+Epoch:   15/60    Loss: 3.5978007052579652
+
+Epoch:   15/60    Loss: 3.5011952493190766
+
+Epoch:   15/60    Loss: 3.3554293138980866
+
+Epoch:   15/60    Loss: 3.397196498632431
+
+Epoch:   15/60    Loss: 3.361057954788208
+
+Epoch:   15/60    Loss: 3.389194525718689
+
+Epoch:   15/60    Loss: 3.4363338837623596
+
+Epoch:   15/60    Loss: 3.366086834669113
+
+Epoch:   15/60    Loss: 3.1991918210983274
+
+Epoch:   15/60    Loss: 3.4605094521045685
+
+Epoch:   15/60    Loss: 3.378990444421768
+
+Epoch:   15/60    Loss: 3.3795575320720674
+
+Epoch:   15/60    Loss: 3.2349978141784668
+
+Epoch:   15/60    Loss: 3.288603487253189
+
+Epoch:   15/60    Loss: 3.2760678145885467
+
+Epoch:   15/60    Loss: 3.28762483215332
+
+Epoch:   15/60    Loss: 3.301560841560364
+
+Epoch:   15/60    Loss: 3.420902151107788
+
+Epoch:   15/60    Loss: 3.366080671072006
+
+Epoch:   15/60    Loss: 3.283931738853455
+
+Epoch:   15/60    Loss: 3.329003821372986
+
+Epoch:   15/60    Loss: 3.290248983621597
+
+Epoch:   15/60    Loss: 3.4870563502311707
+
+Epoch:   15/60    Loss: 3.372059406518936
+
+Epoch:   15/60    Loss: 3.445386960744858
+
+Epoch:   15/60    Loss: 3.518833995819092
+
+Epoch:   15/60    Loss: 3.3904691171646117
+
+Epoch:   15/60    Loss: 3.4991769862174986
+
+Epoch:   15/60    Loss: 3.3900370581150057
+
+Epoch:   15/60    Loss: 3.3443149697780608
+
+Epoch:   15/60    Loss: 3.206187175512314
+
+Epoch:   15/60    Loss: 3.5267063121795656
+
+Epoch:   15/60    Loss: 3.428943464279175
+
+Epoch:   15/60    Loss: 3.2694342992305754
+
+Epoch:   15/60    Loss: 3.244398521900177
+
+Epoch:   15/60    Loss: 3.368488088607788
+
+Epoch:   15/60    Loss: 3.2283637523651123
+
+Epoch:   15/60    Loss: 3.320254534959793
+
+Epoch:   15/60    Loss: 3.3536297919750213
+
+Epoch:   15/60    Loss: 3.2967400479316713
+
+Epoch:   15/60    Loss: 3.3157939219474795
+
+Epoch:   15/60    Loss: 3.2750966374874113
+
+Epoch:   15/60    Loss: 3.3442129786014556
+
+Epoch:   15/60    Loss: 3.3975198674201965
+
+Epoch:   15/60    Loss: 3.379279350757599
+
+Epoch:   15/60    Loss: 3.4479566042423246
+
+Epoch:   15/60    Loss: 3.524293622970581
+
+Epoch:   15/60    Loss: 3.405334379673004
+
+Epoch:   15/60    Loss: 3.452107650518417
+
+Epoch:   15/60    Loss: 3.5332250752449035
+
+Epoch:   15/60    Loss: 3.4846694133281706
+
+Epoch:   15/60    Loss: 3.5117354130744936
+
+Epoch:   15/60    Loss: 3.529239530324936
+
+Epoch:   15/60    Loss: 3.60353387260437
+
+Epoch:   15/60    Loss: 3.5332089989185334
+
+Epoch:   15/60    Loss: 3.5477080078125
+
+Epoch:   15/60    Loss: 3.4446413679122925
+
+Epoch:   15/60    Loss: 3.560871721506119
+
+Epoch:   15/60    Loss: 3.4297697234153746
+
+Epoch:   16/60    Loss: 3.5552016415673755
+
+Epoch:   16/60    Loss: 3.4850304188728334
+
+Epoch:   16/60    Loss: 3.32276788687706
+
+Epoch:   16/60    Loss: 3.343819099664688
+
+Epoch:   16/60    Loss: 3.3156618456840516
+
+Epoch:   16/60    Loss: 3.3549168450832365
+
+Epoch:   16/60    Loss: 3.4108371272087097
+
+Epoch:   16/60    Loss: 3.3434850280284882
+
+Epoch:   16/60    Loss: 3.1768969492912293
+
+Epoch:   16/60    Loss: 3.4110292937755586
+
+Epoch:   16/60    Loss: 3.3493848741054535
+
+Epoch:   16/60    Loss: 3.3631961233615875
+
+Epoch:   16/60    Loss: 3.2054788069725038
+
+Epoch:   16/60    Loss: 3.2568587579727173
+
+Epoch:   16/60    Loss: 3.246300941705704
+
+Epoch:   16/60    Loss: 3.264293571472168
+
+Epoch:   16/60    Loss: 3.2896481068134307
+
+Epoch:   16/60    Loss: 3.4036517677307128
+
+Epoch:   16/60    Loss: 3.343314752101898
+
+Epoch:   16/60    Loss: 3.2852506513595583
+
+Epoch:   16/60    Loss: 3.297949355840683
+
+Epoch:   16/60    Loss: 3.277534846782684
+
+Epoch:   16/60    Loss: 3.461104424715042
+
+Epoch:   16/60    Loss: 3.3360949013233183
+
+Epoch:   16/60    Loss: 3.4054131293296814
+
+Epoch:   16/60    Loss: 3.4818177108764647
+
+Epoch:   16/60    Loss: 3.3623150482177735
+
+Epoch:   16/60    Loss: 3.4547464017868044
+
+Epoch:   16/60    Loss: 3.3655280735492705
+
+Epoch:   16/60    Loss: 3.326203287124634
+
+Epoch:   16/60    Loss: 3.184393804550171
+
+Epoch:   16/60    Loss: 3.4161973829269408
+
+Epoch:   16/60    Loss: 3.368087757587433
+
+Epoch:   16/60    Loss: 3.2124102938175203
+
+Epoch:   16/60    Loss: 3.1800529844760894
+
+Epoch:   16/60    Loss: 3.34174204993248
+
+Epoch:   16/60    Loss: 3.207780462265015
+
+Epoch:   16/60    Loss: 3.2872151832580565
+
+Epoch:   16/60    Loss: 3.3365808897018434
+
+Epoch:   16/60    Loss: 3.2830717675685883
+
+Epoch:   16/60    Loss: 3.2771510825157164
+
+Epoch:   16/60    Loss: 3.2433772900104523
+
+Epoch:   16/60    Loss: 3.333143209695816
+
+Epoch:   16/60    Loss: 3.3903775753974914
+
+Epoch:   16/60    Loss: 3.3332857382297516
+
+Epoch:   16/60    Loss: 3.440404524087906
+
+Epoch:   16/60    Loss: 3.4992938935756683
+
+Epoch:   16/60    Loss: 3.391852882385254
+
+Epoch:   16/60    Loss: 3.4199561150074005
+
+Epoch:   16/60    Loss: 3.4959760100841524
+
+Epoch:   16/60    Loss: 3.4601605491638185
+
+Epoch:   16/60    Loss: 3.513487582921982
+
+Epoch:   16/60    Loss: 3.5158816049098967
+
+Epoch:   16/60    Loss: 3.587245527267456
+
+Epoch:   16/60    Loss: 3.4985825440883636
+
+Epoch:   16/60    Loss: 3.4736093354225157
+
+Epoch:   16/60    Loss: 3.394220042467117
+
+Epoch:   16/60    Loss: 3.464185659408569
+
+Epoch:   16/60    Loss: 3.3304287877082825
+
+Epoch:   17/60    Loss: 3.5152878539393777
+
+Epoch:   17/60    Loss: 3.4414569780826567
+
+Epoch:   17/60    Loss: 3.277259191274643
+
+Epoch:   17/60    Loss: 3.302737434387207
+
+Epoch:   17/60    Loss: 3.3002242386341094
+
+Epoch:   17/60    Loss: 3.3366727983951567
+
+Epoch:   17/60    Loss: 3.3957268357276917
+
+Epoch:   17/60    Loss: 3.3206763558387755
+
+Epoch:   17/60    Loss: 3.136403620481491
+
+Epoch:   17/60    Loss: 3.3816332268714904
+
+Epoch:   17/60    Loss: 3.3256276853084565
+
+Epoch:   17/60    Loss: 3.3420629749298096
+
+Epoch:   17/60    Loss: 3.1878785796165467
+
+Epoch:   17/60    Loss: 3.233029477596283
+
+Epoch:   17/60    Loss: 3.2201851279735565
+
+Epoch:   17/60    Loss: 3.2364381322860716
+
+Epoch:   17/60    Loss: 3.245013053417206
+
+Epoch:   17/60    Loss: 3.350328604221344
+
+Epoch:   17/60    Loss: 3.3014356188774108
+
+Epoch:   17/60    Loss: 3.2275468764305115
+
+Epoch:   17/60    Loss: 3.2695296766757966
+
+Epoch:   17/60    Loss: 3.236613594055176
+
+Epoch:   17/60    Loss: 3.417028036355972
+
+Epoch:   17/60    Loss: 3.3160128190517426
+
+Epoch:   17/60    Loss: 3.3651394674777984
+
+Epoch:   17/60    Loss: 3.449082607984543
+
+Epoch:   17/60    Loss: 3.3351928489208222
+
+Epoch:   17/60    Loss: 3.4231724362373352
+
+Epoch:   17/60    Loss: 3.3346037473678587
+
+Epoch:   17/60    Loss: 3.2669774239063263
+
+Epoch:   17/60    Loss: 3.1389810490608214
+
+Epoch:   17/60    Loss: 3.3783677499294282
+
+Epoch:   17/60    Loss: 3.3297284862995147
+
+Epoch:   17/60    Loss: 3.1862420337200166
+
+Epoch:   17/60    Loss: 3.160702290058136
+
+Epoch:   17/60    Loss: 3.2705640594959258
+
+Epoch:   17/60    Loss: 3.181162782907486
+
+Epoch:   17/60    Loss: 3.2599922780990602
+
+Epoch:   17/60    Loss: 3.2767955267429354
+
+Epoch:   17/60    Loss: 3.2499254133701325
+
+Epoch:   17/60    Loss: 3.246207352399826
+
+Epoch:   17/60    Loss: 3.2270885441303254
+
+Epoch:   17/60    Loss: 3.3071152629852296
+
+Epoch:   17/60    Loss: 3.363324609518051
+
+Epoch:   17/60    Loss: 3.308753326177597
+
+Epoch:   17/60    Loss: 3.4097247757911684
+
+Epoch:   17/60    Loss: 3.4634741206169126
+
+Epoch:   17/60    Loss: 3.3609861345291137
+
+Epoch:   17/60    Loss: 3.404297626256943
+
+Epoch:   17/60    Loss: 3.479929836988449
+
+Epoch:   17/60    Loss: 3.4455114908218385
+
+Epoch:   17/60    Loss: 3.4907545621395113
+
+Epoch:   17/60    Loss: 3.4817515788078306
+
+Epoch:   17/60    Loss: 3.541996322154999
+
+Epoch:   17/60    Loss: 3.458978748559952
+
+Epoch:   17/60    Loss: 3.4182840259075165
+
+Epoch:   17/60    Loss: 3.3545843286514283
+
+Epoch:   17/60    Loss: 3.4331324257850646
+
+Epoch:   17/60    Loss: 3.304169405221939
+
+Epoch:   18/60    Loss: 3.4714655564369066
+
+Epoch:   18/60    Loss: 3.4140822927951815
+
+Epoch:   18/60    Loss: 3.251315244436264
+
+Epoch:   18/60    Loss: 3.269177433013916
+
+Epoch:   18/60    Loss: 3.2883712747097014
+
+Epoch:   18/60    Loss: 3.3233015048503876
+
+Epoch:   18/60    Loss: 3.382745847940445
+
+Epoch:   18/60    Loss: 3.3171708369255066
+
+Epoch:   18/60    Loss: 3.1352158184051513
+
+Epoch:   18/60    Loss: 3.367469040155411
+
+Epoch:   18/60    Loss: 3.2886019463539125
+
+Epoch:   18/60    Loss: 3.3191893379688264
+
+Epoch:   18/60    Loss: 3.1684381909370423
+
+Epoch:   18/60    Loss: 3.2163474674224855
+
+Epoch:   18/60    Loss: 3.197632654428482
+
+Epoch:   18/60    Loss: 3.2028141911029815
+
+Epoch:   18/60    Loss: 3.2262202875614165
+
+Epoch:   18/60    Loss: 3.32995526266098
+
+Epoch:   18/60    Loss: 3.282579352617264
+
+Epoch:   18/60    Loss: 3.1851000990867613
+
+Epoch:   18/60    Loss: 3.2335304856300353
+
+Epoch:   18/60    Loss: 3.1980802302360534
+
+Epoch:   18/60    Loss: 3.375347755432129
+
+Epoch:   18/60    Loss: 3.258586063861847
+
+Epoch:   18/60    Loss: 3.309706920146942
+
+Epoch:   18/60    Loss: 3.4028004109859467
+
+Epoch:   18/60    Loss: 3.2939742872714994
+
+Epoch:   18/60    Loss: 3.3646963982582094
+
+Epoch:   18/60    Loss: 3.280197696208954
+
+Epoch:   18/60    Loss: 3.2258049211502073
+
+Epoch:   18/60    Loss: 3.1296678936481475
+
+Epoch:   18/60    Loss: 3.3472199635505677
+
+Epoch:   18/60    Loss: 3.303597439289093
+
+Epoch:   18/60    Loss: 3.164413017034531
+
+Epoch:   18/60    Loss: 3.1386829307079314
+
+Epoch:   18/60    Loss: 3.2544331612586976
+
+Epoch:   18/60    Loss: 3.168205073595047
+
+Epoch:   18/60    Loss: 3.2309611103534697
+
+Epoch:   18/60    Loss: 3.2569259586334227
+
+Epoch:   18/60    Loss: 3.2254952158927916
+
+Epoch:   18/60    Loss: 3.2274992985725404
+
+Epoch:   18/60    Loss: 3.2042432553768156
+
+Epoch:   18/60    Loss: 3.2595687022209168
+
+Epoch:   18/60    Loss: 3.324988003492355
+
+Epoch:   18/60    Loss: 3.271938279867172
+
+Epoch:   18/60    Loss: 3.3737527990341185
+
+Epoch:   18/60    Loss: 3.431216839551926
+
+Epoch:   18/60    Loss: 3.337723244905472
+
+Epoch:   18/60    Loss: 3.3805225074291227
+
+Epoch:   18/60    Loss: 3.4304818847179415
+
+Epoch:   18/60    Loss: 3.3939579112529756
+
+Epoch:   18/60    Loss: 3.4282503299713136
+
+Epoch:   18/60    Loss: 3.4057004628181455
+
+Epoch:   18/60    Loss: 3.449468122243881
+
+Epoch:   18/60    Loss: 3.383532522439957
+
+Epoch:   18/60    Loss: 3.3752264013290407
+
+Epoch:   18/60    Loss: 3.314786041021347
+
+Epoch:   18/60    Loss: 3.4015134620666503
+
+Epoch:   18/60    Loss: 3.2875746097564695
+
+Epoch:   19/60    Loss: 3.4435882451741593
+
+Epoch:   19/60    Loss: 3.3932451777458192
+
+Epoch:   19/60    Loss: 3.2253662605285642
+
+Epoch:   19/60    Loss: 3.2515431244373323
+
+Epoch:   19/60    Loss: 3.2603689341545103
+
+Epoch:   19/60    Loss: 3.3096205270290375
+
+Epoch:   19/60    Loss: 3.36932505106926
+
+Epoch:   19/60    Loss: 3.29607840180397
+
+Epoch:   19/60    Loss: 3.105283158779144
+
+Epoch:   19/60    Loss: 3.3419199697971345
+
+Epoch:   19/60    Loss: 3.2635259916782378
+
+Epoch:   19/60    Loss: 3.299734112739563
+
+Epoch:   19/60    Loss: 3.139265462875366
+
+Epoch:   19/60    Loss: 3.1742255907058716
+
+Epoch:   19/60    Loss: 3.1694970383644105
+
+Epoch:   19/60    Loss: 3.1600742609500885
+
+Epoch:   19/60    Loss: 3.2217712593078613
+
+Epoch:   19/60    Loss: 3.3037006740570067
+
+Epoch:   19/60    Loss: 3.265310702800751
+
+Epoch:   19/60    Loss: 3.1509880166053774
+
+Epoch:   19/60    Loss: 3.220455669879913
+
+Epoch:   19/60    Loss: 3.1935297679901122
+
+Epoch:   19/60    Loss: 3.361803330898285
+
+Epoch:   19/60    Loss: 3.251432709693909
+
+Epoch:   19/60    Loss: 3.2931145989894866
+
+Epoch:   19/60    Loss: 3.383438886165619
+
+Epoch:   19/60    Loss: 3.2602153856754303
+
+Epoch:   19/60    Loss: 3.338701689481735
+
+Epoch:   19/60    Loss: 3.2609868421554564
+
+Epoch:   19/60    Loss: 3.200797885417938
+
+Epoch:   19/60    Loss: 3.1007536644935607
+
+Epoch:   19/60    Loss: 3.31894855761528
+
+Epoch:   19/60    Loss: 3.27019584774971
+
+Epoch:   19/60    Loss: 3.1400501639842986
+
+Epoch:   19/60    Loss: 3.1215213108062745
+
+Epoch:   19/60    Loss: 3.2450032255649566
+
+Epoch:   19/60    Loss: 3.144571321487427
+
+Epoch:   19/60    Loss: 3.1908742072582243
+
+Epoch:   19/60    Loss: 3.2312759172916414
+
+Epoch:   19/60    Loss: 3.218325734615326
+
+Epoch:   19/60    Loss: 3.2139521064758303
+
+Epoch:   19/60    Loss: 3.190109671592712
+
+Epoch:   19/60    Loss: 3.256169975280762
+
+Epoch:   19/60    Loss: 3.312941780567169
+
+Epoch:   19/60    Loss: 3.2579827733039854
+
+Epoch:   19/60    Loss: 3.358627333164215
+
+Epoch:   19/60    Loss: 3.4230148668289186
+
+Epoch:   19/60    Loss: 3.3159169986248016
+
+Epoch:   19/60    Loss: 3.3643763372898103
+
+Epoch:   19/60    Loss: 3.4035292348861694
+
+Epoch:   19/60    Loss: 3.3781617307662963
+
+Epoch:   19/60    Loss: 3.393200198173523
+
+Epoch:   19/60    Loss: 3.391814904689789
+
+Epoch:   19/60    Loss: 3.427008552312851
+
+Epoch:   19/60    Loss: 3.359682839870453
+
+Epoch:   19/60    Loss: 3.347056525230408
+
+Epoch:   19/60    Loss: 3.295238075733185
+
+Epoch:   19/60    Loss: 3.380912928104401
+
+Epoch:   19/60    Loss: 3.2841401598453523
+
+Epoch:   20/60    Loss: 3.44366158966137
+
+Epoch:   20/60    Loss: 3.3748048532009123
+
+Epoch:   20/60    Loss: 3.2220540900230406
+
+Epoch:   20/60    Loss: 3.250820494890213
+
+Epoch:   20/60    Loss: 3.2633381228446963
+
+Epoch:   20/60    Loss: 3.3013504610061646
+
+Epoch:   20/60    Loss: 3.3728490743637085
+
+Epoch:   20/60    Loss: 3.3011843864917756
+
+Epoch:   20/60    Loss: 3.1004565436840057
+
+Epoch:   20/60    Loss: 3.331958844423294
+
+Epoch:   20/60    Loss: 3.2458356862068176
+
+Epoch:   20/60    Loss: 3.2701011686325074
+
+Epoch:   20/60    Loss: 3.1254337661266325
+
+Epoch:   20/60    Loss: 3.16709756731987
+
+Epoch:   20/60    Loss: 3.155626588821411
+
+Epoch:   20/60    Loss: 3.136560223579407
+
+Epoch:   20/60    Loss: 3.199279043197632
+
+Epoch:   20/60    Loss: 3.2842544367313384
+
+Epoch:   20/60    Loss: 3.2330834448337553
+
+Epoch:   20/60    Loss: 3.122628919363022
+
+Epoch:   20/60    Loss: 3.200595396280289
+
+Epoch:   20/60    Loss: 3.1525713675022127
+
+Epoch:   20/60    Loss: 3.3322874665260316
+
+Epoch:   20/60    Loss: 3.2201295130252836
+
+Epoch:   20/60    Loss: 3.290888930082321
+
+Epoch:   20/60    Loss: 3.364639599084854
+
+Epoch:   20/60    Loss: 3.2395799372196197
+
+Epoch:   20/60    Loss: 3.3343406012058256
+
+Epoch:   20/60    Loss: 3.24289826130867
+
+Epoch:   20/60    Loss: 3.1938642995357513
+
+Epoch:   20/60    Loss: 3.081999782085419
+
+Epoch:   20/60    Loss: 3.298675107717514
+
+Epoch:   20/60    Loss: 3.232543532848358
+
+Epoch:   20/60    Loss: 3.0943985736370085
+
+Epoch:   20/60    Loss: 3.0767729694843293
+
+Epoch:   20/60    Loss: 3.203366997241974
+
+Epoch:   20/60    Loss: 3.1085765814781188
+
+Epoch:   20/60    Loss: 3.172331338405609
+
+Epoch:   20/60    Loss: 3.206588030099869
+
+Epoch:   20/60    Loss: 3.1852057688236237
+
+Epoch:   20/60    Loss: 3.1891278445720674
+
+Epoch:   20/60    Loss: 3.1524035050868986
+
+Epoch:   20/60    Loss: 3.2226285595893858
+
+Epoch:   20/60    Loss: 3.2939402880668642
+
+Epoch:   20/60    Loss: 3.235398077726364
+
+Epoch:   20/60    Loss: 3.3165499815940858
+
+Epoch:   20/60    Loss: 3.3790861258506775
+
+Epoch:   20/60    Loss: 3.2757291321754454
+
+Epoch:   20/60    Loss: 3.3181465916633606
+
+Epoch:   20/60    Loss: 3.4117147517204285
+
+Epoch:   20/60    Loss: 3.393078059196472
+
+Epoch:   20/60    Loss: 3.4051807792186737
+
+Epoch:   20/60    Loss: 3.4274336278438566
+
+Epoch:   20/60    Loss: 3.475057035446167
+
+Epoch:   20/60    Loss: 3.3527822237014773
+
+Epoch:   20/60    Loss: 3.3457605645656585
+
+Epoch:   20/60    Loss: 3.2942122263908384
+
+Epoch:   20/60    Loss: 3.372402899503708
+
+Epoch:   20/60    Loss: 3.2454360268116
+
+Epoch:   21/60    Loss: 3.3890306306597977
+
+Epoch:   21/60    Loss: 3.3505555183887483
+
+Epoch:   21/60    Loss: 3.1941434059143066
+
+Epoch:   21/60    Loss: 3.2214544446468354
+
+Epoch:   21/60    Loss: 3.2397784752845764
+
+Epoch:   21/60    Loss: 3.2772955420017245
+
+Epoch:   21/60    Loss: 3.3453901402950286
+
+Epoch:   21/60    Loss: 3.2769277510643007
+
+Epoch:   21/60    Loss: 3.0869160294532776
+
+Epoch:   21/60    Loss: 3.2896291198730467
+
+Epoch:   21/60    Loss: 3.216500338554382
+
+Epoch:   21/60    Loss: 3.2540368976593017
+
+Epoch:   21/60    Loss: 3.1070007705688476
+
+Epoch:   21/60    Loss: 3.1482338845729827
+
+Epoch:   21/60    Loss: 3.137527368783951
+
+Epoch:   21/60    Loss: 3.127875126838684
+
+Epoch:   21/60    Loss: 3.1736760737895966
+
+Epoch:   21/60    Loss: 3.2569229340553285
+
+Epoch:   21/60    Loss: 3.21292844414711
+
+Epoch:   21/60    Loss: 3.09515110039711
+
+Epoch:   21/60    Loss: 3.1878458201885223
+
+Epoch:   21/60    Loss: 3.1418847529888154
+
+Epoch:   21/60    Loss: 3.3174240827560424
+
+Epoch:   21/60    Loss: 3.1855021178722382
+
+Epoch:   21/60    Loss: 3.229977388381958
+
+Epoch:   21/60    Loss: 3.3235807480812074
+
+Epoch:   21/60    Loss: 3.2286188554763795
+
+Epoch:   21/60    Loss: 3.305500149011612
+
+Epoch:   21/60    Loss: 3.234744029045105
+
+Epoch:   21/60    Loss: 3.1669623277187346
+
+Epoch:   21/60    Loss: 3.0583952803611756
+
+Epoch:   21/60    Loss: 3.261802905321121
+
+Epoch:   21/60    Loss: 3.202532320022583
+
+Epoch:   21/60    Loss: 3.077067308187485
+
+Epoch:   21/60    Loss: 3.0665506664514544
+
+Epoch:   21/60    Loss: 3.1952502703666688
+
+Epoch:   21/60    Loss: 3.089830324411392
+
+Epoch:   21/60    Loss: 3.157734303236008
+
+Epoch:   21/60    Loss: 3.1906966679096223
+
+Epoch:   21/60    Loss: 3.1724193432331087
+
+Epoch:   21/60    Loss: 3.1829420773983004
+
+Epoch:   21/60    Loss: 3.1479301557540893
+
+Epoch:   21/60    Loss: 3.2187497408390047
+
+Epoch:   21/60    Loss: 3.2613553190231324
+
+Epoch:   21/60    Loss: 3.2187742846012117
+
+Epoch:   21/60    Loss: 3.290645385980606
+
+Epoch:   21/60    Loss: 3.3661729748249054
+
+Epoch:   21/60    Loss: 3.2669912366867067
+
+Epoch:   21/60    Loss: 3.3028371243476866
+
+Epoch:   21/60    Loss: 3.3879406988620757
+
+Epoch:   21/60    Loss: 3.3437950115203856
+
+Epoch:   21/60    Loss: 3.345221534490585
+
+Epoch:   21/60    Loss: 3.3488168103694917
+
+Epoch:   21/60    Loss: 3.3616772651672364
+
+Epoch:   21/60    Loss: 3.3017532577514648
+
+Epoch:   21/60    Loss: 3.295152482509613
+
+Epoch:   21/60    Loss: 3.24951136302948
+
+Epoch:   21/60    Loss: 3.3114295167922974
+
+Epoch:   21/60    Loss: 3.2175979900360105
+
+Epoch:   22/60    Loss: 3.3525230468291305
+
+Epoch:   22/60    Loss: 3.329718123435974
+
+Epoch:   22/60    Loss: 3.171366690635681
+
+Epoch:   22/60    Loss: 3.2111372804641722
+
+Epoch:   22/60    Loss: 3.230391526699066
+
+Epoch:   22/60    Loss: 3.269884363412857
+
+Epoch:   22/60    Loss: 3.3291896250247954
+
+Epoch:   22/60    Loss: 3.2702301166057586
+
+Epoch:   22/60    Loss: 3.0537908601760866
+
+Epoch:   22/60    Loss: 3.279209993839264
+
+Epoch:   22/60    Loss: 3.203646239519119
+
+Epoch:   22/60    Loss: 3.2303769497871397
+
+Epoch:   22/60    Loss: 3.101595013141632
+
+Epoch:   22/60    Loss: 3.1341551961898806
+
+Epoch:   22/60    Loss: 3.123944275379181
+
+Epoch:   22/60    Loss: 3.1119845876693724
+
+Epoch:   22/60    Loss: 3.173766445159912
+
+Epoch:   22/60    Loss: 3.2340454182624816
+
+Epoch:   22/60    Loss: 3.1939045550823213
+
+Epoch:   22/60    Loss: 3.078372958421707
+
+Epoch:   22/60    Loss: 3.1605537157058716
+
+Epoch:   22/60    Loss: 3.1258726296424864
+
+Epoch:   22/60    Loss: 3.2935631239414214
+
+Epoch:   22/60    Loss: 3.207704310655594
+
+Epoch:   22/60    Loss: 3.276477355003357
+
+Epoch:   22/60    Loss: 3.358918066740036
+
+Epoch:   22/60    Loss: 3.258873100757599
+
+Epoch:   22/60    Loss: 3.3475914976596832
+
+Epoch:   22/60    Loss: 3.2536139369010924
+
+Epoch:   22/60    Loss: 3.1894791519641874
+
+Epoch:   22/60    Loss: 3.0837908148765565
+
+Epoch:   22/60    Loss: 3.2694993517398836
+
+Epoch:   22/60    Loss: 3.1907878777980803
+
+Epoch:   22/60    Loss: 3.0637707107067107
+
+Epoch:   22/60    Loss: 3.0566560587882994
+
+Epoch:   22/60    Loss: 3.1860242097377776
+
+Epoch:   22/60    Loss: 3.078820961236954
+
+Epoch:   22/60    Loss: 3.13180508852005
+
+Epoch:   22/60    Loss: 3.153046749353409
+
+Epoch:   22/60    Loss: 3.1433741042613983
+
+Epoch:   22/60    Loss: 3.141433486223221
+
+Epoch:   22/60    Loss: 3.110483531236649
+
+Epoch:   22/60    Loss: 3.179442493438721
+
+Epoch:   22/60    Loss: 3.2425625150203703
+
+Epoch:   22/60    Loss: 3.183097496032715
+
+Epoch:   22/60    Loss: 3.2530018389225006
+
+Epoch:   22/60    Loss: 3.297988232374191
+
+Epoch:   22/60    Loss: 3.2225471425056456
+
+Epoch:   22/60    Loss: 3.232872729063034
+
+Epoch:   22/60    Loss: 3.332060234308243
+
+Epoch:   22/60    Loss: 3.321972390174866
+
+Epoch:   22/60    Loss: 3.3241609709262847
+
+Epoch:   22/60    Loss: 3.3384240819215774
+
+Epoch:   22/60    Loss: 3.388199050426483
+
+Epoch:   22/60    Loss: 3.323750913858414
+
+Epoch:   22/60    Loss: 3.3332782142162323
+
+Epoch:   22/60    Loss: 3.2562644238471985
+
+Epoch:   22/60    Loss: 3.3223790163993834
+
+Epoch:   22/60    Loss: 3.2034840342998505
+
+Epoch:   23/60    Loss: 3.3494567557683457
+
+Epoch:   23/60    Loss: 3.31244424700737
+
+Epoch:   23/60    Loss: 3.160527765750885
+
+Epoch:   23/60    Loss: 3.185696368932724
+
+Epoch:   23/60    Loss: 3.2058851659297942
+
+Epoch:   23/60    Loss: 3.2774449214935304
+
+Epoch:   23/60    Loss: 3.323592010974884
+
+Epoch:   23/60    Loss: 3.252961540222168
+
+Epoch:   23/60    Loss: 3.041528793811798
+
+Epoch:   23/60    Loss: 3.267077039718628
+
+Epoch:   23/60    Loss: 3.200559318304062
+
+Epoch:   23/60    Loss: 3.2057689225673673
+
+Epoch:   23/60    Loss: 3.0651870827674865
+
+Epoch:   23/60    Loss: 3.130100431203842
+
+Epoch:   23/60    Loss: 3.1178616077899934
+
+Epoch:   23/60    Loss: 3.0867657623291014
+
+Epoch:   23/60    Loss: 3.151378420352936
+
+Epoch:   23/60    Loss: 3.210068916797638
+
+Epoch:   23/60    Loss: 3.1592724165916444
+
+Epoch:   23/60    Loss: 3.03513889670372
+
+Epoch:   23/60    Loss: 3.154473962545395
+
+Epoch:   23/60    Loss: 3.0982229878902436
+
+Epoch:   23/60    Loss: 3.236834690570831
+
+Epoch:   23/60    Loss: 3.1488859136104583
+
+Epoch:   23/60    Loss: 3.2081017920970916
+
+Epoch:   23/60    Loss: 3.2918880982398986
+
+Epoch:   23/60    Loss: 3.2071077835559847
+
+Epoch:   23/60    Loss: 3.280902110815048
+
+Epoch:   23/60    Loss: 3.2026264243125917
+
+Epoch:   23/60    Loss: 3.136078412294388
+
+Epoch:   23/60    Loss: 3.048828910589218
+
+Epoch:   23/60    Loss: 3.244369997739792
+
+Epoch:   23/60    Loss: 3.187796584367752
+
+Epoch:   23/60    Loss: 3.0604088876247406
+
+Epoch:   23/60    Loss: 3.065027961730957
+
+Epoch:   23/60    Loss: 3.1629499826431275
+
+Epoch:   23/60    Loss: 3.0547912983894348
+
+Epoch:   23/60    Loss: 3.122392864704132
+
+Epoch:   23/60    Loss: 3.1397533531188966
+
+Epoch:   23/60    Loss: 3.1241463499069213
+
+Epoch:   23/60    Loss: 3.117223782300949
+
+Epoch:   23/60    Loss: 3.1003319392204283
+
+Epoch:   23/60    Loss: 3.1695787980556487
+
+Epoch:   23/60    Loss: 3.227068747520447
+
+Epoch:   23/60    Loss: 3.166234560728073
+
+Epoch:   23/60    Loss: 3.2481342577934265
+
+Epoch:   23/60    Loss: 3.287988368988037
+
+Epoch:   23/60    Loss: 3.2103374769687654
+
+Epoch:   23/60    Loss: 3.2430268170833587
+
+Epoch:   23/60    Loss: 3.30386062335968
+
+Epoch:   23/60    Loss: 3.293411366224289
+
+Epoch:   23/60    Loss: 3.3104345326423643
+
+Epoch:   23/60    Loss: 3.327299517631531
+
+Epoch:   23/60    Loss: 3.3518936722278596
+
+Epoch:   23/60    Loss: 3.280302752494812
+
+Epoch:   23/60    Loss: 3.2564538397789002
+
+Epoch:   23/60    Loss: 3.229128796339035
+
+Epoch:   23/60    Loss: 3.28719482421875
+
+Epoch:   23/60    Loss: 3.194560915708542
+
+Epoch:   24/60    Loss: 3.32713197754777
+
+Epoch:   24/60    Loss: 3.30367972612381
+
+Epoch:   24/60    Loss: 3.1606237008571623
+
+Epoch:   24/60    Loss: 3.180560900449753
+
+Epoch:   24/60    Loss: 3.206193353176117
+
+Epoch:   24/60    Loss: 3.276008516073227
+
+Epoch:   24/60    Loss: 3.317097346305847
+
+Epoch:   24/60    Loss: 3.2436540951728823
+
+Epoch:   24/60    Loss: 3.050613998413086
+
+Epoch:   24/60    Loss: 3.2630653309822084
+
+Epoch:   24/60    Loss: 3.182581844329834
+
+Epoch:   24/60    Loss: 3.204918080329895
+
+Epoch:   24/60    Loss: 3.0784280519485474
+
+Epoch:   24/60    Loss: 3.1193792691230775
+
+Epoch:   24/60    Loss: 3.119899911880493
+
+Epoch:   24/60    Loss: 3.0953834183216093
+
+Epoch:   24/60    Loss: 3.155800164461136
+
+Epoch:   24/60    Loss: 3.198010833024979
+
+Epoch:   24/60    Loss: 3.138090211391449
+
+Epoch:   24/60    Loss: 3.032639531850815
+
+Epoch:   24/60    Loss: 3.1174081799983977
+
+Epoch:   24/60    Loss: 3.064105360031128
+
+Epoch:   24/60    Loss: 3.23137064409256
+
+Epoch:   24/60    Loss: 3.126053014278412
+
+Epoch:   24/60    Loss: 3.200216019153595
+
+Epoch:   24/60    Loss: 3.2832240488529205
+
+Epoch:   24/60    Loss: 3.215441768169403
+
+Epoch:   24/60    Loss: 3.2752171585559844
+
+Epoch:   24/60    Loss: 3.208848156452179
+
+Epoch:   24/60    Loss: 3.1561842405796052
+
+Epoch:   24/60    Loss: 3.0241555919647216
+
+Epoch:   24/60    Loss: 3.2344521288871766
+
+Epoch:   24/60    Loss: 3.1790564608573915
+
+Epoch:   24/60    Loss: 3.035922480583191
+
+Epoch:   24/60    Loss: 3.047520641088486
+
+Epoch:   24/60    Loss: 3.163784691095352
+
+Epoch:   24/60    Loss: 3.041408799171448
+
+Epoch:   24/60    Loss: 3.1324448010921477
+
+Epoch:   24/60    Loss: 3.1347719399929046
+
+Epoch:   24/60    Loss: 3.103367799282074
+
+Epoch:   24/60    Loss: 3.1094648180007933
+
+Epoch:   24/60    Loss: 3.0852584183216094
+
+Epoch:   24/60    Loss: 3.1466327958106994
+
+Epoch:   24/60    Loss: 3.2002575924396517
+
+Epoch:   24/60    Loss: 3.1506952316761017
+
+Epoch:   24/60    Loss: 3.2184173090457917
+
+Epoch:   24/60    Loss: 3.2642698788642885
+
+Epoch:   24/60    Loss: 3.1901793880462646
+
+Epoch:   24/60    Loss: 3.2297333736419676
+
+Epoch:   24/60    Loss: 3.2935849587917327
+
+Epoch:   24/60    Loss: 3.2887387099266054
+
+Epoch:   24/60    Loss: 3.288646265745163
+
+Epoch:   24/60    Loss: 3.3114688873291014
+
+Epoch:   24/60    Loss: 3.3222681365013123
+
+Epoch:   24/60    Loss: 3.260840102672577
+
+Epoch:   24/60    Loss: 3.246461062192917
+
+Epoch:   24/60    Loss: 3.2104096426963804
+
+Epoch:   24/60    Loss: 3.2650087802410126
+
+Epoch:   24/60    Loss: 3.1767506334781648
+
+Epoch:   25/60    Loss: 3.3014464392934157
+
+Epoch:   25/60    Loss: 3.2798501904010773
+
+Epoch:   25/60    Loss: 3.1423875272274016
+
+Epoch:   25/60    Loss: 3.1674541614055634
+
+Epoch:   25/60    Loss: 3.1849380800724028
+
+Epoch:   25/60    Loss: 3.290565789461136
+
+Epoch:   25/60    Loss: 3.332444205760956
+
+Epoch:   25/60    Loss: 3.2442870554924013
+
+Epoch:   25/60    Loss: 3.044664734840393
+
+Epoch:   25/60    Loss: 3.2563874328136446
+
+Epoch:   25/60    Loss: 3.1829892530441284
+
+Epoch:   25/60    Loss: 3.198612802505493
+
+Epoch:   25/60    Loss: 3.067127161026001
+
+Epoch:   25/60    Loss: 3.1130473959445952
+
+Epoch:   25/60    Loss: 3.1101930370330813
+
+Epoch:   25/60    Loss: 3.0828771719932555
+
+Epoch:   25/60    Loss: 3.136753133535385
+
+Epoch:   25/60    Loss: 3.17970508480072
+
+Epoch:   25/60    Loss: 3.111905447244644
+
+Epoch:   25/60    Loss: 2.997760966062546
+
+Epoch:   25/60    Loss: 3.108935190677643
+
+Epoch:   25/60    Loss: 3.0385731463432313
+
+Epoch:   25/60    Loss: 3.2227918615341187
+
+Epoch:   25/60    Loss: 3.116731342077255
+
+Epoch:   25/60    Loss: 3.1832658920288086
+
+Epoch:   25/60    Loss: 3.2562838463783264
+
+Epoch:   25/60    Loss: 3.17350848031044
+
+Epoch:   25/60    Loss: 3.2466956107616425
+
+Epoch:   25/60    Loss: 3.1841956508159637
+
+Epoch:   25/60    Loss: 3.124103716135025
+
+Epoch:   25/60    Loss: 2.993997768640518
+
+Epoch:   25/60    Loss: 3.214498744726181
+
+Epoch:   25/60    Loss: 3.1646314318180084
+
+Epoch:   25/60    Loss: 3.041068286895752
+
+Epoch:   25/60    Loss: 3.0428027611970903
+
+Epoch:   25/60    Loss: 3.145283654212952
+
+Epoch:   25/60    Loss: 3.0467017424106597
+
+Epoch:   25/60    Loss: 3.0991668064594267
+
+Epoch:   25/60    Loss: 3.114147076368332
+
+Epoch:   25/60    Loss: 3.088903252363205
+
+Epoch:   25/60    Loss: 3.069813893556595
+
+Epoch:   25/60    Loss: 3.0795442578792573
+
+Epoch:   25/60    Loss: 3.128224499464035
+
+Epoch:   25/60    Loss: 3.1968778812885286
+
+Epoch:   25/60    Loss: 3.155699201822281
+
+Epoch:   25/60    Loss: 3.2106115558147432
+
+Epoch:   25/60    Loss: 3.260142599582672
+
+Epoch:   25/60    Loss: 3.181547567605972
+
+Epoch:   25/60    Loss: 3.2212612988948823
+
+Epoch:   25/60    Loss: 3.3022894823551177
+
+Epoch:   25/60    Loss: 3.2678789775371553
+
+Epoch:   25/60    Loss: 3.2770699725151062
+
+Epoch:   25/60    Loss: 3.29932698225975
+
+Epoch:   25/60    Loss: 3.3020890719890597
+
+Epoch:   25/60    Loss: 3.243849677801132
+
+Epoch:   25/60    Loss: 3.2138840978145597
+
+Epoch:   25/60    Loss: 3.204992097616196
+
+Epoch:   25/60    Loss: 3.241625812292099
+
+Epoch:   25/60    Loss: 3.1753618352413175
+
+Epoch:   26/60    Loss: 3.2824100625255834
+
+Epoch:   26/60    Loss: 3.2643801357746125
+
+Epoch:   26/60    Loss: 3.1429071176052092
+
+Epoch:   26/60    Loss: 3.1732819039821623
+
+Epoch:   26/60    Loss: 3.1721739330291747
+
+Epoch:   26/60    Loss: 3.237333239078522
+
+Epoch:   26/60    Loss: 3.299185887813568
+
+Epoch:   26/60    Loss: 3.2231822905540466
+
+Epoch:   26/60    Loss: 3.015273444890976
+
+Epoch:   26/60    Loss: 3.2255232856273652
+
+Epoch:   26/60    Loss: 3.172258568525314
+
+Epoch:   26/60    Loss: 3.165005084991455
+
+Epoch:   26/60    Loss: 3.0573105475902556
+
+Epoch:   26/60    Loss: 3.094062237739563
+
+Epoch:   26/60    Loss: 3.0762504954338072
+
+Epoch:   26/60    Loss: 3.052840411424637
+
+Epoch:   26/60    Loss: 3.1043069171905517
+
+Epoch:   26/60    Loss: 3.147906328201294
+
+Epoch:   26/60    Loss: 3.067091053247452
+
+Epoch:   26/60    Loss: 2.9709243824481963
+
+Epoch:   26/60    Loss: 3.091760709285736
+
+Epoch:   26/60    Loss: 3.0270607771873475
+
+Epoch:   26/60    Loss: 3.188534518957138
+
+Epoch:   26/60    Loss: 3.1149723739624022
+
+Epoch:   26/60    Loss: 3.167436373472214
+
+Epoch:   26/60    Loss: 3.252490184545517
+
+Epoch:   26/60    Loss: 3.1701221494674683
+
+Epoch:   26/60    Loss: 3.2143978855609894
+
+Epoch:   26/60    Loss: 3.156895528078079
+
+Epoch:   26/60    Loss: 3.0908896300792694
+
+Epoch:   26/60    Loss: 2.979009090900421
+
+Epoch:   26/60    Loss: 3.180060913801193
+
+Epoch:   26/60    Loss: 3.137565226793289
+
+Epoch:   26/60    Loss: 3.007013378381729
+
+Epoch:   26/60    Loss: 2.9955402559041975
+
+Epoch:   26/60    Loss: 3.113186612844467
+
+Epoch:   26/60    Loss: 3.0073030800819396
+
+Epoch:   26/60    Loss: 3.074005312681198
+
+Epoch:   26/60    Loss: 3.0990140192508697
+
+Epoch:   26/60    Loss: 3.0603642933368684
+
+Epoch:   26/60    Loss: 3.0486267025470735
+
+Epoch:   26/60    Loss: 3.0422983050346373
+
+Epoch:   26/60    Loss: 3.1140801928043365
+
+Epoch:   26/60    Loss: 3.170503722667694
+
+Epoch:   26/60    Loss: 3.1184332506656647
+
+Epoch:   26/60    Loss: 3.2031474485397338
+
+Epoch:   26/60    Loss: 3.241922064781189
+
+Epoch:   26/60    Loss: 3.153810519695282
+
+Epoch:   26/60    Loss: 3.1913318133354185
+
+Epoch:   26/60    Loss: 3.2722426114082337
+
+Epoch:   26/60    Loss: 3.240302745103836
+
+Epoch:   26/60    Loss: 3.2511712880134582
+
+Epoch:   26/60    Loss: 3.2796772305965423
+
+Epoch:   26/60    Loss: 3.28140873670578
+
+Epoch:   26/60    Loss: 3.219908824443817
+
+Epoch:   26/60    Loss: 3.1930616080760954
+
+Epoch:   26/60    Loss: 3.179032930135727
+
+Epoch:   26/60    Loss: 3.2076800801754
+
+Epoch:   26/60    Loss: 3.1514083974361418
+
+Epoch:   27/60    Loss: 3.2517395588042945
+
+Epoch:   27/60    Loss: 3.2496823348999024
+
+Epoch:   27/60    Loss: 3.123064632177353
+
+Epoch:   27/60    Loss: 3.151201905012131
+
+Epoch:   27/60    Loss: 3.155539333105087
+
+Epoch:   27/60    Loss: 3.2152191965579986
+
+Epoch:   27/60    Loss: 3.2833662436008453
+
+Epoch:   27/60    Loss: 3.202563238143921
+
+Epoch:   27/60    Loss: 3.0034579095840455
+
+Epoch:   27/60    Loss: 3.252532524347305
+
+Epoch:   27/60    Loss: 3.1457058322429656
+
+Epoch:   27/60    Loss: 3.153880066394806
+
+Epoch:   27/60    Loss: 3.0497526495456695
+
+Epoch:   27/60    Loss: 3.0683611574172973
+
+Epoch:   27/60    Loss: 3.057412425994873
+
+Epoch:   27/60    Loss: 3.054770300149918
+
+Epoch:   27/60    Loss: 3.08154034948349
+
+Epoch:   27/60    Loss: 3.1272462527751923
+
+Epoch:   27/60    Loss: 3.0614929840564726
+
+Epoch:   27/60    Loss: 2.96336772274971
+
+Epoch:   27/60    Loss: 3.0855437846183777
+
+Epoch:   27/60    Loss: 3.0322559411525725
+
+Epoch:   27/60    Loss: 3.1900787932872774
+
+Epoch:   27/60    Loss: 3.109283920049667
+
+Epoch:   27/60    Loss: 3.1666396777629853
+
+Epoch:   27/60    Loss: 3.24435404586792
+
+Epoch:   27/60    Loss: 3.1530773935317993
+
+Epoch:   27/60    Loss: 3.220617554664612
+
+Epoch:   27/60    Loss: 3.145743486881256
+
+Epoch:   27/60    Loss: 3.0984175999164583
+
+Epoch:   27/60    Loss: 2.9804731266498568
+
+Epoch:   27/60    Loss: 3.176934023141861
+
+Epoch:   27/60    Loss: 3.138734047412872
+
+Epoch:   27/60    Loss: 3.019386063337326
+
+Epoch:   27/60    Loss: 2.9886224702596667
+
+Epoch:   27/60    Loss: 3.104314866065979
+
+Epoch:   27/60    Loss: 3.001241199731827
+
+Epoch:   27/60    Loss: 3.046669637441635
+
+Epoch:   27/60    Loss: 3.069044170856476
+
+Epoch:   27/60    Loss: 3.0459380526542663
+
+Epoch:   27/60    Loss: 3.0444839708805085
+
+Epoch:   27/60    Loss: 3.0271233224868777
+
+Epoch:   27/60    Loss: 3.126231763839722
+
+Epoch:   27/60    Loss: 3.1644414710998534
+
+Epoch:   27/60    Loss: 3.10905611205101
+
+Epoch:   27/60    Loss: 3.195855367183685
+
+Epoch:   27/60    Loss: 3.206722493171692
+
+Epoch:   27/60    Loss: 3.1492760422229766
+
+Epoch:   27/60    Loss: 3.173669897556305
+
+Epoch:   27/60    Loss: 3.2736987805366518
+
+Epoch:   27/60    Loss: 3.219166883468628
+
+Epoch:   27/60    Loss: 3.22292259311676
+
+Epoch:   27/60    Loss: 3.2495104751586914
+
+Epoch:   27/60    Loss: 3.2688429644107817
+
+Epoch:   27/60    Loss: 3.2126126382350924
+
+Epoch:   27/60    Loss: 3.183524803876877
+
+Epoch:   27/60    Loss: 3.1686656134128572
+
+Epoch:   27/60    Loss: 3.1977979700565338
+
+Epoch:   27/60    Loss: 3.1576051952838897
+
+Epoch:   28/60    Loss: 3.2459619798414083
+
+Epoch:   28/60    Loss: 3.246616428375244
+
+Epoch:   28/60    Loss: 3.116182049036026
+
+Epoch:   28/60    Loss: 3.1506019871234896
+
+Epoch:   28/60    Loss: 3.169260477542877
+
+Epoch:   28/60    Loss: 3.204132674455643
+
+Epoch:   28/60    Loss: 3.2584334692955017
+
+Epoch:   28/60    Loss: 3.1841353805065156
+
+Epoch:   28/60    Loss: 2.993722052574158
+
+Epoch:   28/60    Loss: 3.21470391535759
+
+Epoch:   28/60    Loss: 3.133639189004898
+
+Epoch:   28/60    Loss: 3.1660267231464387
+
+Epoch:   28/60    Loss: 3.029148137331009
+
+Epoch:   28/60    Loss: 3.0458621933460237
+
+Epoch:   28/60    Loss: 3.0369887704849243
+
+Epoch:   28/60    Loss: 3.0282894837856293
+
+Epoch:   28/60    Loss: 3.0525249104499816
+
+Epoch:   28/60    Loss: 3.083208135128021
+
+Epoch:   28/60    Loss: 3.0496143662929533
+
+Epoch:   28/60    Loss: 2.9526714515686034
+
+Epoch:   28/60    Loss: 3.0736707220077513
+
+Epoch:   28/60    Loss: 3.023289094209671
+
+Epoch:   28/60    Loss: 3.197794517040253
+
+Epoch:   28/60    Loss: 3.079053326845169
+
+Epoch:   28/60    Loss: 3.1537500088214876
+
+Epoch:   28/60    Loss: 3.2268345046043394
+
+Epoch:   28/60    Loss: 3.1444077599048614
+
+Epoch:   28/60    Loss: 3.199453557729721
+
+Epoch:   28/60    Loss: 3.127594259738922
+
+Epoch:   28/60    Loss: 3.069702623128891
+
+Epoch:   28/60    Loss: 2.9638917729854586
+
+Epoch:   28/60    Loss: 3.168306215763092
+
+Epoch:   28/60    Loss: 3.1126984531879427
+
+Epoch:   28/60    Loss: 3.0057098371982574
+
+Epoch:   28/60    Loss: 2.959975458979607
+
+Epoch:   28/60    Loss: 3.090817270040512
+
+Epoch:   28/60    Loss: 2.9851654028892516
+
+Epoch:   28/60    Loss: 3.051480257987976
+
+Epoch:   28/60    Loss: 3.0580079784393313
+
+Epoch:   28/60    Loss: 3.0476529359817506
+
+Epoch:   28/60    Loss: 3.0284366285800934
+
+Epoch:   28/60    Loss: 3.042036154985428
+
+Epoch:   28/60    Loss: 3.1145613543987274
+
+Epoch:   28/60    Loss: 3.167093104362488
+
+Epoch:   28/60    Loss: 3.1120325615406035
+
+Epoch:   28/60    Loss: 3.1882222232818602
+
+Epoch:   28/60    Loss: 3.1957232456207274
+
+Epoch:   28/60    Loss: 3.142953670024872
+
+Epoch:   28/60    Loss: 3.175559911489487
+
+Epoch:   28/60    Loss: 3.2598867933750153
+
+Epoch:   28/60    Loss: 3.2056417288780215
+
+Epoch:   28/60    Loss: 3.219977255344391
+
+Epoch:   28/60    Loss: 3.2372818565368653
+
+Epoch:   28/60    Loss: 3.2150800414085388
+
+Epoch:   28/60    Loss: 3.151398829460144
+
+Epoch:   28/60    Loss: 3.153313445806503
+
+Epoch:   28/60    Loss: 3.171240034341812
+
+Epoch:   28/60    Loss: 3.181645530223846
+
+Epoch:   28/60    Loss: 3.144977261662483
+
+Epoch:   29/60    Loss: 3.218468306667131
+
+Epoch:   29/60    Loss: 3.218180927991867
+
+Epoch:   29/60    Loss: 3.115405396938324
+
+Epoch:   29/60    Loss: 3.1389251697063445
+
+Epoch:   29/60    Loss: 3.1360567901134493
+
+Epoch:   29/60    Loss: 3.190512441158295
+
+Epoch:   29/60    Loss: 3.2481078038215636
+
+Epoch:   29/60    Loss: 3.164378559112549
+
+Epoch:   29/60    Loss: 2.9818544020652773
+
+Epoch:   29/60    Loss: 3.1908528852462767
+
+Epoch:   29/60    Loss: 3.1027670454978944
+
+Epoch:   29/60    Loss: 3.120328179836273
+
+Epoch:   29/60    Loss: 3.010430204153061
+
+Epoch:   29/60    Loss: 3.015859061002731
+
+Epoch:   29/60    Loss: 3.015225519657135
+
+Epoch:   29/60    Loss: 3.0030183384418487
+
+Epoch:   29/60    Loss: 3.0351644208431243
+
+Epoch:   29/60    Loss: 3.0744638538360594
+
+Epoch:   29/60    Loss: 3.0254170391559603
+
+Epoch:   29/60    Loss: 2.9369632439613342
+
+Epoch:   29/60    Loss: 3.061616802215576
+
+Epoch:   29/60    Loss: 2.9980540857315066
+
+Epoch:   29/60    Loss: 3.1710488119125366
+
+Epoch:   29/60    Loss: 3.0713107318878174
+
+Epoch:   29/60    Loss: 3.136098598957062
+
+Epoch:   29/60    Loss: 3.193192447423935
+
+Epoch:   29/60    Loss: 3.1063424854278563
+
+Epoch:   29/60    Loss: 3.1761375365257263
+
+Epoch:   29/60    Loss: 3.1215568809509278
+
+Epoch:   29/60    Loss: 3.0484107785224914
+
+Epoch:   29/60    Loss: 2.9387732384204863
+
+Epoch:   29/60    Loss: 3.150732218980789
+
+Epoch:   29/60    Loss: 3.0981245675086977
+
+Epoch:   29/60    Loss: 2.9730623087882995
+
+Epoch:   29/60    Loss: 2.9441278114318847
+
+Epoch:   29/60    Loss: 3.07008838057518
+
+Epoch:   29/60    Loss: 2.9727095427513124
+
+Epoch:   29/60    Loss: 3.0355621547698974
+
+Epoch:   29/60    Loss: 3.0527125451564787
+
+Epoch:   29/60    Loss: 3.017948407411575
+
+Epoch:   29/60    Loss: 3.0195788209438326
+
+Epoch:   29/60    Loss: 3.0025245711803437
+
+Epoch:   29/60    Loss: 3.0793857128620146
+
+Epoch:   29/60    Loss: 3.1501694395542144
+
+Epoch:   29/60    Loss: 3.086200427055359
+
+Epoch:   29/60    Loss: 3.1692429385185243
+
+Epoch:   29/60    Loss: 3.1815834295749665
+
+Epoch:   29/60    Loss: 3.1299571063518523
+
+Epoch:   29/60    Loss: 3.165325443983078
+
+Epoch:   29/60    Loss: 3.2626559114456177
+
+Epoch:   29/60    Loss: 3.1931901626586914
+
+Epoch:   29/60    Loss: 3.201913867235184
+
+Epoch:   29/60    Loss: 3.21992192029953
+
+Epoch:   29/60    Loss: 3.224096882343292
+
+Epoch:   29/60    Loss: 3.163540901184082
+
+Epoch:   29/60    Loss: 3.1366022844314574
+
+Epoch:   29/60    Loss: 3.1418236718177797
+
+Epoch:   29/60    Loss: 3.1760004720687864
+
+Epoch:   29/60    Loss: 3.134887305855751
+
+Epoch:   30/60    Loss: 3.187243509227815
+
+Epoch:   30/60    Loss: 3.203850958108902
+
+Epoch:   30/60    Loss: 3.1054005720615385
+
+Epoch:   30/60    Loss: 3.1218292503356935
+
+Epoch:   30/60    Loss: 3.126458002090454
+
+Epoch:   30/60    Loss: 3.167111741781235
+
+Epoch:   30/60    Loss: 3.2397584590911865
+
+Epoch:   30/60    Loss: 3.1459299998283385
+
+Epoch:   30/60    Loss: 2.9654383170604706
+
+Epoch:   30/60    Loss: 3.167007639169693
+
+Epoch:   30/60    Loss: 3.0810819640159606
+
+Epoch:   30/60    Loss: 3.1002568950653075
+
+Epoch:   30/60    Loss: 2.9725213961601256
+
+Epoch:   30/60    Loss: 2.993962775707245
+
+Epoch:   30/60    Loss: 2.991511967420578
+
+Epoch:   30/60    Loss: 2.993745790243149
+
+Epoch:   30/60    Loss: 3.0240114133358
+
+Epoch:   30/60    Loss: 3.060887866973877
+
+Epoch:   30/60    Loss: 3.010517231464386
+
+Epoch:   30/60    Loss: 2.93312926864624
+
+Epoch:   30/60    Loss: 3.0481647379398344
+
+Epoch:   30/60    Loss: 2.9815274384021757
+
+Epoch:   30/60    Loss: 3.157489766597748
+
+Epoch:   30/60    Loss: 3.076118742465973
+
+Epoch:   30/60    Loss: 3.124458427667618
+
+Epoch:   30/60    Loss: 3.198771340370178
+
+Epoch:   30/60    Loss: 3.1020855391025544
+
+Epoch:   30/60    Loss: 3.161688735485077
+
+Epoch:   30/60    Loss: 3.1078968698978424
+
+Epoch:   30/60    Loss: 3.040723175048828
+
+Epoch:   30/60    Loss: 2.941658013343811
+
+Epoch:   30/60    Loss: 3.159033704280853
+
+Epoch:   30/60    Loss: 3.0779104590415955
+
+Epoch:   30/60    Loss: 2.9508689806461335
+
+Epoch:   30/60    Loss: 2.9317293125391006
+
+Epoch:   30/60    Loss: 3.062045939683914
+
+Epoch:   30/60    Loss: 2.96294313955307
+
+Epoch:   30/60    Loss: 3.0122893900871275
+
+Epoch:   30/60    Loss: 3.042671245098114
+
+Epoch:   30/60    Loss: 3.0203929522037507
+
+Epoch:   30/60    Loss: 3.0017593464851378
+
+Epoch:   30/60    Loss: 3.0100570001602174
+
+Epoch:   30/60    Loss: 3.0670339584350588
+
+Epoch:   30/60    Loss: 3.1475368337631227
+
+Epoch:   30/60    Loss: 3.098185524702072
+
+Epoch:   30/60    Loss: 3.1626435055732727
+
+Epoch:   30/60    Loss: 3.1722052733898165
+
+Epoch:   30/60    Loss: 3.1074667232036592
+
+Epoch:   30/60    Loss: 3.1526270377635957
+
+Epoch:   30/60    Loss: 3.2363417999744417
+
+Epoch:   30/60    Loss: 3.1621725404262544
+
+Epoch:   30/60    Loss: 3.184684141635895
+
+Epoch:   30/60    Loss: 3.2071956992149353
+
+Epoch:   30/60    Loss: 3.2244320821762087
+
+Epoch:   30/60    Loss: 3.158918437242508
+
+Epoch:   30/60    Loss: 3.150056751489639
+
+Epoch:   30/60    Loss: 3.1219381046295167
+
+Epoch:   30/60    Loss: 3.158297131538391
+
+Epoch:   30/60    Loss: 3.103246833562851
+
+Epoch:   31/60    Loss: 3.1782259975114595
+
+Epoch:   31/60    Loss: 3.196581447839737
+
+Epoch:   31/60    Loss: 3.1040210053920747
+
+Epoch:   31/60    Loss: 3.1179077801704405
+
+Epoch:   31/60    Loss: 3.1125588746070862
+
+Epoch:   31/60    Loss: 3.155251037120819
+
+Epoch:   31/60    Loss: 3.224366933822632
+
+Epoch:   31/60    Loss: 3.1316540677547455
+
+Epoch:   31/60    Loss: 2.9668082299232483
+
+Epoch:   31/60    Loss: 3.146726080417633
+
+Epoch:   31/60    Loss: 3.0646413960456846
+
+Epoch:   31/60    Loss: 3.076312267065048
+
+Epoch:   31/60    Loss: 2.975865613460541
+
+Epoch:   31/60    Loss: 2.985364976644516
+
+Epoch:   31/60    Loss: 2.9775849392414093
+
+Epoch:   31/60    Loss: 2.9781140625476836
+
+Epoch:   31/60    Loss: 3.004886736392975
+
+Epoch:   31/60    Loss: 3.049630974769592
+
+Epoch:   31/60    Loss: 2.9912080471515656
+
+Epoch:   31/60    Loss: 2.9069157140254975
+
+Epoch:   31/60    Loss: 3.054383675813675
+
+Epoch:   31/60    Loss: 2.9711801595687866
+
+Epoch:   31/60    Loss: 3.1315568513870238
+
+Epoch:   31/60    Loss: 3.049844933271408
+
+Epoch:   31/60    Loss: 3.123380555868149
+
+Epoch:   31/60    Loss: 3.165644086360931
+
+Epoch:   31/60    Loss: 3.086634991168976
+
+Epoch:   31/60    Loss: 3.1576405799388887
+
+Epoch:   31/60    Loss: 3.083655501842499
+
+Epoch:   31/60    Loss: 3.0428120617866514
+
+Epoch:   31/60    Loss: 2.931574454784393
+
+Epoch:   31/60    Loss: 3.1417510821819303
+
+Epoch:   31/60    Loss: 3.0767595286369325
+
+Epoch:   31/60    Loss: 2.9458300352096556
+
+Epoch:   31/60    Loss: 2.936626856327057
+
+Epoch:   31/60    Loss: 3.0639035873413087
+
+Epoch:   31/60    Loss: 2.964131036281586
+
+Epoch:   31/60    Loss: 3.021437284708023
+
+Epoch:   31/60    Loss: 3.0547752606868745
+
+Epoch:   31/60    Loss: 3.000124353647232
+
+Epoch:   31/60    Loss: 2.9841701521873474
+
+Epoch:   31/60    Loss: 3.010991952896118
+
+Epoch:   31/60    Loss: 3.08094780421257
+
+Epoch:   31/60    Loss: 3.131435032129288
+
+Epoch:   31/60    Loss: 3.092638710975647
+
+Epoch:   31/60    Loss: 3.157622986793518
+
+Epoch:   31/60    Loss: 3.152037111759186
+
+Epoch:   31/60    Loss: 3.090929336309433
+
+Epoch:   31/60    Loss: 3.1429014155864716
+
+Epoch:   31/60    Loss: 3.2147383258342743
+
+Epoch:   31/60    Loss: 3.143448480606079
+
+Epoch:   31/60    Loss: 3.1653190810680387
+
+Epoch:   31/60    Loss: 3.198370785951614
+
+Epoch:   31/60    Loss: 3.202535481929779
+
+Epoch:   31/60    Loss: 3.1517985055446625
+
+Epoch:   31/60    Loss: 3.1241198625564577
+
+Epoch:   31/60    Loss: 3.132288385629654
+
+Epoch:   31/60    Loss: 3.1457016088962555
+
+Epoch:   31/60    Loss: 3.0990567336082457
+
+Epoch:   32/60    Loss: 3.17881835365425
+
+Epoch:   32/60    Loss: 3.1918637762069704
+
+Epoch:   32/60    Loss: 3.105240847349167
+
+Epoch:   32/60    Loss: 3.1123576371669768
+
+Epoch:   32/60    Loss: 3.0919654712677
+
+Epoch:   32/60    Loss: 3.1546101052761077
+
+Epoch:   32/60    Loss: 3.2088785347938535
+
+Epoch:   32/60    Loss: 3.113136734485626
+
+Epoch:   32/60    Loss: 2.9462667241096496
+
+Epoch:   32/60    Loss: 3.1567353401184084
+
+Epoch:   32/60    Loss: 3.058941882133484
+
+Epoch:   32/60    Loss: 3.064712493181229
+
+Epoch:   32/60    Loss: 2.967828981399536
+
+Epoch:   32/60    Loss: 2.9885004689693453
+
+Epoch:   32/60    Loss: 2.9753766055107116
+
+Epoch:   32/60    Loss: 2.982267266511917
+
+Epoch:   32/60    Loss: 3.001084571123123
+
+Epoch:   32/60    Loss: 3.0460862529277803
+
+Epoch:   32/60    Loss: 2.981781590461731
+
+Epoch:   32/60    Loss: 2.909105006694794
+
+Epoch:   32/60    Loss: 3.0495317492485046
+
+Epoch:   32/60    Loss: 2.9569839470386503
+
+Epoch:   32/60    Loss: 3.1307226309776306
+
+Epoch:   32/60    Loss: 3.0511734731197357
+
+Epoch:   32/60    Loss: 3.1257280554771425
+
+Epoch:   32/60    Loss: 3.1591051750183103
+
+Epoch:   32/60    Loss: 3.0761395530700684
+
+Epoch:   32/60    Loss: 3.150798867702484
+
+Epoch:   32/60    Loss: 3.0748170235157013
+
+Epoch:   32/60    Loss: 3.019593344449997
+
+Epoch:   32/60    Loss: 2.9108537013530733
+
+Epoch:   32/60    Loss: 3.10223925948143
+
+Epoch:   32/60    Loss: 3.0393471343517304
+
+Epoch:   32/60    Loss: 2.927425884962082
+
+Epoch:   32/60    Loss: 2.918137809753418
+
+Epoch:   32/60    Loss: 3.0441638567447664
+
+Epoch:   32/60    Loss: 2.954317919969559
+
+Epoch:   32/60    Loss: 3.0126265568733217
+
+Epoch:   32/60    Loss: 3.0180280675888063
+
+Epoch:   32/60    Loss: 2.9952023491859436
+
+Epoch:   32/60    Loss: 2.9743887979984285
+
+Epoch:   32/60    Loss: 2.9874898557662966
+
+Epoch:   32/60    Loss: 3.0520887520313265
+
+Epoch:   32/60    Loss: 3.132808999300003
+
+Epoch:   32/60    Loss: 3.0795875828266146
+
+Epoch:   32/60    Loss: 3.1602372555732727
+
+Epoch:   32/60    Loss: 3.158954257249832
+
+Epoch:   32/60    Loss: 3.1023238332271577
+
+Epoch:   32/60    Loss: 3.1406932299137114
+
+Epoch:   32/60    Loss: 3.2285658423900605
+
+Epoch:   32/60    Loss: 3.126117061853409
+
+Epoch:   32/60    Loss: 3.1678429963588717
+
+Epoch:   32/60    Loss: 3.1769622988700865
+
+Epoch:   32/60    Loss: 3.199985963344574
+
+Epoch:   32/60    Loss: 3.143599509000778
+
+Epoch:   32/60    Loss: 3.1261780037879943
+
+Epoch:   32/60    Loss: 3.11725160074234
+
+Epoch:   32/60    Loss: 3.1238948967456817
+
+Epoch:   32/60    Loss: 3.083948718547821
+
+Epoch:   33/60    Loss: 3.1705463998343633
+
+Epoch:   33/60    Loss: 3.1890233783721924
+
+Epoch:   33/60    Loss: 3.0972916464805604
+
+Epoch:   33/60    Loss: 3.1054378352165224
+
+Epoch:   33/60    Loss: 3.087610771417618
+
+Epoch:   33/60    Loss: 3.137322801351547
+
+Epoch:   33/60    Loss: 3.207550136804581
+
+Epoch:   33/60    Loss: 3.1104293298721313
+
+Epoch:   33/60    Loss: 2.9564541738033294
+
+Epoch:   33/60    Loss: 3.1338079097270968
+
+Epoch:   33/60    Loss: 3.0525307209491728
+
+Epoch:   33/60    Loss: 3.0523040096759795
+
+Epoch:   33/60    Loss: 2.984789976119995
+
+Epoch:   33/60    Loss: 2.9684223103523255
+
+Epoch:   33/60    Loss: 2.9658381021022797
+
+Epoch:   33/60    Loss: 2.9852140748500826
+
+Epoch:   33/60    Loss: 3.0078382341861727
+
+Epoch:   33/60    Loss: 3.041002182006836
+
+Epoch:   33/60    Loss: 2.976677483558655
+
+Epoch:   33/60    Loss: 2.9239862084388735
+
+Epoch:   33/60    Loss: 3.04994545173645
+
+Epoch:   33/60    Loss: 2.961669871807098
+
+Epoch:   33/60    Loss: 3.1258152792453764
+
+Epoch:   33/60    Loss: 3.0625193269252775
+
+Epoch:   33/60    Loss: 3.1078261854648592
+
+Epoch:   33/60    Loss: 3.152232390880585
+
+Epoch:   33/60    Loss: 3.0743019559383393
+
+Epoch:   33/60    Loss: 3.1514937672615053
+
+Epoch:   33/60    Loss: 3.0896307706832884
+
+Epoch:   33/60    Loss: 3.014448296070099
+
+Epoch:   33/60    Loss: 2.912558705329895
+
+Epoch:   33/60    Loss: 3.115330225467682
+
+Epoch:   33/60    Loss: 3.0414504408836365
+
+Epoch:   33/60    Loss: 2.9362447338104247
+
+Epoch:   33/60    Loss: 2.939699576497078
+
+Epoch:   33/60    Loss: 3.0637748303413392
+
+Epoch:   33/60    Loss: 2.967298913478851
+
+Epoch:   33/60    Loss: 3.024495339155197
+
+Epoch:   33/60    Loss: 3.0294698882102966
+
+Epoch:   33/60    Loss: 2.990122900009155
+
+Epoch:   33/60    Loss: 2.971289993286133
+
+Epoch:   33/60    Loss: 3.010731971502304
+
+Epoch:   33/60    Loss: 3.0654096879959107
+
+Epoch:   33/60    Loss: 3.128812580347061
+
+Epoch:   33/60    Loss: 3.0737349812984465
+
+Epoch:   33/60    Loss: 3.148640888929367
+
+Epoch:   33/60    Loss: 3.153101070165634
+
+Epoch:   33/60    Loss: 3.081338542222977
+
+Epoch:   33/60    Loss: 3.128263285160065
+
+Epoch:   33/60    Loss: 3.2049586634635925
+
+Epoch:   33/60    Loss: 3.117250919342041
+
+Epoch:   33/60    Loss: 3.1584676365852355
+
+Epoch:   33/60    Loss: 3.1903491883277892
+
+Epoch:   33/60    Loss: 3.1943409068584443
+
+Epoch:   33/60    Loss: 3.1335312962532043
+
+Epoch:   33/60    Loss: 3.1517373464107514
+
+Epoch:   33/60    Loss: 3.116008060216904
+
+Epoch:   33/60    Loss: 3.130334142446518
+
+Epoch:   33/60    Loss: 3.085222573041916
+
+Epoch:   34/60    Loss: 3.1861706899236077
+
+Epoch:   34/60    Loss: 3.1849163644313814
+
+Epoch:   34/60    Loss: 3.0973918907642366
+
+Epoch:   34/60    Loss: 3.0990607764720917
+
+Epoch:   34/60    Loss: 3.0733630049228666
+
+Epoch:   34/60    Loss: 3.121804697036743
+
+Epoch:   34/60    Loss: 3.1933577358722687
+
+Epoch:   34/60    Loss: 3.1053919517993926
+
+Epoch:   34/60    Loss: 2.964190404176712
+
+Epoch:   34/60    Loss: 3.205109890222549
+
+Epoch:   34/60    Loss: 3.067805131196976
+
+Epoch:   34/60    Loss: 3.0659134476184846
+
+Epoch:   34/60    Loss: 2.97984792304039
+
+Epoch:   34/60    Loss: 2.963258675098419
+
+Epoch:   34/60    Loss: 2.9804603049755096
+
+Epoch:   34/60    Loss: 2.996723609685898
+
+Epoch:   34/60    Loss: 2.990193009853363
+
+Epoch:   34/60    Loss: 3.053738740682602
+
+Epoch:   34/60    Loss: 2.9853010942935945
+
+Epoch:   34/60    Loss: 2.921634806871414
+
+Epoch:   34/60    Loss: 3.0561906580924987
+
+Epoch:   34/60    Loss: 2.944456301212311
+
+Epoch:   34/60    Loss: 3.128075255870819
+
+Epoch:   34/60    Loss: 3.0599674167633055
+
+Epoch:   34/60    Loss: 3.1858503000736236
+
+Epoch:   34/60    Loss: 3.2118596961498262
+
+Epoch:   34/60    Loss: 3.073887254238129
+
+Epoch:   34/60    Loss: 3.151592722415924
+
+Epoch:   34/60    Loss: 3.11147075009346
+
+Epoch:   34/60    Loss: 3.028626959323883
+
+Epoch:   34/60    Loss: 2.9251680097579955
+
+Epoch:   34/60    Loss: 3.1209397480487824
+
+Epoch:   34/60    Loss: 3.0638704338073732
+
+Epoch:   34/60    Loss: 2.9260489358901975
+
+Epoch:   34/60    Loss: 2.9228864908218384
+
+Epoch:   34/60    Loss: 3.0415108785629275
+
+Epoch:   34/60    Loss: 3.0140800960063934
+
+Epoch:   34/60    Loss: 3.033498083591461
+
+Epoch:   34/60    Loss: 3.047578451871872
+
+Epoch:   34/60    Loss: 3.0089014930725098
+
+Epoch:   34/60    Loss: 3.0018775975704193
+
+Epoch:   34/60    Loss: 3.03071093583107
+
+Epoch:   34/60    Loss: 3.0750710945129396
+
+Epoch:   34/60    Loss: 3.1473272392749787
+
+Epoch:   34/60    Loss: 3.096860668897629
+
+Epoch:   34/60    Loss: 3.1652978703975676
+
+Epoch:   34/60    Loss: 3.185614676475525
+
+Epoch:   34/60    Loss: 3.1036993639469146
+
+Epoch:   34/60    Loss: 3.138181200504303
+
+Epoch:   34/60    Loss: 3.2179928283691406
+
+Epoch:   34/60    Loss: 3.14386789894104
+
+Epoch:   34/60    Loss: 3.2092092785835264
+
+Epoch:   34/60    Loss: 3.2170609834194184
+
+Epoch:   34/60    Loss: 3.2053499948978423
+
+Epoch:   34/60    Loss: 3.1380536398887635
+
+Epoch:   34/60    Loss: 3.140747343301773
+
+Epoch:   34/60    Loss: 3.119494415283203
+
+Epoch:   34/60    Loss: 3.123211730003357
+
+Epoch:   34/60    Loss: 3.0886306030750275
+
+Epoch:   35/60    Loss: 3.1894821929542916
+
+Epoch:   35/60    Loss: 3.1784431595802305
+
+Epoch:   35/60    Loss: 3.084380681037903
+
+Epoch:   35/60    Loss: 3.0911667363643645
+
+Epoch:   35/60    Loss: 3.072069806098938
+
+Epoch:   35/60    Loss: 3.12794201874733
+
+Epoch:   35/60    Loss: 3.1895361847877504
+
+Epoch:   35/60    Loss: 3.104860337257385
+
+Epoch:   35/60    Loss: 2.9512898609638216
+
+Epoch:   35/60    Loss: 3.187531141281128
+
+Epoch:   35/60    Loss: 3.0593538382053374
+
+Epoch:   35/60    Loss: 3.059458706378937
+
+Epoch:   35/60    Loss: 2.9752501220703125
+
+Epoch:   35/60    Loss: 2.9762490532398225
+
+Epoch:   35/60    Loss: 2.9670818445682525
+
+Epoch:   35/60    Loss: 2.98245666885376
+
+Epoch:   35/60    Loss: 2.9908998320102693
+
+Epoch:   35/60    Loss: 3.0524499039649964
+
+Epoch:   35/60    Loss: 2.975510601520538
+
+Epoch:   35/60    Loss: 2.9055240569114686
+
+Epoch:   35/60    Loss: 3.03635653591156
+
+Epoch:   35/60    Loss: 2.9379790630340574
+
+Epoch:   35/60    Loss: 3.122620486021042
+
+Epoch:   35/60    Loss: 3.0484653027057647
+
+Epoch:   35/60    Loss: 3.1623841247558593
+
+Epoch:   35/60    Loss: 3.1766760089397432
+
+Epoch:   35/60    Loss: 3.07910777425766
+
+Epoch:   35/60    Loss: 3.143934928655624
+
+Epoch:   35/60    Loss: 3.089844637393951
+
+Epoch:   35/60    Loss: 3.0007282090187073
+
+Epoch:   35/60    Loss: 2.892428570270538
+
+Epoch:   35/60    Loss: 3.0971471738815306
+
+Epoch:   35/60    Loss: 3.0372003479003906
+
+Epoch:   35/60    Loss: 2.9150333194732667
+
+Epoch:   35/60    Loss: 2.9144302361011505
+
+Epoch:   35/60    Loss: 3.040918859243393
+
+Epoch:   35/60    Loss: 2.9727069697380064
+
+Epoch:   35/60    Loss: 2.995165593624115
+
+Epoch:   35/60    Loss: 3.018919582128525
+
+Epoch:   35/60    Loss: 2.9630650074481966
+
+Epoch:   35/60    Loss: 2.981726763010025
+
+Epoch:   35/60    Loss: 2.99874086022377
+
+Epoch:   35/60    Loss: 3.0512151327133177
+
+Epoch:   35/60    Loss: 3.128644435405731
+
+Epoch:   35/60    Loss: 3.075453406572342
+
+Epoch:   35/60    Loss: 3.147720549106598
+
+Epoch:   35/60    Loss: 3.1838462364673616
+
+Epoch:   35/60    Loss: 3.0882269954681396
+
+Epoch:   35/60    Loss: 3.1131210112571717
+
+Epoch:   35/60    Loss: 3.1803090524673463
+
+Epoch:   35/60    Loss: 3.1348936271667482
+
+Epoch:   35/60    Loss: 3.176943425178528
+
+Epoch:   35/60    Loss: 3.2020690510272978
+
+Epoch:   35/60    Loss: 3.1980169138908385
+
+Epoch:   35/60    Loss: 3.141498408794403
+
+Epoch:   35/60    Loss: 3.14187984752655
+
+Epoch:   35/60    Loss: 3.114202605485916
+
+Epoch:   35/60    Loss: 3.124638273000717
+
+Epoch:   35/60    Loss: 3.078050146818161
+
+Epoch:   36/60    Loss: 3.173302885144949
+
+Epoch:   36/60    Loss: 3.1792861087322235
+
+Epoch:   36/60    Loss: 3.095037763118744
+
+Epoch:   36/60    Loss: 3.1029393763542177
+
+Epoch:   36/60    Loss: 3.067325219154358
+
+Epoch:   36/60    Loss: 3.1168304505348208
+
+Epoch:   36/60    Loss: 3.1881619834899904
+
+Epoch:   36/60    Loss: 3.075036755800247
+
+Epoch:   36/60    Loss: 2.954404410123825
+
+Epoch:   36/60    Loss: 3.1496875107288362
+
+Epoch:   36/60    Loss: 3.0602037682533263
+
+Epoch:   36/60    Loss: 3.0568134360313417
+
+Epoch:   36/60    Loss: 2.9789441928863525
+
+Epoch:   36/60    Loss: 2.9810759470462798
+
+Epoch:   36/60    Loss: 2.9656807379722596
+
+Epoch:   36/60    Loss: 2.96777165055275
+
+Epoch:   36/60    Loss: 2.982442436695099
+
+Epoch:   36/60    Loss: 3.033561665058136
+
+Epoch:   36/60    Loss: 2.952042234659195
+
+Epoch:   36/60    Loss: 2.9103558406829833
+
+Epoch:   36/60    Loss: 3.0334262130260465
+
+Epoch:   36/60    Loss: 2.934503564119339
+
+Epoch:   36/60    Loss: 3.104118376970291
+
+Epoch:   36/60    Loss: 3.0418269124031068
+
+Epoch:   36/60    Loss: 3.1539673998355866
+
+Epoch:   36/60    Loss: 3.1702045578956604
+
+Epoch:   36/60    Loss: 3.058209401845932
+
+Epoch:   36/60    Loss: 3.138608909845352
+
+Epoch:   36/60    Loss: 3.084193307161331
+
+Epoch:   36/60    Loss: 2.9993287224769594
+
+Epoch:   36/60    Loss: 2.8763644599914553
+
+Epoch:   36/60    Loss: 3.105853671312332
+
+Epoch:   36/60    Loss: 3.0435115427970887
+
+Epoch:   36/60    Loss: 2.917991832256317
+
+Epoch:   36/60    Loss: 2.904712725877762
+
+Epoch:   36/60    Loss: 3.048201247930527
+
+Epoch:   36/60    Loss: 2.96268443107605
+
+Epoch:   36/60    Loss: 3.0081600432395934
+
+Epoch:   36/60    Loss: 3.028305340528488
+
+Epoch:   36/60    Loss: 2.9888019688129424
+
+Epoch:   36/60    Loss: 2.9759749593734743
+
+Epoch:   36/60    Loss: 2.9854643242359162
+
+Epoch:   36/60    Loss: 3.0548310639858247
+
+Epoch:   36/60    Loss: 3.1199749495983125
+
+Epoch:   36/60    Loss: 3.0759076635837554
+
+Epoch:   36/60    Loss: 3.1325815575122835
+
+Epoch:   36/60    Loss: 3.160965591430664
+
+Epoch:   36/60    Loss: 3.0680247476100924
+
+Epoch:   36/60    Loss: 3.1109073255062105
+
+Epoch:   36/60    Loss: 3.16745755982399
+
+Epoch:   36/60    Loss: 3.117165856838226
+
+Epoch:   36/60    Loss: 3.1736557612419127
+
+Epoch:   36/60    Loss: 3.1997082562446595
+
+Epoch:   36/60    Loss: 3.1962783110141753
+
+Epoch:   36/60    Loss: 3.132851837396622
+
+Epoch:   36/60    Loss: 3.1437093484401704
+
+Epoch:   36/60    Loss: 3.1081204872131347
+
+Epoch:   36/60    Loss: 3.1227819180488585
+
+Epoch:   36/60    Loss: 3.0703429045677186
+
+Epoch:   37/60    Loss: 3.1481142563988334
+
+Epoch:   37/60    Loss: 3.1700779001712798
+
+Epoch:   37/60    Loss: 3.0801383843421934
+
+Epoch:   37/60    Loss: 3.0936452903747558
+
+Epoch:   37/60    Loss: 3.0428838410377503
+
+Epoch:   37/60    Loss: 3.129092566251755
+
+Epoch:   37/60    Loss: 3.17870907497406
+
+Epoch:   37/60    Loss: 3.0788731503486635
+
+Epoch:   37/60    Loss: 2.9650612819194793
+
+Epoch:   37/60    Loss: 3.1427767186164854
+
+Epoch:   37/60    Loss: 3.0405018367767336
+
+Epoch:   37/60    Loss: 3.0382130880355835
+
+Epoch:   37/60    Loss: 2.972416882753372
+
+Epoch:   37/60    Loss: 2.9789421162605287
+
+Epoch:   37/60    Loss: 2.9543784708976744
+
+Epoch:   37/60    Loss: 2.971674109697342
+
+Epoch:   37/60    Loss: 2.989449418306351
+
+Epoch:   37/60    Loss: 3.0192961916923524
+
+Epoch:   37/60    Loss: 2.9442588551044464
+
+Epoch:   37/60    Loss: 2.891411461353302
+
+Epoch:   37/60    Loss: 3.0258099892139434
+
+Epoch:   37/60    Loss: 2.9225511248111724
+
+Epoch:   37/60    Loss: 3.107248735189438
+
+Epoch:   37/60    Loss: 3.035632571697235
+
+Epoch:   37/60    Loss: 3.136086362838745
+
+Epoch:   37/60    Loss: 3.1494858944416046
+
+Epoch:   37/60    Loss: 3.0605237138271333
+
+Epoch:   37/60    Loss: 3.125300415992737
+
+Epoch:   37/60    Loss: 3.076999696969986
+
+Epoch:   37/60    Loss: 2.983711388349533
+
+Epoch:   37/60    Loss: 2.8714251239299773
+
+Epoch:   37/60    Loss: 3.0682800340652467
+
+Epoch:   37/60    Loss: 3.022811788320541
+
+Epoch:   37/60    Loss: 2.8985137860774994
+
+Epoch:   37/60    Loss: 2.898397704958916
+
+Epoch:   37/60    Loss: 3.0313122229576113
+
+Epoch:   37/60    Loss: 2.9597419822216033
+
+Epoch:   37/60    Loss: 2.9815456066131594
+
+Epoch:   37/60    Loss: 3.0218827304840086
+
+Epoch:   37/60    Loss: 2.97951970911026
+
+Epoch:   37/60    Loss: 2.9797503004074097
+
+Epoch:   37/60    Loss: 2.972579386949539
+
+Epoch:   37/60    Loss: 3.0605340282917024
+
+Epoch:   37/60    Loss: 3.12198556137085
+
+Epoch:   37/60    Loss: 3.0656176595687867
+
+Epoch:   37/60    Loss: 3.1309004652500154
+
+Epoch:   37/60    Loss: 3.177590415239334
+
+Epoch:   37/60    Loss: 3.0528208725452424
+
+Epoch:   37/60    Loss: 3.081958196401596
+
+Epoch:   37/60    Loss: 3.168526504278183
+
+Epoch:   37/60    Loss: 3.1100663096904753
+
+Epoch:   37/60    Loss: 3.177379049539566
+
+Epoch:   37/60    Loss: 3.2014407675266265
+
+Epoch:   37/60    Loss: 3.2013019881248472
+
+Epoch:   37/60    Loss: 3.1116405363082884
+
+Epoch:   37/60    Loss: 3.131434072494507
+
+Epoch:   37/60    Loss: 3.0917666301727293
+
+Epoch:   37/60    Loss: 3.096025139808655
+
+Epoch:   37/60    Loss: 3.0715293262004852
+
+Epoch:   38/60    Loss: 3.1389347170682056
+
+Epoch:   38/60    Loss: 3.144345749616623
+
+Epoch:   38/60    Loss: 3.058508293390274
+
+Epoch:   38/60    Loss: 3.0820131916999816
+
+Epoch:   38/60    Loss: 3.0240564024448395
+
+Epoch:   38/60    Loss: 3.118771219730377
+
+Epoch:   38/60    Loss: 3.1633186745643616
+
+Epoch:   38/60    Loss: 3.064795875787735
+
+Epoch:   38/60    Loss: 2.9454488620758057
+
+Epoch:   38/60    Loss: 3.1307691967487337
+
+Epoch:   38/60    Loss: 3.039781153678894
+
+Epoch:   38/60    Loss: 3.031111707687378
+
+Epoch:   38/60    Loss: 2.9667810270786283
+
+Epoch:   38/60    Loss: 2.9841043014526365
+
+Epoch:   38/60    Loss: 2.950550648212433
+
+Epoch:   38/60    Loss: 2.952563541173935
+
+Epoch:   38/60    Loss: 2.987652824640274
+
+Epoch:   38/60    Loss: 3.0067065947055815
+
+Epoch:   38/60    Loss: 2.953228824853897
+
+Epoch:   38/60    Loss: 2.894010226011276
+
+Epoch:   38/60    Loss: 3.014816735744476
+
+Epoch:   38/60    Loss: 2.9212001101970673
+
+Epoch:   38/60    Loss: 3.092692663192749
+
+Epoch:   38/60    Loss: 3.0314877688884736
+
+Epoch:   38/60    Loss: 3.1489054553508757
+
+Epoch:   38/60    Loss: 3.1366248598098756
+
+Epoch:   38/60    Loss: 3.051818100452423
+
+Epoch:   38/60    Loss: 3.117445320606232
+
+Epoch:   38/60    Loss: 3.0770897059440614
+
+Epoch:   38/60    Loss: 2.9868664031028747
+
+Epoch:   38/60    Loss: 2.8650772910118105
+
+Epoch:   38/60    Loss: 3.0584479722976683
+
+Epoch:   38/60    Loss: 3.004020450592041
+
+Epoch:   38/60    Loss: 2.9009191098213196
+
+Epoch:   38/60    Loss: 2.899100332379341
+
+Epoch:   38/60    Loss: 3.019701493501663
+
+Epoch:   38/60    Loss: 2.9504950494766233
+
+Epoch:   38/60    Loss: 2.988217223882675
+
+Epoch:   38/60    Loss: 3.01880958032608
+
+Epoch:   38/60    Loss: 2.9579134821891784
+
+Epoch:   38/60    Loss: 2.9615123476982115
+
+Epoch:   38/60    Loss: 2.9815971457958224
+
+Epoch:   38/60    Loss: 3.047356778860092
+
+Epoch:   38/60    Loss: 3.110862074136734
+
+Epoch:   38/60    Loss: 3.0599793372154234
+
+Epoch:   38/60    Loss: 3.1147408182621
+
+Epoch:   38/60    Loss: 3.156835874080658
+
+Epoch:   38/60    Loss: 3.0447343776226043
+
+Epoch:   38/60    Loss: 3.088047639608383
+
+Epoch:   38/60    Loss: 3.173002005815506
+
+Epoch:   38/60    Loss: 3.109811360836029
+
+Epoch:   38/60    Loss: 3.154600687265396
+
+Epoch:   38/60    Loss: 3.16610284948349
+
+Epoch:   38/60    Loss: 3.1789481678009035
+
+Epoch:   38/60    Loss: 3.1080629715919494
+
+Epoch:   38/60    Loss: 3.13068598818779
+
+Epoch:   38/60    Loss: 3.0910221350193026
+
+Epoch:   38/60    Loss: 3.107727843761444
+
+Epoch:   38/60    Loss: 3.062282696247101
+
+Epoch:   39/60    Loss: 3.1250405731084556
+
+Epoch:   39/60    Loss: 3.15772588801384
+
+Epoch:   39/60    Loss: 3.07127366566658
+
+Epoch:   39/60    Loss: 3.082715462207794
+
+Epoch:   39/60    Loss: 3.0463307187557223
+
+Epoch:   39/60    Loss: 3.1374029169082642
+
+Epoch:   39/60    Loss: 3.1684657254219055
+
+Epoch:   39/60    Loss: 3.0719260218143463
+
+Epoch:   39/60    Loss: 2.9429920599460604
+
+Epoch:   39/60    Loss: 3.1235665628910065
+
+Epoch:   39/60    Loss: 3.0425378983020783
+
+Epoch:   39/60    Loss: 3.037440004348755
+
+Epoch:   39/60    Loss: 2.9713542261123655
+
+Epoch:   39/60    Loss: 2.991943059921265
+
+Epoch:   39/60    Loss: 2.946016527175903
+
+Epoch:   39/60    Loss: 2.9659835741519927
+
+Epoch:   39/60    Loss: 2.9811646983623503
+
+Epoch:   39/60    Loss: 3.0268825647830964
+
+Epoch:   39/60    Loss: 2.9480661749839783
+
+Epoch:   39/60    Loss: 2.8944881286621094
+
+Epoch:   39/60    Loss: 3.0162426176071166
+
+Epoch:   39/60    Loss: 2.9168019099235534
+
+Epoch:   39/60    Loss: 3.0922558283805848
+
+Epoch:   39/60    Loss: 3.0300139379501343
+
+Epoch:   39/60    Loss: 3.147718927145004
+
+Epoch:   39/60    Loss: 3.127772345542908
+
+Epoch:   39/60    Loss: 3.038557509422302
+
+Epoch:   39/60    Loss: 3.117521201133728
+
+Epoch:   39/60    Loss: 3.0802025334835053
+
+Epoch:   39/60    Loss: 2.9909650919437407
+
+Epoch:   39/60    Loss: 2.8562294316291807
+
+Epoch:   39/60    Loss: 3.055903832912445
+
+Epoch:   39/60    Loss: 3.005458951711655
+
+Epoch:   39/60    Loss: 2.9040640454292297
+
+Epoch:   39/60    Loss: 2.914397147655487
+
+Epoch:   39/60    Loss: 3.0236536610126494
+
+Epoch:   39/60    Loss: 2.9534739577770233
+
+Epoch:   39/60    Loss: 3.0052827398777007
+
+Epoch:   39/60    Loss: 3.0413389294147493
+
+Epoch:   39/60    Loss: 2.9607503249645233
+
+Epoch:   39/60    Loss: 2.9586686508655546
+
+Epoch:   39/60    Loss: 2.995025770664215
+
+Epoch:   39/60    Loss: 3.0581513793468473
+
+Epoch:   39/60    Loss: 3.120459712743759
+
+Epoch:   39/60    Loss: 3.060416044473648
+
+Epoch:   39/60    Loss: 3.1194103260040285
+
+Epoch:   39/60    Loss: 3.1485910918712614
+
+Epoch:   39/60    Loss: 3.0498586325645447
+
+Epoch:   39/60    Loss: 3.093242623806
+
+Epoch:   39/60    Loss: 3.1592773957252502
+
+Epoch:   39/60    Loss: 3.1060505237579346
+
+Epoch:   39/60    Loss: 3.141702759027481
+
+Epoch:   39/60    Loss: 3.178971615791321
+
+Epoch:   39/60    Loss: 3.1936564288139344
+
+Epoch:   39/60    Loss: 3.097660556316376
+
+Epoch:   39/60    Loss: 3.1185722861289977
+
+Epoch:   39/60    Loss: 3.083045645236969
+
+Epoch:   39/60    Loss: 3.082092263698578
+
+Epoch:   39/60    Loss: 3.066607334136963
+
+Epoch:   40/60    Loss: 3.1262721749751465
+
+Epoch:   40/60    Loss: 3.148907691001892
+
+Epoch:   40/60    Loss: 3.0517247793674467
+
+Epoch:   40/60    Loss: 3.10187824678421
+
+Epoch:   40/60    Loss: 3.142848861217499
+
+Epoch:   40/60    Loss: 3.173131920814514
+
+Epoch:   40/60    Loss: 3.2105554661750793
+
+Epoch:   40/60    Loss: 3.0995560040473937
+
+Epoch:   40/60    Loss: 2.9687626230716706
+
+Epoch:   40/60    Loss: 3.1522324459552764
+
+Epoch:   40/60    Loss: 3.0421516778469084
+
+Epoch:   40/60    Loss: 3.0263333070278167
+
+Epoch:   40/60    Loss: 2.955805886030197
+
+Epoch:   40/60    Loss: 2.9651662061214448
+
+Epoch:   40/60    Loss: 2.9366647222042084
+
+Epoch:   40/60    Loss: 2.961541243314743
+
+Epoch:   40/60    Loss: 2.969838995218277
+
+Epoch:   40/60    Loss: 3.0214133851528167
+
+Epoch:   40/60    Loss: 2.9352246391773225
+
+Epoch:   40/60    Loss: 2.8740109627246855
+
+Epoch:   40/60    Loss: 2.997951092481613
+
+Epoch:   40/60    Loss: 2.915254445075989
+
+Epoch:   40/60    Loss: 3.1049278421401976
+
+Epoch:   40/60    Loss: 3.046305191993713
+
+Epoch:   40/60    Loss: 3.1553846259117124
+
+Epoch:   40/60    Loss: 3.0973890750408173
+
+Epoch:   40/60    Loss: 3.0563858513832094
+
+Epoch:   40/60    Loss: 3.1086518144607544
+
+Epoch:   40/60    Loss: 3.057493339776993
+
+Epoch:   40/60    Loss: 3.0017341783046723
+
+Epoch:   40/60    Loss: 2.8658252255916596
+
+Epoch:   40/60    Loss: 3.058959479570389
+
+Epoch:   40/60    Loss: 3.0000039873123168
+
+Epoch:   40/60    Loss: 2.8963545966148376
+
+Epoch:   40/60    Loss: 2.890125222444534
+
+Epoch:   40/60    Loss: 3.029244445323944
+
+Epoch:   40/60    Loss: 2.9513508982658387
+
+Epoch:   40/60    Loss: 2.9996849813461304
+
+Epoch:   40/60    Loss: 3.047045772790909
+
+Epoch:   40/60    Loss: 2.9656163747310638
+
+Epoch:   40/60    Loss: 2.9553837544918062
+
+Epoch:   40/60    Loss: 2.9714024970531465
+
+Epoch:   40/60    Loss: 3.053172397851944
+
+Epoch:   40/60    Loss: 3.1181537103652954
+
+Epoch:   40/60    Loss: 3.0446594023704527
+
+Epoch:   40/60    Loss: 3.1095355508327485
+
+Epoch:   40/60    Loss: 3.1461827986240385
+
+Epoch:   40/60    Loss: 3.0466291913986208
+
+Epoch:   40/60    Loss: 3.0681727793216704
+
+Epoch:   40/60    Loss: 3.1494550058841706
+
+Epoch:   40/60    Loss: 3.0827660233974457
+
+Epoch:   40/60    Loss: 3.1503564772605896
+
+Epoch:   40/60    Loss: 3.1694176137447356
+
+Epoch:   40/60    Loss: 3.1773688747882844
+
+Epoch:   40/60    Loss: 3.0824504415988923
+
+Epoch:   40/60    Loss: 3.1022457056045534
+
+Epoch:   40/60    Loss: 3.068397121191025
+
+Epoch:   40/60    Loss: 3.075532869338989
+
+Epoch:   40/60    Loss: 3.0700600798130036
+
+Epoch:   41/60    Loss: 3.086030999927417
+
+Epoch:   41/60    Loss: 3.116550425291061
+
+Epoch:   41/60    Loss: 3.0376320865154267
+
+Epoch:   41/60    Loss: 3.060008834838867
+
+Epoch:   41/60    Loss: 3.0272209384441378
+
+Epoch:   41/60    Loss: 3.1179986658096315
+
+Epoch:   41/60    Loss: 3.148656722307205
+
+Epoch:   41/60    Loss: 3.050597101211548
+
+Epoch:   41/60    Loss: 2.9265604510307313
+
+Epoch:   41/60    Loss: 3.0997251217365265
+
+Epoch:   41/60    Loss: 3.0229703443050386
+
+Epoch:   41/60    Loss: 3.0274320492744446
+
+Epoch:   41/60    Loss: 2.966873325586319
+
+Epoch:   41/60    Loss: 2.960293667078018
+
+Epoch:   41/60    Loss: 2.9374149515628813
+
+Epoch:   41/60    Loss: 2.9706977529525758
+
+Epoch:   41/60    Loss: 2.9651681380271913
+
+Epoch:   41/60    Loss: 3.0076396260261538
+
+Epoch:   41/60    Loss: 2.9499938471317293
+
+Epoch:   41/60    Loss: 2.8843137681484223
+
+Epoch:   41/60    Loss: 3.002869258880615
+
+Epoch:   41/60    Loss: 2.912875291109085
+
+Epoch:   41/60    Loss: 3.0777210726737976
+
+Epoch:   41/60    Loss: 3.027593333005905
+
+Epoch:   41/60    Loss: 3.1373018810749054
+
+Epoch:   41/60    Loss: 3.099492845058441
+
+Epoch:   41/60    Loss: 3.0316268074512482
+
+Epoch:   41/60    Loss: 3.1009825830459596
+
+Epoch:   41/60    Loss: 3.0388744921684263
+
+Epoch:   41/60    Loss: 2.965761347770691
+
+Epoch:   41/60    Loss: 2.851779157400131
+
+Epoch:   41/60    Loss: 3.033067460775375
+
+Epoch:   41/60    Loss: 3.011154436826706
+
+Epoch:   41/60    Loss: 2.873066217660904
+
+Epoch:   41/60    Loss: 2.886397496461868
+
+Epoch:   41/60    Loss: 3.015625423908234
+
+Epoch:   41/60    Loss: 2.9514209656715393
+
+Epoch:   41/60    Loss: 2.9817888679504394
+
+Epoch:   41/60    Loss: 3.0122427484989167
+
+Epoch:   41/60    Loss: 2.9557553970813752
+
+Epoch:   41/60    Loss: 2.946123316049576
+
+Epoch:   41/60    Loss: 2.96768151807785
+
+Epoch:   41/60    Loss: 3.0333781740665438
+
+Epoch:   41/60    Loss: 3.104801787137985
+
+Epoch:   41/60    Loss: 3.0382493803501127
+
+Epoch:   41/60    Loss: 3.118915191411972
+
+Epoch:   41/60    Loss: 3.1279202046394348
+
+Epoch:   41/60    Loss: 3.0094738745689393
+
+Epoch:   41/60    Loss: 3.0573804059028626
+
+Epoch:   41/60    Loss: 3.1436093454360963
+
+Epoch:   41/60    Loss: 3.082442863225937
+
+Epoch:   41/60    Loss: 3.1261413323879244
+
+Epoch:   41/60    Loss: 3.1618354506492614
+
+Epoch:   41/60    Loss: 3.181948473453522
+
+Epoch:   41/60    Loss: 3.0704736166000366
+
+Epoch:   41/60    Loss: 3.1182702403068543
+
+Epoch:   41/60    Loss: 3.0651849091053007
+
+Epoch:   41/60    Loss: 3.057775611639023
+
+Epoch:   41/60    Loss: 3.0434089710712433
+
+Epoch:   42/60    Loss: 3.092148725591276
+
+Epoch:   42/60    Loss: 3.1293621854782105
+
+Epoch:   42/60    Loss: 3.0457620327472688
+
+Epoch:   42/60    Loss: 3.0670481851100924
+
+Epoch:   42/60    Loss: 3.0581257984638213
+
+Epoch:   42/60    Loss: 3.115144844532013
+
+Epoch:   42/60    Loss: 3.1493120954036713
+
+Epoch:   42/60    Loss: 3.0499859528541564
+
+Epoch:   42/60    Loss: 2.9254602830410006
+
+Epoch:   42/60    Loss: 3.0729503524303436
+
+Epoch:   42/60    Loss: 3.023276232481003
+
+Epoch:   42/60    Loss: 3.0174328706264495
+
+Epoch:   42/60    Loss: 2.9666012465953826
+
+Epoch:   42/60    Loss: 2.9638283627033233
+
+Epoch:   42/60    Loss: 2.9287453491687776
+
+Epoch:   42/60    Loss: 2.9471066427230834
+
+Epoch:   42/60    Loss: 2.974882519006729
+
+Epoch:   42/60    Loss: 3.0059455924034117
+
+Epoch:   42/60    Loss: 2.948490542173386
+
+Epoch:   42/60    Loss: 2.871450941801071
+
+Epoch:   42/60    Loss: 3.006770128250122
+
+Epoch:   42/60    Loss: 2.9016582918167115
+
+Epoch:   42/60    Loss: 3.0764598083496093
+
+Epoch:   42/60    Loss: 3.03523712515831
+
+Epoch:   42/60    Loss: 3.1342465941905977
+
+Epoch:   42/60    Loss: 3.106542479991913
+
+Epoch:   42/60    Loss: 3.0428971168994905
+
+Epoch:   42/60    Loss: 3.1229171984195707
+
+Epoch:   42/60    Loss: 3.0607087128162385
+
+Epoch:   42/60    Loss: 2.9672075123786925
+
+Epoch:   42/60    Loss: 2.842102677345276
+
+Epoch:   42/60    Loss: 3.028514805316925
+
+Epoch:   42/60    Loss: 3.005133458137512
+
+Epoch:   42/60    Loss: 2.8838301157951354
+
+Epoch:   42/60    Loss: 2.8944777755737303
+
+Epoch:   42/60    Loss: 3.0239533140659334
+
+Epoch:   42/60    Loss: 2.9547366995811464
+
+Epoch:   42/60    Loss: 3.0098736870288847
+
+Epoch:   42/60    Loss: 3.0317411084175108
+
+Epoch:   42/60    Loss: 2.967855660200119
+
+Epoch:   42/60    Loss: 2.9548491938114165
+
+Epoch:   42/60    Loss: 2.978021357059479
+
+Epoch:   42/60    Loss: 3.051149995803833
+
+Epoch:   42/60    Loss: 3.130338718891144
+
+Epoch:   42/60    Loss: 3.0561192433834075
+
+Epoch:   42/60    Loss: 3.1148892934322356
+
+Epoch:   42/60    Loss: 3.1519591093063353
+
+Epoch:   42/60    Loss: 3.0412966356277464
+
+Epoch:   42/60    Loss: 3.0832574646472932
+
+Epoch:   42/60    Loss: 3.151954854488373
+
+Epoch:   42/60    Loss: 3.1058541417121885
+
+Epoch:   42/60    Loss: 3.124259605884552
+
+Epoch:   42/60    Loss: 3.1767401390075682
+
+Epoch:   42/60    Loss: 3.180327879190445
+
+Epoch:   42/60    Loss: 3.0894172797203066
+
+Epoch:   42/60    Loss: 3.118107046842575
+
+Epoch:   42/60    Loss: 3.073662515163422
+
+Epoch:   42/60    Loss: 3.057678426027298
+
+Epoch:   42/60    Loss: 3.0592990016937254
+
+Epoch:   43/60    Loss: 3.1100704694247763
+
+Epoch:   43/60    Loss: 3.110792987585068
+
+Epoch:   43/60    Loss: 3.0422075967788698
+
+Epoch:   43/60    Loss: 3.0662009761333464
+
+Epoch:   43/60    Loss: 3.0339917266368865
+
+Epoch:   43/60    Loss: 3.0826671562194825
+
+Epoch:   43/60    Loss: 3.1384483904838563
+
+Epoch:   43/60    Loss: 3.0543555226325987
+
+Epoch:   43/60    Loss: 2.91785999917984
+
+Epoch:   43/60    Loss: 3.096923757314682
+
+Epoch:   43/60    Loss: 3.0183658010959626
+
+Epoch:   43/60    Loss: 3.0245808005332946
+
+Epoch:   43/60    Loss: 2.9725626828670504
+
+Epoch:   43/60    Loss: 2.969960765838623
+
+Epoch:   43/60    Loss: 2.93476940703392
+
+Epoch:   43/60    Loss: 2.94625671505928
+
+Epoch:   43/60    Loss: 2.986353925704956
+
+Epoch:   43/60    Loss: 3.024359981536865
+
+Epoch:   43/60    Loss: 2.949137754201889
+
+Epoch:   43/60    Loss: 2.8770002391338347
+
+Epoch:   43/60    Loss: 3.012836408853531
+
+Epoch:   43/60    Loss: 2.9257607207298277
+
+Epoch:   43/60    Loss: 3.090638847112656
+
+Epoch:   43/60    Loss: 3.030079158067703
+
+Epoch:   43/60    Loss: 3.1261641302108765
+
+Epoch:   43/60    Loss: 3.11188418340683
+
+Epoch:   43/60    Loss: 3.0341323969364167
+
+Epoch:   43/60    Loss: 3.1006702978610994
+
+Epoch:   43/60    Loss: 3.0408530402183533
+
+Epoch:   43/60    Loss: 2.983079584121704
+
+Epoch:   43/60    Loss: 2.841561742544174
+
+Epoch:   43/60    Loss: 3.0360674197673796
+
+Epoch:   43/60    Loss: 2.9797712275981905
+
+Epoch:   43/60    Loss: 2.885895172357559
+
+Epoch:   43/60    Loss: 2.875544925570488
+
+Epoch:   43/60    Loss: 3.0098095169067385
+
+Epoch:   43/60    Loss: 2.9556259937286375
+
+Epoch:   43/60    Loss: 2.987063666343689
+
+Epoch:   43/60    Loss: 3.0266947734355925
+
+Epoch:   43/60    Loss: 2.946428050041199
+
+Epoch:   43/60    Loss: 2.9363732914924623
+
+Epoch:   43/60    Loss: 2.9498360884189605
+
+Epoch:   43/60    Loss: 3.0379798431396483
+
+Epoch:   43/60    Loss: 3.1003151862621308
+
+Epoch:   43/60    Loss: 3.037814037322998
+
+Epoch:   43/60    Loss: 3.0850671153068543
+
+Epoch:   43/60    Loss: 3.1214787628650664
+
+Epoch:   43/60    Loss: 3.0000205056667326
+
+Epoch:   43/60    Loss: 3.056643347978592
+
+Epoch:   43/60    Loss: 3.1416377391815185
+
+Epoch:   43/60    Loss: 3.084012977361679
+
+Epoch:   43/60    Loss: 3.128134729385376
+
+Epoch:   43/60    Loss: 3.1732988739013672
+
+Epoch:   43/60    Loss: 3.174706595182419
+
+Epoch:   43/60    Loss: 3.0619075965881346
+
+Epoch:   43/60    Loss: 3.0975652322769167
+
+Epoch:   43/60    Loss: 3.047823598861694
+
+Epoch:   43/60    Loss: 3.0527428700923918
+
+Epoch:   43/60    Loss: 3.038299885034561
+
+Epoch:   44/60    Loss: 3.1057871965610464
+
+Epoch:   44/60    Loss: 3.1175356798171996
+
+Epoch:   44/60    Loss: 3.0338140335083006
+
+Epoch:   44/60    Loss: 3.050504264354706
+
+Epoch:   44/60    Loss: 3.015196985244751
+
+Epoch:   44/60    Loss: 3.103215345621109
+
+Epoch:   44/60    Loss: 3.145182144165039
+
+Epoch:   44/60    Loss: 3.017931983232498
+
+Epoch:   44/60    Loss: 2.910377662420273
+
+Epoch:   44/60    Loss: 3.0890840301513673
+
+Epoch:   44/60    Loss: 3.030639253139496
+
+Epoch:   44/60    Loss: 3.0088644890785217
+
+Epoch:   44/60    Loss: 2.959332175016403
+
+Epoch:   44/60    Loss: 2.9415709199905398
+
+Epoch:   44/60    Loss: 2.911150344133377
+
+Epoch:   44/60    Loss: 2.9494465682506563
+
+Epoch:   44/60    Loss: 2.950033944606781
+
+Epoch:   44/60    Loss: 3.002642254114151
+
+Epoch:   44/60    Loss: 2.9393729462623597
+
+Epoch:   44/60    Loss: 2.859626454591751
+
+Epoch:   44/60    Loss: 3.002092875242233
+
+Epoch:   44/60    Loss: 2.9063120617866516
+
+Epoch:   44/60    Loss: 3.0796995782852172
+
+Epoch:   44/60    Loss: 3.0132444450855256
+
+Epoch:   44/60    Loss: 3.150618716478348
+
+Epoch:   44/60    Loss: 3.0920152773857117
+
+Epoch:   44/60    Loss: 3.031526552438736
+
+Epoch:   44/60    Loss: 3.1133728475570677
+
+Epoch:   44/60    Loss: 3.0479983882904054
+
+Epoch:   44/60    Loss: 2.9737456340789796
+
+Epoch:   44/60    Loss: 2.853150385379791
+
+Epoch:   44/60    Loss: 3.0482267425060274
+
+Epoch:   44/60    Loss: 2.967641756057739
+
+Epoch:   44/60    Loss: 2.8796323933601378
+
+Epoch:   44/60    Loss: 2.869545225262642
+
+Epoch:   44/60    Loss: 3.001022027730942
+
+Epoch:   44/60    Loss: 2.948321983098984
+
+Epoch:   44/60    Loss: 2.9591350131034853
+
+Epoch:   44/60    Loss: 3.010930519104004
+
+Epoch:   44/60    Loss: 2.947244173526764
+
+Epoch:   44/60    Loss: 2.9340159480571746
+
+Epoch:   44/60    Loss: 2.9769789826869966
+
+Epoch:   44/60    Loss: 3.0205305223464967
+
+Epoch:   44/60    Loss: 3.121595125436783
+
+Epoch:   44/60    Loss: 3.018134928703308
+
+Epoch:   44/60    Loss: 3.0962358458042143
+
+Epoch:   44/60    Loss: 3.1218710577487947
+
+Epoch:   44/60    Loss: 3.024410885334015
+
+Epoch:   44/60    Loss: 3.081345404148102
+
+Epoch:   44/60    Loss: 3.136372030735016
+
+Epoch:   44/60    Loss: 3.1000461423397065
+
+Epoch:   44/60    Loss: 3.1218565871715547
+
+Epoch:   44/60    Loss: 3.142817758560181
+
+Epoch:   44/60    Loss: 3.1663548185825348
+
+Epoch:   44/60    Loss: 3.086637711763382
+
+Epoch:   44/60    Loss: 3.152047376871109
+
+Epoch:   44/60    Loss: 3.077839470624924
+
+Epoch:   44/60    Loss: 3.0717997167110442
+
+Epoch:   44/60    Loss: 3.048148946046829
+
+Epoch:   45/60    Loss: 3.096145106236572
+
+Epoch:   45/60    Loss: 3.117184024333954
+
+Epoch:   45/60    Loss: 3.026113163471222
+
+Epoch:   45/60    Loss: 3.048919434070587
+
+Epoch:   45/60    Loss: 2.992741417884827
+
+Epoch:   45/60    Loss: 3.0947959408760073
+
+Epoch:   45/60    Loss: 3.109008890628815
+
+Epoch:   45/60    Loss: 3.0152339799404144
+
+Epoch:   45/60    Loss: 2.9140649747848513
+
+Epoch:   45/60    Loss: 3.0742836170196535
+
+Epoch:   45/60    Loss: 3.0242112703323363
+
+Epoch:   45/60    Loss: 3.004214734554291
+
+Epoch:   45/60    Loss: 2.9563051991462705
+
+Epoch:   45/60    Loss: 2.951890959262848
+
+Epoch:   45/60    Loss: 2.9096975111961365
+
+Epoch:   45/60    Loss: 2.923230703353882
+
+Epoch:   45/60    Loss: 2.9575631000995637
+
+Epoch:   45/60    Loss: 3.0021615102291106
+
+Epoch:   45/60    Loss: 2.9308499546051023
+
+Epoch:   45/60    Loss: 2.863070547580719
+
+Epoch:   45/60    Loss: 2.995648373603821
+
+Epoch:   45/60    Loss: 2.8993592348098756
+
+Epoch:   45/60    Loss: 3.0641955029964447
+
+Epoch:   45/60    Loss: 3.0131485736370087
+
+Epoch:   45/60    Loss: 3.1330907990932464
+
+Epoch:   45/60    Loss: 3.08722270154953
+
+Epoch:   45/60    Loss: 3.03753826379776
+
+Epoch:   45/60    Loss: 3.0896341059207915
+
+Epoch:   45/60    Loss: 3.039579493045807
+
+Epoch:   45/60    Loss: 2.9580710937976837
+
+Epoch:   45/60    Loss: 2.8592309663295747
+
+Epoch:   45/60    Loss: 3.0103370485305785
+
+Epoch:   45/60    Loss: 2.972384529352188
+
+Epoch:   45/60    Loss: 2.9228383400440214
+
+Epoch:   45/60    Loss: 2.8722664778232576
+
+Epoch:   45/60    Loss: 2.9962532968521116
+
+Epoch:   45/60    Loss: 2.939050582408905
+
+Epoch:   45/60    Loss: 2.950337362289429
+
+Epoch:   45/60    Loss: 3.008650138616562
+
+Epoch:   45/60    Loss: 2.9369109725952147
+
+Epoch:   45/60    Loss: 2.930461907148361
+
+Epoch:   45/60    Loss: 2.9640975024700165
+
+Epoch:   45/60    Loss: 3.007123285770416
+
+Epoch:   45/60    Loss: 3.0964926657676695
+
+Epoch:   45/60    Loss: 2.9979764337539674
+
+Epoch:   45/60    Loss: 3.088160542011261
+
+Epoch:   45/60    Loss: 3.106951784849167
+
+Epoch:   45/60    Loss: 3.015046206712723
+
+Epoch:   45/60    Loss: 3.0580741403102873
+
+Epoch:   45/60    Loss: 3.138214866399765
+
+Epoch:   45/60    Loss: 3.113639970779419
+
+Epoch:   45/60    Loss: 3.1191043486595156
+
+Epoch:   45/60    Loss: 3.1322926981449126
+
+Epoch:   45/60    Loss: 3.158511768102646
+
+Epoch:   45/60    Loss: 3.092940051794052
+
+Epoch:   45/60    Loss: 3.147403843641281
+
+Epoch:   45/60    Loss: 3.051437216758728
+
+Epoch:   45/60    Loss: 3.063143036365509
+
+Epoch:   45/60    Loss: 3.0337309668064116
+
+Epoch:   46/60    Loss: 3.0976372879484426
+
+Epoch:   46/60    Loss: 3.110047564983368
+
+Epoch:   46/60    Loss: 3.032273302078247
+
+Epoch:   46/60    Loss: 3.053340095043182
+
+Epoch:   46/60    Loss: 2.9990861237049105
+
+Epoch:   46/60    Loss: 3.093832799434662
+
+Epoch:   46/60    Loss: 3.0983972034454346
+
+Epoch:   46/60    Loss: 3.0014361157417295
+
+Epoch:   46/60    Loss: 2.895834550857544
+
+Epoch:   46/60    Loss: 3.063236252784729
+
+Epoch:   46/60    Loss: 3.008116314411163
+
+Epoch:   46/60    Loss: 3.002519870519638
+
+Epoch:   46/60    Loss: 2.931067692995071
+
+Epoch:   46/60    Loss: 2.9414340682029723
+
+Epoch:   46/60    Loss: 2.9124692249298096
+
+Epoch:   46/60    Loss: 2.9470260190963744
+
+Epoch:   46/60    Loss: 2.965022222518921
+
+Epoch:   46/60    Loss: 2.988706797838211
+
+Epoch:   46/60    Loss: 2.947237141370773
+
+Epoch:   46/60    Loss: 2.865762429237366
+
+Epoch:   46/60    Loss: 2.9860402228832243
+
+Epoch:   46/60    Loss: 2.90588667011261
+
+Epoch:   46/60    Loss: 3.059682575941086
+
+Epoch:   46/60    Loss: 3.0241614813804625
+
+Epoch:   46/60    Loss: 3.1351639831066134
+
+Epoch:   46/60    Loss: 3.0844789712429046
+
+Epoch:   46/60    Loss: 3.0185905051231385
+
+Epoch:   46/60    Loss: 3.1148258240222932
+
+Epoch:   46/60    Loss: 3.041685434818268
+
+Epoch:   46/60    Loss: 2.9692048134803772
+
+Epoch:   46/60    Loss: 2.8650081973075867
+
+Epoch:   46/60    Loss: 3.01297505068779
+
+Epoch:   46/60    Loss: 2.979734571456909
+
+Epoch:   46/60    Loss: 2.888355106830597
+
+Epoch:   46/60    Loss: 2.881117057442665
+
+Epoch:   46/60    Loss: 2.9971380496025084
+
+Epoch:   46/60    Loss: 2.9374815347194674
+
+Epoch:   46/60    Loss: 2.9692651193141937
+
+Epoch:   46/60    Loss: 3.0108868761062624
+
+Epoch:   46/60    Loss: 2.9296825635433197
+
+Epoch:   46/60    Loss: 2.949569267034531
+
+Epoch:   46/60    Loss: 2.9574543783664704
+
+Epoch:   46/60    Loss: 3.020563673019409
+
+Epoch:   46/60    Loss: 3.097684848308563
+
+Epoch:   46/60    Loss: 2.9947271721363067
+
+Epoch:   46/60    Loss: 3.0907340133190155
+
+Epoch:   46/60    Loss: 3.103367785453796
+
+Epoch:   46/60    Loss: 3.016656225681305
+
+Epoch:   46/60    Loss: 3.054153949022293
+
+Epoch:   46/60    Loss: 3.1226656782627105
+
+Epoch:   46/60    Loss: 3.078036957502365
+
+Epoch:   46/60    Loss: 3.124737919330597
+
+Epoch:   46/60    Loss: 3.131183156132698
+
+Epoch:   46/60    Loss: 3.176480851173401
+
+Epoch:   46/60    Loss: 3.0664112498760225
+
+Epoch:   46/60    Loss: 3.1156598417758943
+
+Epoch:   46/60    Loss: 3.0571302139759062
+
+Epoch:   46/60    Loss: 3.0493595592975615
+
+Epoch:   46/60    Loss: 3.0304821765422822
+
+Epoch:   47/60    Loss: 3.086216467878093
+
+Epoch:   47/60    Loss: 3.1069427399635314
+
+Epoch:   47/60    Loss: 3.0337973246574403
+
+Epoch:   47/60    Loss: 3.0624477746486662
+
+Epoch:   47/60    Loss: 3.005125830888748
+
+Epoch:   47/60    Loss: 3.101511426925659
+
+Epoch:   47/60    Loss: 3.1103211760520937
+
+Epoch:   47/60    Loss: 3.007653996229172
+
+Epoch:   47/60    Loss: 2.9066615147590635
+
+Epoch:   47/60    Loss: 3.067049268960953
+
+Epoch:   47/60    Loss: 3.003788236141205
+
+Epoch:   47/60    Loss: 2.9968197603225706
+
+Epoch:   47/60    Loss: 2.950217666864395
+
+Epoch:   47/60    Loss: 2.9441307888031005
+
+Epoch:   47/60    Loss: 2.886631462097168
+
+Epoch:   47/60    Loss: 2.9580254983901977
+
+Epoch:   47/60    Loss: 2.9496497304439546
+
+Epoch:   47/60    Loss: 3.005276326417923
+
+Epoch:   47/60    Loss: 2.9347076025009153
+
+Epoch:   47/60    Loss: 2.858466131210327
+
+Epoch:   47/60    Loss: 2.998891371011734
+
+Epoch:   47/60    Loss: 2.9171423506736756
+
+Epoch:   47/60    Loss: 3.063275590181351
+
+Epoch:   47/60    Loss: 3.0317487888336183
+
+Epoch:   47/60    Loss: 3.1481201915740966
+
+Epoch:   47/60    Loss: 3.0931300354003906
+
+Epoch:   47/60    Loss: 3.042589370727539
+
+Epoch:   47/60    Loss: 3.1124799530506135
+
+Epoch:   47/60    Loss: 3.0481827301979063
+
+Epoch:   47/60    Loss: 2.9800547180175783
+
+Epoch:   47/60    Loss: 2.8600639281272886
+
+Epoch:   47/60    Loss: 3.0223714332580567
+
+Epoch:   47/60    Loss: 2.9774523451328276
+
+Epoch:   47/60    Loss: 2.883713107585907
+
+Epoch:   47/60    Loss: 2.8886713383197784
+
+Epoch:   47/60    Loss: 3.006787141084671
+
+Epoch:   47/60    Loss: 2.9375072431564333
+
+Epoch:   47/60    Loss: 2.977167944908142
+
+Epoch:   47/60    Loss: 2.997740655660629
+
+Epoch:   47/60    Loss: 2.9333864810466768
+
+Epoch:   47/60    Loss: 2.937172237634659
+
+Epoch:   47/60    Loss: 2.946501904249191
+
+Epoch:   47/60    Loss: 3.0056193096637727
+
+Epoch:   47/60    Loss: 3.106282942056656
+
+Epoch:   47/60    Loss: 3.0042909655570984
+
+Epoch:   47/60    Loss: 3.077782829284668
+
+Epoch:   47/60    Loss: 3.086987367391586
+
+Epoch:   47/60    Loss: 3.016266874074936
+
+Epoch:   47/60    Loss: 3.039120304584503
+
+Epoch:   47/60    Loss: 3.1126444849967956
+
+Epoch:   47/60    Loss: 3.0811812076568605
+
+Epoch:   47/60    Loss: 3.1203634719848634
+
+Epoch:   47/60    Loss: 3.1192327497005463
+
+Epoch:   47/60    Loss: 3.1476015651226046
+
+Epoch:   47/60    Loss: 3.0632222638130187
+
+Epoch:   47/60    Loss: 3.097335669517517
+
+Epoch:   47/60    Loss: 3.047910796880722
+
+Epoch:   47/60    Loss: 3.0263735632896425
+
+Epoch:   47/60    Loss: 3.0292762644290923
+
+Epoch:   48/60    Loss: 3.0849865003610435
+
+Epoch:   48/60    Loss: 3.1018317778110505
+
+Epoch:   48/60    Loss: 3.042961688041687
+
+Epoch:   48/60    Loss: 3.063106123924255
+
+Epoch:   48/60    Loss: 3.002747392654419
+
+Epoch:   48/60    Loss: 3.0731441850662233
+
+Epoch:   48/60    Loss: 3.097103804588318
+
+Epoch:   48/60    Loss: 2.9860553121566773
+
+Epoch:   48/60    Loss: 2.903356143474579
+
+Epoch:   48/60    Loss: 3.0644680700302125
+
+Epoch:   48/60    Loss: 3.0039691903591157
+
+Epoch:   48/60    Loss: 2.9913999338150026
+
+Epoch:   48/60    Loss: 2.9440281121730805
+
+Epoch:   48/60    Loss: 2.940204051017761
+
+Epoch:   48/60    Loss: 2.894203959941864
+
+Epoch:   48/60    Loss: 2.9327537639141084
+
+Epoch:   48/60    Loss: 2.953297787427902
+
+Epoch:   48/60    Loss: 2.996680649995804
+
+Epoch:   48/60    Loss: 2.9318720417022703
+
+Epoch:   48/60    Loss: 2.8591598246097565
+
+Epoch:   48/60    Loss: 2.9931799845695495
+
+Epoch:   48/60    Loss: 2.9099164085388183
+
+Epoch:   48/60    Loss: 3.0639079792499544
+
+Epoch:   48/60    Loss: 3.0140649843215943
+
+Epoch:   48/60    Loss: 3.1117189733982085
+
+Epoch:   48/60    Loss: 3.0810452206134795
+
+Epoch:   48/60    Loss: 3.010371458768845
+
+Epoch:   48/60    Loss: 3.0653964443206787
+
+Epoch:   48/60    Loss: 3.026694645166397
+
+Epoch:   48/60    Loss: 2.9693665103912354
+
+Epoch:   48/60    Loss: 2.8377054188251494
+
+Epoch:   48/60    Loss: 3.010176119327545
+
+Epoch:   48/60    Loss: 2.9801430628299714
+
+Epoch:   48/60    Loss: 2.8851949994564055
+
+Epoch:   48/60    Loss: 2.8727548274993895
+
+Epoch:   48/60    Loss: 2.9952844116687776
+
+Epoch:   48/60    Loss: 2.9247602264881136
+
+Epoch:   48/60    Loss: 2.974836740732193
+
+Epoch:   48/60    Loss: 2.9898908233642576
+
+Epoch:   48/60    Loss: 2.917654103279114
+
+Epoch:   48/60    Loss: 2.927294830560684
+
+Epoch:   48/60    Loss: 2.9491155841350554
+
+Epoch:   48/60    Loss: 3.009120227098465
+
+Epoch:   48/60    Loss: 3.0884748239517212
+
+Epoch:   48/60    Loss: 2.9949560270309448
+
+Epoch:   48/60    Loss: 3.0671943466663363
+
+Epoch:   48/60    Loss: 3.0904375865459444
+
+Epoch:   48/60    Loss: 3.005414951086044
+
+Epoch:   48/60    Loss: 3.0370432374477385
+
+Epoch:   48/60    Loss: 3.102999111413956
+
+Epoch:   48/60    Loss: 3.078783193588257
+
+Epoch:   48/60    Loss: 3.1153530972003938
+
+Epoch:   48/60    Loss: 3.115285287499428
+
+Epoch:   48/60    Loss: 3.1353337178230287
+
+Epoch:   48/60    Loss: 3.0681954922676087
+
+Epoch:   48/60    Loss: 3.1069755177497864
+
+Epoch:   48/60    Loss: 3.049838349103928
+
+Epoch:   48/60    Loss: 3.0469242560863496
+
+Epoch:   48/60    Loss: 3.026157600879669
+
+Epoch:   49/60    Loss: 3.0800397145035476
+
+Epoch:   49/60    Loss: 3.0836811571121214
+
+Epoch:   49/60    Loss: 3.019122073173523
+
+Epoch:   49/60    Loss: 3.0437518105506896
+
+Epoch:   49/60    Loss: 2.991272403240204
+
+Epoch:   49/60    Loss: 3.088693995475769
+
+Epoch:   49/60    Loss: 3.0891170752048493
+
+Epoch:   49/60    Loss: 2.999826104640961
+
+Epoch:   49/60    Loss: 2.900358872652054
+
+Epoch:   49/60    Loss: 3.081073584318161
+
+Epoch:   49/60    Loss: 3.0098414347171785
+
+Epoch:   49/60    Loss: 2.99009863615036
+
+Epoch:   49/60    Loss: 2.9393506503105162
+
+Epoch:   49/60    Loss: 2.9425090942382814
+
+Epoch:   49/60    Loss: 2.8990601954460145
+
+Epoch:   49/60    Loss: 2.932772700548172
+
+Epoch:   49/60    Loss: 2.9487368531227114
+
+Epoch:   49/60    Loss: 3.0011843755245207
+
+Epoch:   49/60    Loss: 2.9225366299152373
+
+Epoch:   49/60    Loss: 2.8649790987968444
+
+Epoch:   49/60    Loss: 2.989877316236496
+
+Epoch:   49/60    Loss: 2.913241027832031
+
+Epoch:   49/60    Loss: 3.0553090274333954
+
+Epoch:   49/60    Loss: 3.0039348700046538
+
+Epoch:   49/60    Loss: 3.108970588207245
+
+Epoch:   49/60    Loss: 3.0879432039260863
+
+Epoch:   49/60    Loss: 3.018503621816635
+
+Epoch:   49/60    Loss: 3.071346702337265
+
+Epoch:   49/60    Loss: 3.0297627956867217
+
+Epoch:   49/60    Loss: 2.9620844252109526
+
+Epoch:   49/60    Loss: 2.8478054993152617
+
+Epoch:   49/60    Loss: 3.0155974340438845
+
+Epoch:   49/60    Loss: 2.9705784947872163
+
+Epoch:   49/60    Loss: 2.870784148931503
+
+Epoch:   49/60    Loss: 2.8496800854206086
+
+Epoch:   49/60    Loss: 2.9871755051612854
+
+Epoch:   49/60    Loss: 2.910436533689499
+
+Epoch:   49/60    Loss: 2.9649738726615906
+
+Epoch:   49/60    Loss: 2.992098108768463
+
+Epoch:   49/60    Loss: 2.902198829650879
+
+Epoch:   49/60    Loss: 2.9271729214191438
+
+Epoch:   49/60    Loss: 2.949398866891861
+
+Epoch:   49/60    Loss: 2.9971057121753693
+
+Epoch:   49/60    Loss: 3.08716539311409
+
+Epoch:   49/60    Loss: 2.9728712980747223
+
+Epoch:   49/60    Loss: 3.05896693444252
+
+Epoch:   49/60    Loss: 3.0711623201370237
+
+Epoch:   49/60    Loss: 2.993757415294647
+
+Epoch:   49/60    Loss: 3.0194747681617735
+
+Epoch:   49/60    Loss: 3.105437849283218
+
+Epoch:   49/60    Loss: 3.0554436209201814
+
+Epoch:   49/60    Loss: 3.095263400554657
+
+Epoch:   49/60    Loss: 3.0942877244949343
+
+Epoch:   49/60    Loss: 3.1009848127365114
+
+Epoch:   49/60    Loss: 3.0567599432468415
+
+Epoch:   49/60    Loss: 3.0640114924907684
+
+Epoch:   49/60    Loss: 3.0130142250061036
+
+Epoch:   49/60    Loss: 3.0064301960468294
+
+Epoch:   49/60    Loss: 2.981265371084213
+
+Epoch:   50/60    Loss: 3.0613568416270227
+
+Epoch:   50/60    Loss: 3.071657246351242
+
+Epoch:   50/60    Loss: 3.0024305205345154
+
+Epoch:   50/60    Loss: 3.0459081122875213
+
+Epoch:   50/60    Loss: 2.9822627065181733
+
+Epoch:   50/60    Loss: 3.0612265453338625
+
+Epoch:   50/60    Loss: 3.0843437352180483
+
+Epoch:   50/60    Loss: 2.975562352180481
+
+Epoch:   50/60    Loss: 2.8786121568679808
+
+Epoch:   50/60    Loss: 3.047159935474396
+
+Epoch:   50/60    Loss: 2.9935846462249756
+
+Epoch:   50/60    Loss: 2.9705122718811037
+
+Epoch:   50/60    Loss: 2.9167635247707366
+
+Epoch:   50/60    Loss: 2.925040512561798
+
+Epoch:   50/60    Loss: 2.8768383402824402
+
+Epoch:   50/60    Loss: 2.8970713448524474
+
+Epoch:   50/60    Loss: 2.910839380979538
+
+Epoch:   50/60    Loss: 2.97347486948967
+
+Epoch:   50/60    Loss: 2.8967274746894836
+
+Epoch:   50/60    Loss: 2.8394748191833497
+
+Epoch:   50/60    Loss: 2.9679217665195465
+
+Epoch:   50/60    Loss: 2.907258535861969
+
+Epoch:   50/60    Loss: 3.05255255818367
+
+Epoch:   50/60    Loss: 2.9735028088092803
+
+Epoch:   50/60    Loss: 3.0890113904476166
+
+Epoch:   50/60    Loss: 3.0722603290081025
+
+Epoch:   50/60    Loss: 3.0180531022548673
+
+Epoch:   50/60    Loss: 3.0613181090354917
+
+Epoch:   50/60    Loss: 3.0275284328460694
+
+Epoch:   50/60    Loss: 2.9364496760368346
+
+Epoch:   50/60    Loss: 2.8322240874767304
+
+Epoch:   50/60    Loss: 3.0282137265205384
+
+Epoch:   50/60    Loss: 2.974846268415451
+
+Epoch:   50/60    Loss: 2.878977446556091
+
+Epoch:   50/60    Loss: 2.8708135725259782
+
+Epoch:   50/60    Loss: 2.971199601650238
+
+Epoch:   50/60    Loss: 2.9030075426101685
+
+Epoch:   50/60    Loss: 2.9520105941295625
+
+Epoch:   50/60    Loss: 2.98646621799469
+
+Epoch:   50/60    Loss: 2.894718611717224
+
+Epoch:   50/60    Loss: 2.9284240565299986
+
+Epoch:   50/60    Loss: 2.947987493991852
+
+Epoch:   50/60    Loss: 2.9915312254428863
+
+Epoch:   50/60    Loss: 3.073798157930374
+
+Epoch:   50/60    Loss: 2.9799598290920257
+
+Epoch:   50/60    Loss: 3.0665150318145753
+
+Epoch:   50/60    Loss: 3.0567766189575196
+
+Epoch:   50/60    Loss: 2.992167160987854
+
+Epoch:   50/60    Loss: 3.0096910388469698
+
+Epoch:   50/60    Loss: 3.1275985288619994
+
+Epoch:   50/60    Loss: 3.0632794866561888
+
+Epoch:   50/60    Loss: 3.0875400490760803
+
+Epoch:   50/60    Loss: 3.089534109354019
+
+Epoch:   50/60    Loss: 3.1106541419029234
+
+Epoch:   50/60    Loss: 3.054996931552887
+
+Epoch:   50/60    Loss: 3.056796977043152
+
+Epoch:   50/60    Loss: 3.028136667013168
+
+Epoch:   50/60    Loss: 3.018318776845932
+
+Epoch:   50/60    Loss: 2.9934408338069916
+
+Epoch:   51/60    Loss: 3.054399254853311
+
+Epoch:   51/60    Loss: 3.0810298993587493
+
+Epoch:   51/60    Loss: 3.0060585012435914
+
+Epoch:   51/60    Loss: 3.022301633834839
+
+Epoch:   51/60    Loss: 2.980330480337143
+
+Epoch:   51/60    Loss: 3.057424148321152
+
+Epoch:   51/60    Loss: 3.075183735370636
+
+Epoch:   51/60    Loss: 2.9870274760723112
+
+Epoch:   51/60    Loss: 2.882827315568924
+
+Epoch:   51/60    Loss: 3.064393669128418
+
+Epoch:   51/60    Loss: 2.977226418018341
+
+Epoch:   51/60    Loss: 2.977231836795807
+
+Epoch:   51/60    Loss: 2.9177310099601748
+
+Epoch:   51/60    Loss: 2.9210846781730653
+
+Epoch:   51/60    Loss: 2.877005383491516
+
+Epoch:   51/60    Loss: 2.899774928569794
+
+Epoch:   51/60    Loss: 2.9229600133895874
+
+Epoch:   51/60    Loss: 2.9975520486831666
+
+Epoch:   51/60    Loss: 2.912836739063263
+
+Epoch:   51/60    Loss: 2.84456818652153
+
+Epoch:   51/60    Loss: 2.9639290523529054
+
+Epoch:   51/60    Loss: 2.917105629205704
+
+Epoch:   51/60    Loss: 3.114727685689926
+
+Epoch:   51/60    Loss: 2.9980156664848328
+
+Epoch:   51/60    Loss: 3.100083258628845
+
+Epoch:   51/60    Loss: 3.0737390043735506
+
+Epoch:   51/60    Loss: 3.0204210300445555
+
+Epoch:   51/60    Loss: 3.053943338394165
+
+Epoch:   51/60    Loss: 3.004842661857605
+
+Epoch:   51/60    Loss: 2.9378234446048737
+
+Epoch:   51/60    Loss: 2.8309053342342376
+
+Epoch:   51/60    Loss: 3.033059121131897
+
+Epoch:   51/60    Loss: 2.9852282521724702
+
+Epoch:   51/60    Loss: 2.8845387070178985
+
+Epoch:   51/60    Loss: 2.8797512893676758
+
+Epoch:   51/60    Loss: 2.9767066411972047
+
+Epoch:   51/60    Loss: 2.9003634164333345
+
+Epoch:   51/60    Loss: 2.961876041650772
+
+Epoch:   51/60    Loss: 3.0050615510940553
+
+Epoch:   51/60    Loss: 2.901410232067108
+
+Epoch:   51/60    Loss: 2.924691110610962
+
+Epoch:   51/60    Loss: 2.9245167343616485
+
+Epoch:   51/60    Loss: 2.9768986485004425
+
+Epoch:   51/60    Loss: 3.091092780828476
+
+Epoch:   51/60    Loss: 2.986560703754425
+
+Epoch:   51/60    Loss: 3.0738426747322083
+
+Epoch:   51/60    Loss: 3.063547237634659
+
+Epoch:   51/60    Loss: 3.0026896553039553
+
+Epoch:   51/60    Loss: 3.0040248239040377
+
+Epoch:   51/60    Loss: 3.1120832161903382
+
+Epoch:   51/60    Loss: 3.050765271663666
+
+Epoch:   51/60    Loss: 3.0752094833850863
+
+Epoch:   51/60    Loss: 3.0971774789094924
+
+Epoch:   51/60    Loss: 3.0951415543556213
+
+Epoch:   51/60    Loss: 3.039756693840027
+
+Epoch:   51/60    Loss: 3.0682893633842467
+
+Epoch:   51/60    Loss: 3.026142585992813
+
+Epoch:   51/60    Loss: 3.019805272102356
+
+Epoch:   51/60    Loss: 2.9821710691452026
+
+Epoch:   52/60    Loss: 3.0466790170125337
+
+Epoch:   52/60    Loss: 3.0770574729442597
+
+Epoch:   52/60    Loss: 3.013322429418564
+
+Epoch:   52/60    Loss: 3.0250846581459045
+
+Epoch:   52/60    Loss: 2.971890931367874
+
+Epoch:   52/60    Loss: 3.069017068862915
+
+Epoch:   52/60    Loss: 3.0653288316726686
+
+Epoch:   52/60    Loss: 2.9740147907733916
+
+Epoch:   52/60    Loss: 2.8695229897499086
+
+Epoch:   52/60    Loss: 3.0666405193805693
+
+Epoch:   52/60    Loss: 2.970627545595169
+
+Epoch:   52/60    Loss: 2.9645105142593384
+
+Epoch:   52/60    Loss: 2.9124842274188993
+
+Epoch:   52/60    Loss: 2.921178946971893
+
+Epoch:   52/60    Loss: 2.8773056118488314
+
+Epoch:   52/60    Loss: 2.888235698699951
+
+Epoch:   52/60    Loss: 2.9229613678455353
+
+Epoch:   52/60    Loss: 2.978849330186844
+
+Epoch:   52/60    Loss: 2.9101776342391967
+
+Epoch:   52/60    Loss: 2.8345661537647246
+
+Epoch:   52/60    Loss: 2.9668083910942076
+
+Epoch:   52/60    Loss: 2.9005878484249115
+
+Epoch:   52/60    Loss: 3.09209019780159
+
+Epoch:   52/60    Loss: 2.9908509542942046
+
+Epoch:   52/60    Loss: 3.102702036619186
+
+Epoch:   52/60    Loss: 3.062076731681824
+
+Epoch:   52/60    Loss: 2.996789535045624
+
+Epoch:   52/60    Loss: 3.037564143657684
+
+Epoch:   52/60    Loss: 3.0080623025894164
+
+Epoch:   52/60    Loss: 2.94582121348381
+
+Epoch:   52/60    Loss: 2.8164009456634522
+
+Epoch:   52/60    Loss: 3.0184047169685364
+
+Epoch:   52/60    Loss: 2.989757337331772
+
+Epoch:   52/60    Loss: 2.8729828157424926
+
+Epoch:   52/60    Loss: 2.8739992871284485
+
+Epoch:   52/60    Loss: 2.9778012998104098
+
+Epoch:   52/60    Loss: 2.8842021770477295
+
+Epoch:   52/60    Loss: 2.9548330194950103
+
+Epoch:   52/60    Loss: 2.9881372945308686
+
+Epoch:   52/60    Loss: 2.8868038947582244
+
+Epoch:   52/60    Loss: 2.908275580406189
+
+Epoch:   52/60    Loss: 2.9494276208877563
+
+Epoch:   52/60    Loss: 2.9765192828178404
+
+Epoch:   52/60    Loss: 3.079454936504364
+
+Epoch:   52/60    Loss: 2.9847560076713564
+
+Epoch:   52/60    Loss: 3.0776143281459807
+
+Epoch:   52/60    Loss: 3.052996375322342
+
+Epoch:   52/60    Loss: 3.003739317417145
+
+Epoch:   52/60    Loss: 3.0046169645786285
+
+Epoch:   52/60    Loss: 3.1161595783233644
+
+Epoch:   52/60    Loss: 3.0584751942157746
+
+Epoch:   52/60    Loss: 3.0697835047245023
+
+Epoch:   52/60    Loss: 3.0866367956399916
+
+Epoch:   52/60    Loss: 3.0985342943668366
+
+Epoch:   52/60    Loss: 3.049612582206726
+
+Epoch:   52/60    Loss: 3.0630641005039214
+
+Epoch:   52/60    Loss: 3.024775385379791
+
+Epoch:   52/60    Loss: 3.015448805809021
+
+Epoch:   52/60    Loss: 2.9751757447719576
+
+Epoch:   53/60    Loss: 3.0304716548517994
+
+Epoch:   53/60    Loss: 3.0838101842403414
+
+Epoch:   53/60    Loss: 2.996749423980713
+
+Epoch:   53/60    Loss: 3.0194865529537203
+
+Epoch:   53/60    Loss: 2.9875358877182006
+
+Epoch:   53/60    Loss: 3.057285567045212
+
+Epoch:   53/60    Loss: 3.0634976997375487
+
+Epoch:   53/60    Loss: 2.994632865190506
+
+Epoch:   53/60    Loss: 2.8818737885951995
+
+Epoch:   53/60    Loss: 3.0548806331157685
+
+Epoch:   53/60    Loss: 2.9764624860286713
+
+Epoch:   53/60    Loss: 2.9736709904670717
+
+Epoch:   53/60    Loss: 2.9144565510749816
+
+Epoch:   53/60    Loss: 2.932632811784744
+
+Epoch:   53/60    Loss: 2.8803645343780517
+
+Epoch:   53/60    Loss: 2.8872793233394622
+
+Epoch:   53/60    Loss: 2.9343815660476684
+
+Epoch:   53/60    Loss: 2.9943387286663055
+
+Epoch:   53/60    Loss: 2.905864693403244
+
+Epoch:   53/60    Loss: 2.846748575925827
+
+Epoch:   53/60    Loss: 2.9678617820739746
+
+Epoch:   53/60    Loss: 2.9200097877979276
+
+Epoch:   53/60    Loss: 3.084613140583038
+
+Epoch:   53/60    Loss: 2.979613979101181
+
+Epoch:   53/60    Loss: 3.0904669885635374
+
+Epoch:   53/60    Loss: 3.0670109617710115
+
+Epoch:   53/60    Loss: 3.002507592916489
+
+Epoch:   53/60    Loss: 3.049879436969757
+
+Epoch:   53/60    Loss: 3.0116219782829283
+
+Epoch:   53/60    Loss: 2.927492927789688
+
+Epoch:   53/60    Loss: 2.805922000646591
+
+Epoch:   53/60    Loss: 3.0064674673080445
+
+Epoch:   53/60    Loss: 2.970868295669556
+
+Epoch:   53/60    Loss: 2.871236868619919
+
+Epoch:   53/60    Loss: 2.8708896642923354
+
+Epoch:   53/60    Loss: 2.976849819660187
+
+Epoch:   53/60    Loss: 2.8974650545120237
+
+Epoch:   53/60    Loss: 2.9628543343544007
+
+Epoch:   53/60    Loss: 2.9960959131717684
+
+Epoch:   53/60    Loss: 2.88539675450325
+
+Epoch:   53/60    Loss: 2.889001387834549
+
+Epoch:   53/60    Loss: 2.922188564538956
+
+Epoch:   53/60    Loss: 2.9651145327091215
+
+Epoch:   53/60    Loss: 3.0781735157966614
+
+Epoch:   53/60    Loss: 2.9838739812374113
+
+Epoch:   53/60    Loss: 3.0527908918857576
+
+Epoch:   53/60    Loss: 3.050944520711899
+
+Epoch:   53/60    Loss: 3.0003903949260713
+
+Epoch:   53/60    Loss: 2.9956551396846773
+
+Epoch:   53/60    Loss: 3.1047948648929595
+
+Epoch:   53/60    Loss: 3.0262836899757386
+
+Epoch:   53/60    Loss: 3.046745379447937
+
+Epoch:   53/60    Loss: 3.082558100819588
+
+Epoch:   53/60    Loss: 3.072143547296524
+
+Epoch:   53/60    Loss: 3.0232918243408204
+
+Epoch:   53/60    Loss: 3.0340089309215545
+
+Epoch:   53/60    Loss: 3.0025494112968443
+
+Epoch:   53/60    Loss: 2.994285982131958
+
+Epoch:   53/60    Loss: 2.9801971855163574
+
+Epoch:   54/60    Loss: 3.0398767248767875
+
+Epoch:   54/60    Loss: 3.064681040763855
+
+Epoch:   54/60    Loss: 2.9980653235912325
+
+Epoch:   54/60    Loss: 3.0131693539619446
+
+Epoch:   54/60    Loss: 2.966613899946213
+
+Epoch:   54/60    Loss: 3.0535581452846525
+
+Epoch:   54/60    Loss: 3.0733730947971343
+
+Epoch:   54/60    Loss: 2.9609646074771883
+
+Epoch:   54/60    Loss: 2.88037367773056
+
+Epoch:   54/60    Loss: 3.0580583708286286
+
+Epoch:   54/60    Loss: 2.962363934516907
+
+Epoch:   54/60    Loss: 2.9614403874874116
+
+Epoch:   54/60    Loss: 2.906262978076935
+
+Epoch:   54/60    Loss: 2.911340111732483
+
+Epoch:   54/60    Loss: 2.8607526586055756
+
+Epoch:   54/60    Loss: 2.8780839858055116
+
+Epoch:   54/60    Loss: 2.926607965707779
+
+Epoch:   54/60    Loss: 2.9758105716705323
+
+Epoch:   54/60    Loss: 2.873407564640045
+
+Epoch:   54/60    Loss: 2.8302983667850494
+
+Epoch:   54/60    Loss: 2.9484657855033873
+
+Epoch:   54/60    Loss: 2.900604434967041
+
+Epoch:   54/60    Loss: 3.0545633714199067
+
+Epoch:   54/60    Loss: 2.9834310846328735
+
+Epoch:   54/60    Loss: 3.0946285586357116
+
+Epoch:   54/60    Loss: 3.0567964668273926
+
+Epoch:   54/60    Loss: 2.9960142493247988
+
+Epoch:   54/60    Loss: 3.0313789258003236
+
+Epoch:   54/60    Loss: 3.003554049730301
+
+Epoch:   54/60    Loss: 2.9264637553691863
+
+Epoch:   54/60    Loss: 2.802824767589569
+
+Epoch:   54/60    Loss: 2.9962704904079436
+
+Epoch:   54/60    Loss: 2.969213332891464
+
+Epoch:   54/60    Loss: 2.872144943714142
+
+Epoch:   54/60    Loss: 2.8577800476551056
+
+Epoch:   54/60    Loss: 2.981569962978363
+
+Epoch:   54/60    Loss: 2.887761568784714
+
+Epoch:   54/60    Loss: 2.9609529180526732
+
+Epoch:   54/60    Loss: 2.991258065700531
+
+Epoch:   54/60    Loss: 2.88453383231163
+
+Epoch:   54/60    Loss: 2.902968658208847
+
+Epoch:   54/60    Loss: 2.9404112224578856
+
+Epoch:   54/60    Loss: 2.974745832681656
+
+Epoch:   54/60    Loss: 3.0814599976539614
+
+Epoch:   54/60    Loss: 2.973935534477234
+
+Epoch:   54/60    Loss: 3.056840943813324
+
+Epoch:   54/60    Loss: 3.047340158700943
+
+Epoch:   54/60    Loss: 2.9852964205741883
+
+Epoch:   54/60    Loss: 2.9844933116436003
+
+Epoch:   54/60    Loss: 3.0984429445266723
+
+Epoch:   54/60    Loss: 3.031358729124069
+
+Epoch:   54/60    Loss: 3.0553514609336854
+
+Epoch:   54/60    Loss: 3.0793272624015806
+
+Epoch:   54/60    Loss: 3.077792233467102
+
+Epoch:   54/60    Loss: 3.0207255215644837
+
+Epoch:   54/60    Loss: 3.032732763528824
+
+Epoch:   54/60    Loss: 3.0044342041015626
+
+Epoch:   54/60    Loss: 2.992806033849716
+
+Epoch:   54/60    Loss: 2.962880722999573
+
+Epoch:   55/60    Loss: 3.04231723535644
+
+Epoch:   55/60    Loss: 3.0642543947696685
+
+Epoch:   55/60    Loss: 2.994001963376999
+
+Epoch:   55/60    Loss: 3.018650172948837
+
+Epoch:   55/60    Loss: 2.9603012516498564
+
+Epoch:   55/60    Loss: 3.049261309146881
+
+Epoch:   55/60    Loss: 3.0798846981525423
+
+Epoch:   55/60    Loss: 2.9536896603107454
+
+Epoch:   55/60    Loss: 2.8777611451148988
+
+Epoch:   55/60    Loss: 3.0664149692058564
+
+Epoch:   55/60    Loss: 2.9675198566913603
+
+Epoch:   55/60    Loss: 2.9585204367637634
+
+Epoch:   55/60    Loss: 2.920473268985748
+
+Epoch:   55/60    Loss: 2.9192305133342744
+
+Epoch:   55/60    Loss: 2.865849867343903
+
+Epoch:   55/60    Loss: 2.880922792196274
+
+Epoch:   55/60    Loss: 2.9142291762828827
+
+Epoch:   55/60    Loss: 2.971980967760086
+
+Epoch:   55/60    Loss: 2.889021030664444
+
+Epoch:   55/60    Loss: 2.8314428832530973
+
+Epoch:   55/60    Loss: 2.9650269379615786
+
+Epoch:   55/60    Loss: 2.9031902227401734
+
+Epoch:   55/60    Loss: 3.065446618080139
+
+Epoch:   55/60    Loss: 2.9846742985248564
+
+Epoch:   55/60    Loss: 3.1062739613056185
+
+Epoch:   55/60    Loss: 3.0448401658535005
+
+Epoch:   55/60    Loss: 2.9818870179653167
+
+Epoch:   55/60    Loss: 3.036971787929535
+
+Epoch:   55/60    Loss: 2.993278458595276
+
+Epoch:   55/60    Loss: 2.9474772527217863
+
+Epoch:   55/60    Loss: 2.815631739139557
+
+Epoch:   55/60    Loss: 2.9901257407665254
+
+Epoch:   55/60    Loss: 2.9414497957229613
+
+Epoch:   55/60    Loss: 2.8832367720603944
+
+Epoch:   55/60    Loss: 2.8809503700733186
+
+Epoch:   55/60    Loss: 2.986396545410156
+
+Epoch:   55/60    Loss: 2.9008788681030273
+
+Epoch:   55/60    Loss: 2.9637061853408815
+
+Epoch:   55/60    Loss: 2.9878115582466127
+
+Epoch:   55/60    Loss: 2.895455240726471
+
+Epoch:   55/60    Loss: 2.914346218109131
+
+Epoch:   55/60    Loss: 2.926169105529785
+
+Epoch:   55/60    Loss: 2.9722946412563322
+
+Epoch:   55/60    Loss: 3.091877036809921
+
+Epoch:   55/60    Loss: 2.978288801193237
+
+Epoch:   55/60    Loss: 3.065767784833908
+
+Epoch:   55/60    Loss: 3.0418087122440336
+
+Epoch:   55/60    Loss: 2.9924535391330718
+
+Epoch:   55/60    Loss: 2.9995793709754945
+
+Epoch:   55/60    Loss: 3.1032966153621673
+
+Epoch:   55/60    Loss: 3.0292178394794465
+
+Epoch:   55/60    Loss: 3.06530108833313
+
+Epoch:   55/60    Loss: 3.072404894709587
+
+Epoch:   55/60    Loss: 3.086179032087326
+
+Epoch:   55/60    Loss: 3.0289093651771544
+
+Epoch:   55/60    Loss: 3.0302164070606232
+
+Epoch:   55/60    Loss: 3.002160893917084
+
+Epoch:   55/60    Loss: 3.00111633849144
+
+Epoch:   55/60    Loss: 2.974642287015915
+
+Epoch:   56/60    Loss: 3.0494902922731377
+
+Epoch:   56/60    Loss: 3.073200873851776
+
+Epoch:   56/60    Loss: 2.9910693340301515
+
+Epoch:   56/60    Loss: 3.0266118621826172
+
+Epoch:   56/60    Loss: 2.9848900470733644
+
+Epoch:   56/60    Loss: 3.0435986394882204
+
+Epoch:   56/60    Loss: 3.0949651923179626
+
+Epoch:   56/60    Loss: 2.965737152814865
+
+Epoch:   56/60    Loss: 2.891989098548889
+
+Epoch:   56/60    Loss: 3.0587838122844695
+
+Epoch:   56/60    Loss: 2.970678973197937
+
+Epoch:   56/60    Loss: 2.9419221773147584
+
+Epoch:   56/60    Loss: 2.911867938041687
+
+Epoch:   56/60    Loss: 2.8984005422592163
+
+Epoch:   56/60    Loss: 2.875471059560776
+
+Epoch:   56/60    Loss: 2.8918152775764465
+
+Epoch:   56/60    Loss: 2.911176069021225
+
+Epoch:   56/60    Loss: 2.9679972920417788
+
+Epoch:   56/60    Loss: 2.9003723022937775
+
+Epoch:   56/60    Loss: 2.828194458246231
+
+Epoch:   56/60    Loss: 2.9592946574687957
+
+Epoch:   56/60    Loss: 2.904715679883957
+
+Epoch:   56/60    Loss: 3.0697643692493437
+
+Epoch:   56/60    Loss: 2.9839367063045503
+
+Epoch:   56/60    Loss: 3.0832355763912203
+
+Epoch:   56/60    Loss: 3.0537567319869994
+
+Epoch:   56/60    Loss: 2.9985463135242463
+
+Epoch:   56/60    Loss: 3.0270149180889128
+
+Epoch:   56/60    Loss: 3.0245062477588656
+
+Epoch:   56/60    Loss: 2.9305348484516145
+
+Epoch:   56/60    Loss: 2.808276775121689
+
+Epoch:   56/60    Loss: 2.9850461192131044
+
+Epoch:   56/60    Loss: 2.9456857409477233
+
+Epoch:   56/60    Loss: 2.8700095629692077
+
+Epoch:   56/60    Loss: 2.88050574028492
+
+Epoch:   56/60    Loss: 3.0097870774269104
+
+Epoch:   56/60    Loss: 2.90122624707222
+
+Epoch:   56/60    Loss: 2.9626313545703886
+
+Epoch:   56/60    Loss: 3.005253450870514
+
+Epoch:   56/60    Loss: 2.891878569126129
+
+Epoch:   56/60    Loss: 2.9299922513961794
+
+Epoch:   56/60    Loss: 2.9380088336467742
+
+Epoch:   56/60    Loss: 2.98675975561142
+
+Epoch:   56/60    Loss: 3.0873184130191804
+
+Epoch:   56/60    Loss: 2.9896799149513247
+
+Epoch:   56/60    Loss: 3.0682316143512725
+
+Epoch:   56/60    Loss: 3.066204427719116
+
+Epoch:   56/60    Loss: 2.997099313735962
+
+Epoch:   56/60    Loss: 3.002592859506607
+
+Epoch:   56/60    Loss: 3.1162855648994445
+
+Epoch:   56/60    Loss: 3.03624836564064
+
+Epoch:   56/60    Loss: 3.0597377479076386
+
+Epoch:   56/60    Loss: 3.092610401391983
+
+Epoch:   56/60    Loss: 3.072009029150009
+
+Epoch:   56/60    Loss: 3.0278348076343535
+
+Epoch:   56/60    Loss: 3.0536753487586976
+
+Epoch:   56/60    Loss: 3.010807653427124
+
+Epoch:   56/60    Loss: 3.0142667257785796
+
+Epoch:   56/60    Loss: 2.9811697454452513
+
+Epoch:   57/60    Loss: 3.0605738243978955
+
+Epoch:   57/60    Loss: 3.0842979183197023
+
+Epoch:   57/60    Loss: 2.971915983915329
+
+Epoch:   57/60    Loss: 3.0120481326580046
+
+Epoch:   57/60    Loss: 2.9850536835193635
+
+Epoch:   57/60    Loss: 3.0672122201919554
+
+Epoch:   57/60    Loss: 3.0842458810806272
+
+Epoch:   57/60    Loss: 2.957126900911331
+
+Epoch:   57/60    Loss: 2.8817261428833008
+
+Epoch:   57/60    Loss: 3.052192673206329
+
+Epoch:   57/60    Loss: 2.97237748503685
+
+Epoch:   57/60    Loss: 2.9682065107822417
+
+Epoch:   57/60    Loss: 2.912177382230759
+
+Epoch:   57/60    Loss: 2.917708056926727
+
+Epoch:   57/60    Loss: 2.8567008588314056
+
+Epoch:   57/60    Loss: 2.881456253051758
+
+Epoch:   57/60    Loss: 2.911474342107773
+
+Epoch:   57/60    Loss: 2.973313692331314
+
+Epoch:   57/60    Loss: 2.8839134829044344
+
+Epoch:   57/60    Loss: 2.8319746792316436
+
+Epoch:   57/60    Loss: 2.958038131713867
+
+Epoch:   57/60    Loss: 2.909129672288895
+
+Epoch:   57/60    Loss: 3.0589346883296966
+
+Epoch:   57/60    Loss: 3.004286259651184
+
+Epoch:   57/60    Loss: 3.110407501220703
+
+Epoch:   57/60    Loss: 3.0497521007061006
+
+Epoch:   57/60    Loss: 2.9829296462535857
+
+Epoch:   57/60    Loss: 3.0280284552574157
+
+Epoch:   57/60    Loss: 3.0002949509620667
+
+Epoch:   57/60    Loss: 2.93799049782753
+
+Epoch:   57/60    Loss: 2.8160367286205292
+
+Epoch:   57/60    Loss: 2.9780066618919374
+
+Epoch:   57/60    Loss: 2.953281651496887
+
+Epoch:   57/60    Loss: 2.847856263399124
+
+Epoch:   57/60    Loss: 2.881037012577057
+
+Epoch:   57/60    Loss: 2.9992417175769805
+
+Epoch:   57/60    Loss: 2.8962789318561555
+
+Epoch:   57/60    Loss: 2.9911974465847013
+
+Epoch:   57/60    Loss: 3.002042450428009
+
+Epoch:   57/60    Loss: 2.8984207005500795
+
+Epoch:   57/60    Loss: 2.923013423204422
+
+Epoch:   57/60    Loss: 2.921766702890396
+
+Epoch:   57/60    Loss: 2.9962456951141356
+
+Epoch:   57/60    Loss: 3.090331191778183
+
+Epoch:   57/60    Loss: 2.981841787338257
+
+Epoch:   57/60    Loss: 3.0676395733356476
+
+Epoch:   57/60    Loss: 3.0796280710697173
+
+Epoch:   57/60    Loss: 2.991514415979385
+
+Epoch:   57/60    Loss: 2.9991809656620028
+
+Epoch:   57/60    Loss: 3.1089870522022247
+
+Epoch:   57/60    Loss: 3.0180601966381073
+
+Epoch:   57/60    Loss: 3.0664596030712126
+
+Epoch:   57/60    Loss: 3.0862892487049103
+
+Epoch:   57/60    Loss: 3.072568423748016
+
+Epoch:   57/60    Loss: 3.0378028964996338
+
+Epoch:   57/60    Loss: 3.0411947100162506
+
+Epoch:   57/60    Loss: 3.003308625936508
+
+Epoch:   57/60    Loss: 3.035538523674011
+
+Epoch:   57/60    Loss: 2.970074701786041
+
+Epoch:   58/60    Loss: 3.052757196938214
+
+Epoch:   58/60    Loss: 3.053083639383316
+
+Epoch:   58/60    Loss: 2.9829904634952547
+
+Epoch:   58/60    Loss: 3.025077497959137
+
+Epoch:   58/60    Loss: 2.9662833466529848
+
+Epoch:   58/60    Loss: 3.064315193891525
+
+Epoch:   58/60    Loss: 3.0688265726566315
+
+Epoch:   58/60    Loss: 2.9762827379703523
+
+Epoch:   58/60    Loss: 2.8898939049243926
+
+Epoch:   58/60    Loss: 3.0619193625450136
+
+Epoch:   58/60    Loss: 2.96705300617218
+
+Epoch:   58/60    Loss: 2.9522287971973418
+
+Epoch:   58/60    Loss: 2.8963928134441375
+
+Epoch:   58/60    Loss: 2.9106952786445617
+
+Epoch:   58/60    Loss: 2.8632334289550783
+
+Epoch:   58/60    Loss: 2.8655536607503893
+
+Epoch:   58/60    Loss: 2.91704083609581
+
+Epoch:   58/60    Loss: 2.9767431609630584
+
+Epoch:   58/60    Loss: 2.8824785583019255
+
+Epoch:   58/60    Loss: 2.8138919236660005
+
+Epoch:   58/60    Loss: 2.951694934606552
+
+Epoch:   58/60    Loss: 2.9068608424663545
+
+Epoch:   58/60    Loss: 3.0753172800540924
+
+Epoch:   58/60    Loss: 2.9714195835590362
+
+Epoch:   58/60    Loss: 3.104715345144272
+
+Epoch:   58/60    Loss: 3.05153959941864
+
+Epoch:   58/60    Loss: 2.981308692216873
+
+Epoch:   58/60    Loss: 3.031957718372345
+
+Epoch:   58/60    Loss: 3.010605211019516
+
+Epoch:   58/60    Loss: 2.9410625541210176
+
+Epoch:   58/60    Loss: 2.820645138025284
+
+Epoch:   58/60    Loss: 2.987515372753143
+
+Epoch:   58/60    Loss: 2.961802225112915
+
+Epoch:   58/60    Loss: 2.8638599779605864
+
+Epoch:   58/60    Loss: 2.8699944515228273
+
+Epoch:   58/60    Loss: 3.0090534496307373
+
+Epoch:   58/60    Loss: 2.9073416788578035
+
+Epoch:   58/60    Loss: 2.973944884300232
+
+Epoch:   58/60    Loss: 3.011494353055954
+
+Epoch:   58/60    Loss: 2.9144302282333374
+
+Epoch:   58/60    Loss: 2.928942413806915
+
+Epoch:   58/60    Loss: 2.9462935311794283
+
+Epoch:   58/60    Loss: 3.0154632954597473
+
+Epoch:   58/60    Loss: 3.089923846244812
+
+Epoch:   58/60    Loss: 2.9795881843566896
+
+Epoch:   58/60    Loss: 3.0965788426399232
+
+Epoch:   58/60    Loss: 3.109135447263718
+
+Epoch:   58/60    Loss: 3.0051245551109314
+
+Epoch:   58/60    Loss: 3.027168481826782
+
+Epoch:   58/60    Loss: 3.1139655599594116
+
+Epoch:   58/60    Loss: 3.046295505285263
+
+Epoch:   58/60    Loss: 3.066065661430359
+
+Epoch:   58/60    Loss: 3.1018606140613554
+
+Epoch:   58/60    Loss: 3.084925150871277
+
+Epoch:   58/60    Loss: 3.054350051879883
+
+Epoch:   58/60    Loss: 3.0427903695106506
+
+Epoch:   58/60    Loss: 3.020717315196991
+
+Epoch:   58/60    Loss: 3.0195130007267
+
+Epoch:   58/60    Loss: 2.982715908050537
+
+Epoch:   59/60    Loss: 3.0452361814677715
+
+Epoch:   59/60    Loss: 3.0575683653354644
+
+Epoch:   59/60    Loss: 2.9981422402858735
+
+Epoch:   59/60    Loss: 3.034874997138977
+
+Epoch:   59/60    Loss: 3.002537048339844
+
+Epoch:   59/60    Loss: 3.0873897314071654
+
+Epoch:   59/60    Loss: 3.083726209163666
+
+Epoch:   59/60    Loss: 2.973847106695175
+
+Epoch:   59/60    Loss: 2.889144278049469
+
+Epoch:   59/60    Loss: 3.0603441479206084
+
+Epoch:   59/60    Loss: 2.9837223472595213
+
+Epoch:   59/60    Loss: 2.953134929418564
+
+Epoch:   59/60    Loss: 2.9117457249164582
+
+Epoch:   59/60    Loss: 2.913226757764816
+
+Epoch:   59/60    Loss: 2.865428701877594
+
+Epoch:   59/60    Loss: 2.884046220779419
+
+Epoch:   59/60    Loss: 2.9047068340778353
+
+Epoch:   59/60    Loss: 2.9894070482254027
+
+Epoch:   59/60    Loss: 2.8986696090698243
+
+Epoch:   59/60    Loss: 2.832121235847473
+
+Epoch:   59/60    Loss: 2.9518259100914
+
+Epoch:   59/60    Loss: 2.901452662706375
+
+Epoch:   59/60    Loss: 3.078658596754074
+
+Epoch:   59/60    Loss: 2.9790510535240173
+
+Epoch:   59/60    Loss: 3.109859281539917
+
+Epoch:   59/60    Loss: 3.05625715303421
+
+Epoch:   59/60    Loss: 2.979164356470108
+
+Epoch:   59/60    Loss: 3.026801521062851
+
+Epoch:   59/60    Loss: 3.0009855554103853
+
+Epoch:   59/60    Loss: 2.931206425666809
+
+Epoch:   59/60    Loss: 2.8180688881874083
+
+Epoch:   59/60    Loss: 2.9913138756752016
+
+Epoch:   59/60    Loss: 2.9856986222267152
+
+Epoch:   59/60    Loss: 2.8688534355163573
+
+Epoch:   59/60    Loss: 2.8798106508255006
+
+Epoch:   59/60    Loss: 3.014713763475418
+
+Epoch:   59/60    Loss: 2.898033784389496
+
+Epoch:   59/60    Loss: 2.9615472691059113
+
+Epoch:   59/60    Loss: 3.029514420032501
+
+Epoch:   59/60    Loss: 2.919979352235794
+
+Epoch:   59/60    Loss: 2.922021285533905
+
+Epoch:   59/60    Loss: 2.924693707227707
+
+Epoch:   59/60    Loss: 2.9876632397174836
+
+Epoch:   59/60    Loss: 3.0887418694496156
+
+Epoch:   59/60    Loss: 3.001750155210495
+
+Epoch:   59/60    Loss: 3.0833980689048768
+
+Epoch:   59/60    Loss: 3.08768013381958
+
+Epoch:   59/60    Loss: 3.00435680103302
+
+Epoch:   59/60    Loss: 3.0044203991889953
+
+Epoch:   59/60    Loss: 3.1102002601623537
+
+Epoch:   59/60    Loss: 3.030851905107498
+
+Epoch:   59/60    Loss: 3.0481544024944305
+
+Epoch:   59/60    Loss: 3.0877297670841215
+
+Epoch:   59/60    Loss: 3.081446855306625
+
+Epoch:   59/60    Loss: 3.0322229998111725
+
+Epoch:   59/60    Loss: 3.031746115207672
+
+Epoch:   59/60    Loss: 3.0102510447502135
+
+Epoch:   59/60    Loss: 3.00330578827858
+
+Epoch:   59/60    Loss: 2.960490219116211
+
+Epoch:   60/60    Loss: 3.042100684960251
+
+Epoch:   60/60    Loss: 3.0646385209560396
+
+Epoch:   60/60    Loss: 2.983560513973236
+
+Epoch:   60/60    Loss: 3.009678641319275
+
+Epoch:   60/60    Loss: 2.980162822008133
+
+Epoch:   60/60    Loss: 3.0548507344722746
+
+Epoch:   60/60    Loss: 3.0761190176010134
+
+Epoch:   60/60    Loss: 2.9789613435268403
+
+Epoch:   60/60    Loss: 2.884741348028183
+
+Epoch:   60/60    Loss: 3.049336690187454
+
+Epoch:   60/60    Loss: 2.9745236086845397
+
+Epoch:   60/60    Loss: 2.9452423231601714
+
+Epoch:   60/60    Loss: 2.8977202763557433
+
+Epoch:   60/60    Loss: 2.908296685218811
+
+Epoch:   60/60    Loss: 2.8658897778987886
+
+Epoch:   60/60    Loss: 2.877387917518616
+
+Epoch:   60/60    Loss: 2.913098311185837
+
+Epoch:   60/60    Loss: 2.9796364178657533
+
+Epoch:   60/60    Loss: 2.8940574946403506
+
+Epoch:   60/60    Loss: 2.821116201400757
+
+Epoch:   60/60    Loss: 2.963512318611145
+
+Epoch:   60/60    Loss: 2.898242568016052
+
+Epoch:   60/60    Loss: 3.0628935446739196
+
+Epoch:   60/60    Loss: 3.0021293087005616
+
+Epoch:   60/60    Loss: 3.101706418991089
+
+Epoch:   60/60    Loss: 3.058830629110336
+
+Epoch:   60/60    Loss: 2.9968287605047226
+
+Epoch:   60/60    Loss: 3.0220017557144163
+
+Epoch:   60/60    Loss: 2.9825271937847138
+
+Epoch:   60/60    Loss: 2.931373210430145
+
+Epoch:   60/60    Loss: 2.817794398546219
+
+Epoch:   60/60    Loss: 2.9982976648807527
+
+Epoch:   60/60    Loss: 2.9652942707538603
+
+Epoch:   60/60    Loss: 2.8756358847618104
+
+Epoch:   60/60    Loss: 2.882172851085663
+
+Epoch:   60/60    Loss: 3.0220310349464414
+
+Epoch:   60/60    Loss: 2.897277935028076
+
+Epoch:   60/60    Loss: 2.961400050163269
+
+Epoch:   60/60    Loss: 3.0024780814647674
+
+Epoch:   60/60    Loss: 2.898976637840271
+
+Epoch:   60/60    Loss: 2.9109009709358213
+
+Epoch:   60/60    Loss: 2.9405596842765807
+
+Epoch:   60/60    Loss: 2.978248086452484
+
+Epoch:   60/60    Loss: 3.0936934700012206
+
+Epoch:   60/60    Loss: 2.96538426733017
+
+Epoch:   60/60    Loss: 3.0583674821853637
+
+Epoch:   60/60    Loss: 3.065163011789322
+
+Epoch:   60/60    Loss: 2.9900614993572234
+
+Epoch:   60/60    Loss: 3.0007856607437136
+
+Epoch:   60/60    Loss: 3.069423420906067
+
+Epoch:   60/60    Loss: 3.0162329878807066
+
+Epoch:   60/60    Loss: 3.0377836785316465
+
+Epoch:   60/60    Loss: 3.078305502772331
+
+Epoch:   60/60    Loss: 3.0720870769023896
+
+Epoch:   60/60    Loss: 3.008007902383804
+
+Epoch:   60/60    Loss: 3.005903123378754
+
+Epoch:   60/60    Loss: 2.9781039476394655
+
+Epoch:   60/60    Loss: 2.975994692325592
+
+Epoch:   60/60    Loss: 2.9531306116580964
+
 Model Trained and Saved
 </pre>
 </div>
@@ -12739,7 +19819,7 @@ The biggest change happend when I removed the dropout that I originally had. Thi
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12770,7 +19850,7 @@ The biggest change happend when I removed the dropout that I originally had. Thi
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12866,7 +19946,7 @@ The biggest change happend when I removed the dropout that I originally had. Thi
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># run the cell multiple times to get different results!</span>
@@ -12906,75 +19986,59 @@ The biggest change happend when I removed the dropout that I originally had. Thi
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>jerry: &#39;bout eleven wexler:. although, i recall the sense *hell* cutting the face.&#34;
+<pre>jerry: brandes cooling footnote:. writer&#39;s knowwork footnote: kroft) pitched
 
-helen: what?
+jerry: hello?
 
-morty: you got a pen?
+kramer: hey, you gotta get the cash, you want to be honest with that man, you got.
 
-helen: oh.
+morty: what do you mean?
 
-jerry: i can&#39;t take it.
+helen: it&#39;s not that guy.
 
-jack:(to elaine) well, i guess i should take it!
+george: oh, i got it.
 
-helen: what does he want.
+jerry: i don&#39;t know how you can do that.
 
-morty: i don&#39;t want to know you in my back.
+morty: i don&#39;t know, i&#39;m so sorry.
 
-jerry:(to kramer) what are you doing here?
+chiles: help me!
 
-elaine: oh, what are you talking about?
+kramer: hey, i got a lot of static. poor i was there.
 
-jack: i should see the karma.&#34;&#34; helen: the hair are the air conditioner.
+elaine: so, i got it.
 
-helen: morty, what do you think?
+george: i can&#39;t believe i was in the position with the way to talk about.
 
-jack: well, i didn&#39;t know this was very important
+jerry: what?
 
-jerry:(to the(hands the one i&#39;ll call you.
+elaine: well, i don&#39;t know.
 
-elaine:(on phone) oh...
+jerry: why did you not?
 
-morty: you don&#39;t know what you want.(jerry remains elaine&#39;s room between his cleaning) he likes him.
+helen: the sticks. they don&#39;t want to hear soup and she said that would have to be. i have been in this court, you&#39;re a cosmo he was in front of a restaurant tribe- the moors. we just want to get ready, but i would.
 
-jerry: job happened to the right night!
+helen: george, i am, i&#39;m gonna be.
 
-helen:(to the kitchen) don&#39;t tell me.
+george: jerry, i am so grateful for you to get the pound. i was with the of the.
 
-jerry: i think so.
+george: i love this contest...
 
-helen: what?
+elaine: i think i have a pee party and they are.
 
-elaine: i know, i don&#39;t think i can see this thing..
+kramer: you know, i can&#39;t find this stuff, you know, i was in my car with the soup. i can&#39;t have to be closing in front of the 26th packed to my mother and i had a rubber suicide thing.
 
-helen: what is this, you&#39;re a security attendant or something.(kramer overhears as the back without jerry)
+elaine: i have a pee party.
 
-elaine:(thinking) so nice of it?
+elaine: well, it&#39;s a performance. i know what i do.
 
-george: i don&#39;t know what it is.
+susan: did you see it.
 
-jerry: oh...(to helen) so, how do you feel it?
+george: i think it&#39;s not good for you, and he says that the time we have a good bye yeah? what did they do about this?
 
-morty: i can&#39;t get this stuff.
+george: i don&#39;t know. i don&#39;t know where the is as good.
 
-jerry: well, it was a nice guy.
-
-morty: i forgot to get it!
-
-elaine: oh! i know everyone else grew with her.
-
-morty:(ramon: to the kitchen) : the tea building]
-
-jerry: hey, you want to take the pen!
-
-elaine: what happened?
-
-jerry: no.
-
-helen: i don&#39;t know....
-
-morty: you don&#39;t want to
+sidra:
 </pre>
 </div>
 </div>
@@ -12994,7 +20058,7 @@ morty: you don&#39;t want to
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># save script to a text file</span>
